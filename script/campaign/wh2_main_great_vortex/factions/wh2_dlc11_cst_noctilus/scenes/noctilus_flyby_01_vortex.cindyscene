@@ -1,0 +1,29 @@
+<SCENE_FILE name="noctilus_flyby_01_vortex.CindyScene" perspective_camera="185.737,5.53481,223.004:206.457,-46.3304,316.12" end_record_time="89.00000464171171" version="23" start_record_time="0">
+ <ENVIRONMENT name="Environment" data="Weather/default.environment" order="0" hidden="false"/>
+ <VECTOR name="position" surface_mode="Freeform" is_linked="0" link_id="0" unique_id="{519e3eaf-ec7b-4f70-aa21-387438a2efeb}" id="{519e3eaf-ec7b-4f70-aa21-387438a2efeb}">
+  <DOUBLE name="X" single_keyframe_only="1" animated="1" order="0" default="0" hidden="false">
+   <KEYFRAME data="0" handle2_y="0" handle2_x="0" handle1_x="0" handle1_type="SMOOTH" time="0" handle1_y="0" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE name="Y" single_keyframe_only="1" animated="1" order="1" default="0" hidden="false">
+   <KEYFRAME data="0" handle2_y="0" handle2_x="0" handle1_x="0" handle1_type="SMOOTH" time="0" handle1_y="0" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE name="Z" single_keyframe_only="1" animated="1" order="2" default="0" hidden="false">
+   <KEYFRAME data="0" handle2_y="0" handle2_x="0" handle1_x="0" handle1_type="SMOOTH" time="0" handle1_y="0" handle2_type="SMOOTH"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{4295bab2-a6cb-42ec-8fce-df2143b06185}">
+  <RADIAN name="X" single_keyframe_only="1" animated="1" order="0" default="0" hidden="false">
+   <KEYFRAME data="0" handle2_y="0" handle2_x="0" handle1_x="0" handle1_type="SMOOTH" time="0" handle1_y="0" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN name="Y" single_keyframe_only="1" animated="1" order="1" default="0" hidden="false">
+   <KEYFRAME data="0" handle2_y="0" handle2_x="0" handle1_x="0" handle1_type="SMOOTH" time="0" handle1_y="0" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN name="Z" single_keyframe_only="1" animated="1" order="2" default="0" hidden="false">
+   <KEYFRAME data="0" handle2_y="0" handle2_x="0" handle1_x="0" handle1_type="SMOOTH" time="0" handle1_y="0" handle2_type="SMOOTH"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="noctilus_flyby_01_.xml" warscape_properties_file="../cameras/noctilus_flyby_01_.xml"/>
+ </NODE>
+</SCENE_FILE>

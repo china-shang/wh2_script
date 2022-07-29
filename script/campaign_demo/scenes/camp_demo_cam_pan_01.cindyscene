@@ -1,0 +1,5 @@
+<SCENE_FILE name="camp_demo_cam_pan_01.CindyScene" version="18" perspective_camera="0,0,0:0,0,0" start_record_time="0" end_record_time="74.26667053997517">
+  <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="camera_01.xml" warscape_properties_file="../cameras/camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

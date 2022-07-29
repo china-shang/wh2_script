@@ -1,0 +1,10 @@
+<SCENE_MANAGER_FILE name="crm.CindySceneManager" version="23" perspective_camera="-87.1297,51.1695,-397.614:-89.9771,17.1685,-309.317" end_record_time="42" start_record_time="0">
+ <START_SCENE scene="crm_r01.CindyScene" real_time="0"/>
+ <SCENE_SWITCH real_time="0" time="12" switch_scene="crm_r02.CindyScene"/>
+ <SCENE_SWITCH real_time="0" time="23.0333" switch_scene="crm_r03.CindyScene"/>
+ <NODE name="Scenes">
+  <SCENE scene_file="../scenes/crm_r01.CindyScene" name="crm_r01.CindyScene"/>
+  <SCENE scene_file="../scenes/crm_r03.CindyScene" name="crm_r03.CindyScene"/>
+  <SCENE scene_file="../scenes/crm_r02.CindyScene" name="crm_r02.CindyScene"/>
+ </NODE>
+</SCENE_MANAGER_FILE>

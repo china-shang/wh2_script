@@ -1,0 +1,29 @@
+<SCENE_FILE name="bretonnia_main_flyover_s01.CindyScene" version="23" start_record_time="0" end_record_time="86.80000452697277" perspective_camera="244.345,8.59624,357.317:293.66,-47.205,425.955">
+ <ENVIRONMENT hidden="false" data="Weather/Default.environment" name="Environment" order="0"/>
+ <VECTOR is_linked="0" surface_mode="Freeform" id="{53c4e0ed-9332-466c-b724-75e8da50067c}" name="position" unique_id="{53c4e0ed-9332-466c-b724-75e8da50067c}" link_id="0">
+  <DOUBLE hidden="false" single_keyframe_only="0" name="X" order="0" default="0" animated="1">
+   <KEYFRAME time="19.10241317749023" data="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" single_keyframe_only="0" name="Y" order="1" default="0" animated="1">
+   <KEYFRAME time="19.10241317749023" data="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" single_keyframe_only="0" name="Z" order="2" default="0" animated="1">
+   <KEYFRAME time="19.10241317749023" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{24e45690-2840-4889-9ec2-f06be809c46c}" name="rotation">
+  <RADIAN hidden="false" single_keyframe_only="0" name="X" order="0" default="0" animated="1">
+   <KEYFRAME time="19.10241317749023" data="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" single_keyframe_only="0" name="Y" order="1" default="0" animated="1">
+   <KEYFRAME time="19.10241317749023" data="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" single_keyframe_only="0" name="Z" order="2" default="0" animated="1">
+   <KEYFRAME time="19.10241317749023" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/bretonnia_main_flyover_camera_01.xml" name="bretonnia_main_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

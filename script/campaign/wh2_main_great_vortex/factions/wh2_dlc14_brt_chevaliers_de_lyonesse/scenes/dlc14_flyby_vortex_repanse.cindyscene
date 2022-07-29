@@ -1,0 +1,29 @@
+<SCENE_FILE version="23" start_record_time="0" name="dlc14_flyby_vortex_repanse.CindyScene" end_record_time="91.06667141616345" perspective_camera="317.259,11.8799,248.956:322.689,-3.34665,260.733">
+ <ENVIRONMENT hidden="false" data="Weather/default.environment" name="Environment" order="0"/>
+ <VECTOR unique_id="{51f52118-62b7-4cde-8580-3c63cba421d2}" id="{51f52118-62b7-4cde-8580-3c63cba421d2}" name="position" is_linked="0" link_id="0" surface_mode="Freeform">
+  <DOUBLE default="0" hidden="false" animated="1" single_keyframe_only="1" name="X" order="0">
+   <KEYFRAME handle1_x="66.3667" handle2_x="66.3667" handle1_y="0" handle2_y="0" data="0" time="66.36666870117188" handle1_type="SMOOTH" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" animated="1" single_keyframe_only="1" name="Y" order="1">
+   <KEYFRAME handle1_x="66.3667" handle2_x="66.3667" handle1_y="0" handle2_y="0" data="0" time="66.36666870117188" handle1_type="SMOOTH" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" animated="1" single_keyframe_only="1" name="Z" order="2">
+   <KEYFRAME handle1_x="66.3667" handle2_x="66.3667" handle1_y="0" handle2_y="0" data="0" time="66.36666870117188" handle1_type="SMOOTH" handle2_type="SMOOTH"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{07517edf-ff97-4cd7-80fe-7fe1698224a4}" name="rotation">
+  <RADIAN default="0" hidden="false" animated="1" single_keyframe_only="1" name="X" order="0">
+   <KEYFRAME handle1_x="66.3667" handle2_x="66.3667" handle1_y="0" handle2_y="0" data="0" time="66.36666870117188" handle1_type="SMOOTH" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" animated="1" single_keyframe_only="1" name="Y" order="1">
+   <KEYFRAME handle1_x="66.3667" handle2_x="66.3667" handle1_y="0" handle2_y="0" data="0" time="66.36666870117188" handle1_type="SMOOTH" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" animated="1" single_keyframe_only="1" name="Z" order="2">
+   <KEYFRAME handle1_x="66.3667" handle2_x="66.3667" handle1_y="0" handle2_y="0" data="0" time="66.36666870117188" handle1_type="SMOOTH" handle2_type="SMOOTH"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="dlc14_fly_vortex_repanse.xml" warscape_properties_file="../cameras/dlc14_fly_vortex_repanse.xml"/>
+ </NODE>
+</SCENE_FILE>

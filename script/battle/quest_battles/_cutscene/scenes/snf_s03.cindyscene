@@ -1,0 +1,20 @@
+<SCENE_FILE version="23" perspective_camera="-357.024,27.2672,-97.5889:-568.644,90.5082,-21.4738" end_record_time="27.709442578125" name="snf_s03.CindyScene" start_record_time="0">
+ <ENVIRONMENT hidden="false" data="" order="0" name="Environment"/>
+ <VECTOR is_linked="0" surface_mode="Freeform" link_id="0" id="{dc57a0be-b556-4ab7-842b-3b7a4978275c}" unique_id="{dc57a0be-b556-4ab7-842b-3b7a4978275c}" name="position">
+  <DOUBLE single_keyframe_only="1" hidden="false" animated="1" order="0" name="X" default="0"/>
+  <DOUBLE single_keyframe_only="1" hidden="false" animated="1" order="1" name="Y" default="0"/>
+  <DOUBLE single_keyframe_only="1" hidden="false" animated="1" order="2" name="Z" default="0"/>
+ </VECTOR>
+ <ROTATION_AXES id="{f8d7de33-4fb7-4af0-a522-74bfa8b20a2f}" name="rotation">
+  <RADIAN single_keyframe_only="1" hidden="false" animated="1" order="0" name="X" default="0"/>
+  <RADIAN single_keyframe_only="1" hidden="false" animated="1" order="1" name="Y" default="0"/>
+  <RADIAN single_keyframe_only="1" hidden="false" animated="1" order="2" name="Z" default="0"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/snf_c03.xml" name="snf_c03.xml"/>
+ </NODE>
+ <NODE name="Composite Scenes">
+  <COMPOSITE_SCENE name="prince_turn_emote_01.kfcs" composite_scene_file="../csc_ref/prince_turn_emote_01.kfcs"/>
+ </NODE>
+</SCENE_FILE>

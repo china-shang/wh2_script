@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" name="belegar_main_flyover_s01.CindyScene" version="23" end_record_time="60.03333646431565" perspective_camera="357.286,11.9569,238.278:326.411,-42.5337,309.3">
+ <ENVIRONMENT name="Environment" hidden="false" data="Weather/Default.environment" order="0"/>
+ <VECTOR unique_id="{e9642621-7f4f-4f2a-a2dd-626143966a5c}" link_id="0" name="position" is_linked="0" surface_mode="Freeform" id="{e9642621-7f4f-4f2a-a2dd-626143966a5c}">
+  <DOUBLE animated="1" name="X" hidden="false" default="0" order="0" single_keyframe_only="1">
+   <KEYFRAME time="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" name="Y" hidden="false" default="0" order="1" single_keyframe_only="1">
+   <KEYFRAME time="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" name="Z" hidden="false" default="0" order="2" single_keyframe_only="1">
+   <KEYFRAME time="0" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{7c4d2944-325d-4198-b427-f93faf3140d0}">
+  <RADIAN animated="1" name="X" hidden="false" default="0" order="0" single_keyframe_only="1">
+   <KEYFRAME time="0" data="0"/>
+  </RADIAN>
+  <RADIAN animated="1" name="Y" hidden="false" default="0" order="1" single_keyframe_only="1">
+   <KEYFRAME time="0" data="0"/>
+  </RADIAN>
+  <RADIAN animated="1" name="Z" hidden="false" default="0" order="2" single_keyframe_only="1">
+   <KEYFRAME time="0" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/belegar_main_flyover.xml" name="belegar_main_flyover.xml"/>
+ </NODE>
+ <NODE name="Links"/>
+</SCENE_FILE>

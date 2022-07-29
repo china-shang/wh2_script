@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" end_record_time="63.06666995584965" version="23" perspective_camera="369.168,9.94454,247.68:368.379,-3.60644,262.368" name="flyby.CindyScene">
+ <ENVIRONMENT order="0" name="Environment" hidden="false" data=""/>
+ <VECTOR link_id="-1" is_linked="0" surface_mode="Freeform" unique_id="{5c2f5c12-2c21-4859-ac2c-c9816f27c711}" id="{5c2f5c12-2c21-4859-ac2c-c9816f27c711}" name="position">
+  <DOUBLE animated="1" default="0" order="0" name="X" single_keyframe_only="1" hidden="false">
+   <KEYFRAME handle2_y="0" time="0" handle1_type="SMOOTH" handle1_x="0" handle2_x="0" handle1_y="0" handle2_type="SMOOTH" data="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" default="0" order="1" name="Y" single_keyframe_only="1" hidden="false">
+   <KEYFRAME handle2_y="0" time="0" handle1_type="SMOOTH" handle1_x="0" handle2_x="0" handle1_y="0" handle2_type="SMOOTH" data="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" default="0" order="2" name="Z" single_keyframe_only="1" hidden="false">
+   <KEYFRAME handle2_y="0" time="0" handle1_type="SMOOTH" handle1_x="0" handle2_x="0" handle1_y="0" handle2_type="SMOOTH" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{dc077290-4fbf-4218-8932-b20913eaec9c}" name="rotation">
+  <RADIAN animated="1" default="0" order="0" name="X" single_keyframe_only="1" hidden="false">
+   <KEYFRAME handle2_y="0" time="0" handle1_type="SMOOTH" handle1_x="0" handle2_x="0" handle1_y="0" handle2_type="SMOOTH" data="0"/>
+  </RADIAN>
+  <RADIAN animated="1" default="0" order="1" name="Y" single_keyframe_only="1" hidden="false">
+   <KEYFRAME handle2_y="0" time="0" handle1_type="SMOOTH" handle1_x="0" handle2_x="0" handle1_y="0" handle2_type="SMOOTH" data="0"/>
+  </RADIAN>
+  <RADIAN animated="1" default="0" order="2" name="Z" single_keyframe_only="1" hidden="false">
+   <KEYFRAME handle2_y="0" time="0" handle1_type="SMOOTH" handle1_x="0" handle2_x="0" handle1_y="0" handle2_type="SMOOTH" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/flyby.xml" name="flyby.xml"/>
+ </NODE>
+</SCENE_FILE>

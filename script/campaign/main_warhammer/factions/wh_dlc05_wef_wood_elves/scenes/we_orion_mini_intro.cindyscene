@@ -1,0 +1,29 @@
+<SCENE_FILE end_record_time="48.00000234693289" name="we_orion_mini_intro.CindyScene" start_record_time="0" version="21" perspective_camera="187.154,7.67104,156.259:185.536,2.3854,165.833">
+ <ENVIRONMENT hidden="false" name="Environment" order="0" data="Weather/Default.environment"/>
+ <VECTOR target_orientation_k="5.60519e-45" link_source_type="no_link" id="{41552cb3-daaf-4b49-9eb9-a03ec64d3853}" surface_mode="Freeform" name="position" link_id="0" link_type="no_link" target_orientation_w="3.95544e-36" target_pos_x="0" unique_id="{41552cb3-daaf-4b49-9eb9-a03ec64d3853}" target_pos_y="0" target_pos_z="6.12613e-36" target_orientation_i="0" is_linked="0" target_orientation_j="9.80909e-45">
+  <DOUBLE animated="1" single_keyframe_only="0" hidden="false" name="X" default="0" order="0">
+   <KEYFRAME time="18" handle2_x="19.5" handle2_y="0" handle2_type="BEZIER" handle1_type="SMOOTH" data="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" single_keyframe_only="0" hidden="false" name="Y" default="0" order="1">
+   <KEYFRAME time="18" handle2_x="19.5" handle2_y="0" handle2_type="BEZIER" handle1_type="SMOOTH" data="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" single_keyframe_only="0" hidden="false" name="Z" default="0" order="2">
+   <KEYFRAME time="18" handle2_x="19.5" handle2_y="0" handle2_type="BEZIER" handle1_type="SMOOTH" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{7da4737f-71a9-4181-9727-122b45952e64}" name="rotation">
+  <RADIAN animated="1" single_keyframe_only="0" hidden="false" name="X" default="0" order="0">
+   <KEYFRAME time="18" handle2_x="19.5" handle2_y="0" handle2_type="BEZIER" handle1_type="SMOOTH" data="0"/>
+  </RADIAN>
+  <RADIAN animated="1" single_keyframe_only="0" hidden="false" name="Y" default="0" order="1">
+   <KEYFRAME time="18" handle2_x="19.5" handle2_y="0" handle2_type="BEZIER" handle1_type="SMOOTH" data="0"/>
+  </RADIAN>
+  <RADIAN animated="1" single_keyframe_only="0" hidden="false" name="Z" default="0" order="2">
+   <KEYFRAME time="18" handle2_x="19.5" handle2_y="0" handle2_type="BEZIER" handle1_type="SMOOTH" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/orion_mini_intro.xml" name="orion_mini_intro.xml"/>
+ </NODE>
+</SCENE_FILE>

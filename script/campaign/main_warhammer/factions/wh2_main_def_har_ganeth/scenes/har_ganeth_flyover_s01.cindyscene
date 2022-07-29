@@ -1,0 +1,29 @@
+<SCENE_FILE version="23" end_record_time="82.5000043027103" perspective_camera="103.099,3.94712,403.706:95.8438,0.817493,410.534" name="har_ganeth_flyover_s01.CindyScene" start_record_time="0">
+ <ENVIRONMENT data="" hidden="false" name="Environment" order="0"/>
+ <VECTOR is_linked="0" surface_mode="Freeform" id="{19f521fd-e581-49d1-a721-c7423fea4cbc}" unique_id="{19f521fd-e581-49d1-a721-c7423fea4cbc}" name="position" link_id="0">
+  <DOUBLE hidden="false" single_keyframe_only="1" name="X" animated="1" default="0" order="0">
+   <KEYFRAME data="0" handle1_y="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle2_x="14.1333" handle1_x="14.1333" handle2_y="0" time="14.13333415985107"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" single_keyframe_only="1" name="Y" animated="1" default="0" order="1">
+   <KEYFRAME data="0" handle1_y="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle2_x="14.1333" handle1_x="14.1333" handle2_y="0" time="14.13333415985107"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" single_keyframe_only="1" name="Z" animated="1" default="0" order="2">
+   <KEYFRAME data="0" handle1_y="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle2_x="14.1333" handle1_x="14.1333" handle2_y="0" time="14.13333415985107"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{e540eb78-d55f-4358-a7c4-6cda3db0d093}" name="rotation">
+  <RADIAN hidden="false" single_keyframe_only="1" name="X" animated="1" default="0" order="0">
+   <KEYFRAME data="0" handle1_y="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle2_x="14.1333" handle1_x="14.1333" handle2_y="0" time="14.13333415985107"/>
+  </RADIAN>
+  <RADIAN hidden="false" single_keyframe_only="1" name="Y" animated="1" default="0" order="1">
+   <KEYFRAME data="0" handle1_y="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle2_x="14.1333" handle1_x="14.1333" handle2_y="0" time="14.13333415985107"/>
+  </RADIAN>
+  <RADIAN hidden="false" single_keyframe_only="1" name="Z" animated="1" default="0" order="2">
+   <KEYFRAME data="0" handle1_y="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle2_x="14.1333" handle1_x="14.1333" handle2_y="0" time="14.13333415985107"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/har_ganeth_flyover_camera_01.xml" name="har_ganeth_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

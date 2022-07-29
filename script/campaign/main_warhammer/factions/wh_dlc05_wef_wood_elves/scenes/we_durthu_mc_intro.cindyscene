@@ -1,0 +1,17 @@
+<SCENE_FILE name="we_durthu_mc_intro.CindyScene" version="23" start_record_time="0" end_record_time="84.30000476166606" perspective_camera="323.911,9.53607,281.583:321.96,5.86441,288.031">
+ <ENVIRONMENT hidden="false" data="Weather/Default.environment" name="Environment" order="0"/>
+ <VECTOR is_linked="0" surface_mode="Freeform" id="{c2a46ad0-2bd3-4007-bca3-668b8dc43edd}" name="position" unique_id="{c2a46ad0-2bd3-4007-bca3-668b8dc43edd}" link_id="0">
+  <DOUBLE hidden="false" single_keyframe_only="0" name="X" order="0" default="0" animated="1"/>
+  <DOUBLE hidden="false" single_keyframe_only="0" name="Y" order="1" default="0" animated="1"/>
+  <DOUBLE hidden="false" single_keyframe_only="0" name="Z" order="2" default="0" animated="1"/>
+ </VECTOR>
+ <ROTATION_AXES id="{b360cb98-c35e-4ca2-b812-9c34dedee9f3}" name="rotation">
+  <RADIAN hidden="false" single_keyframe_only="0" name="X" order="0" default="0" animated="1"/>
+  <RADIAN hidden="false" single_keyframe_only="0" name="Y" order="1" default="0" animated="1"/>
+  <RADIAN hidden="false" single_keyframe_only="0" name="Z" order="2" default="0" animated="1"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/durthu_mc_intro.xml" name="durthu_mc_intro.xml"/>
+ </NODE>
+</SCENE_FILE>

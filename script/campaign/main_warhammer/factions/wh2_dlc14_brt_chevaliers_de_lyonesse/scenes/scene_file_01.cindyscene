@@ -1,0 +1,29 @@
+<SCENE_FILE end_record_time="57.50000299885869" version="23" perspective_camera="304.162,13.5503,95.1056:303.725,-0.0879049,104.187" name="scene_file_01.CindyScene" start_record_time="0">
+ <ENVIRONMENT data="" hidden="false" order="0" name="Environment"/>
+ <VECTOR surface_mode="Freeform" unique_id="{b5718637-9e1d-4d33-abbf-0a95a1ba6469}" is_linked="0" link_id="-1" id="{b5718637-9e1d-4d33-abbf-0a95a1ba6469}" name="position">
+  <DOUBLE single_keyframe_only="1" hidden="false" order="0" animated="1" default="0" name="X">
+   <KEYFRAME handle2_y="0" handle1_y="0" data="0" handle2_x="1.33333" handle1_type="SMOOTH" time="1.333333373069763" handle1_x="1.33333" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" hidden="false" order="1" animated="1" default="0" name="Y">
+   <KEYFRAME handle2_y="0" handle1_y="0" data="0" handle2_x="1.33333" handle1_type="SMOOTH" time="1.333333373069763" handle1_x="1.33333" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" hidden="false" order="2" animated="1" default="0" name="Z">
+   <KEYFRAME handle2_y="0" handle1_y="0" data="0" handle2_x="1.33333" handle1_type="SMOOTH" time="1.333333373069763" handle1_x="1.33333" handle2_type="SMOOTH"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{037398b8-57ce-4ae0-9603-7c5a54865059}" name="rotation">
+  <RADIAN single_keyframe_only="1" hidden="false" order="0" animated="1" default="0" name="X">
+   <KEYFRAME handle2_y="0" handle1_y="0" data="0" handle2_x="1.33333" handle1_type="SMOOTH" time="1.333333373069763" handle1_x="1.33333" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" hidden="false" order="1" animated="1" default="0" name="Y">
+   <KEYFRAME handle2_y="0" handle1_y="0" data="0" handle2_x="1.33333" handle1_type="SMOOTH" time="1.333333373069763" handle1_x="1.33333" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" hidden="false" order="2" animated="1" default="0" name="Z">
+   <KEYFRAME handle2_y="0" handle1_y="0" data="0" handle2_x="1.33333" handle1_type="SMOOTH" time="1.333333373069763" handle1_x="1.33333" handle2_type="SMOOTH"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/flyby.xml" name="flyby.xml"/>
+ </NODE>
+</SCENE_FILE>

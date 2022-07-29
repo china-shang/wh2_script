@@ -1,0 +1,4 @@
+display_name: Campaign Type
+variable: cv_campaign_type
+description: The type of campaign you want to load
+dropdown:  "Mortal Empire","Vortex"

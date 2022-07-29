@@ -1,0 +1,101 @@
+display_name: Battle Count
+variable: cv_battle_count
+description: The number of battles to complete before ending, defaults to 1 battle.
+
+display_name: Battle Length Before Quit
+variable: cv_battle_length
+description: The amount of time in seconds before ending battle, defaults to 20s
+
+display_name: Team 1 Size
+variable: cv_team_1_size
+description: size of the first team, 1 = 1 player, 2 = 2 players, etc, defaults to random
+dropdown: "Random", 1, 2, 3, 4
+
+display_name: Team 2 Size
+variable: cv_team_2_size
+description: size of the first team, 1 = 1 player, 2 = 2 players, etc, defaults to random
+dropdown: "Random", 1, 2, 3, 4
+
+display_name: Team 1 Player 1 Faction
+variable: cv_army_faction_1_1
+description: Which faction to select with Team 1 Player 1 if that player is active. Defaults to Random.
+dropdown: "Random", "High Elves", "Order of Loremasters", "Avelorn", "Nagarythe", "Lizardmen", "Last Defenders", "Spirit of the Jungle", "Cult of Sotek", "Itza", "Tlaqua", "Dark Elves", "Cult of Pleasure", "Har Ganeth, "The Blessed Dread", "Hag Graef", "Skaven", "Clan Pestilens", "Clan Rictus", "Clan Skryre", "Clan Eshin", "Vampire Coast", "The Dreadfleet", "Pirates of Sartosa", "The Drowned", "Tomb Kings", "Exiles of Nehek", "Court of Lybaras", "Followers of Nagash", "The Empire", "Middenland", "The Golden Order", "The Huntsmarshal's Expedition", "Dwarfs", "Clan Angrund", "Karak Kadrin", "Greenskins", "Crooked Moon", "The Bloody Handz", "Vampire Counts", "Von Carstein", "Mousillon", "The Barrow Legion", "Norsca", "Wintertooth", "Bretonnia", "Bordeleaux", "Carcassonne", "[PH] Chevaliers de Lyonesse", "Wood Elves", "Argwylon", "Beastmen", "Warherd of the Shadowgave", "Warriors of Chaos" 
+
+display_name: Team 1 Player 2 Faction
+variable: cv_army_faction_1_2
+description: Which faction to select with Team 1 Player 2 if that player is active. Defaults to Random.
+dropdown: "Random", "High Elves", "Order of Loremasters", "Avelorn", "Nagarythe", "Lizardmen", "Last Defenders", "Spirit of the Jungle", "Cult of Sotek", "Itza", "Tlaqua", "Dark Elves", "Cult of Pleasure", "Har Ganeth, "The Blessed Dread", "Hag Graef", "Skaven", "Clan Pestilens", "Clan Rictus", "Clan Skryre", "Clan Eshin", "Vampire Coast", "The Dreadfleet", "Pirates of Sartosa", "The Drowned", "Tomb Kings", "Exiles of Nehek", "Court of Lybaras", "Followers of Nagash", "The Empire", "Middenland", "The Golden Order", "The Huntsmarshal's Expedition", "Dwarfs", "Clan Angrund", "Karak Kadrin", "Greenskins", "Crooked Moon", "The Bloody Handz", "Vampire Counts", "Von Carstein", "Mousillon", "The Barrow Legion", "Norsca", "Wintertooth", "Bretonnia", "Bordeleaux", "Carcassonne", "[PH] Chevaliers de Lyonesse", "Wood Elves", "Argwylon", "Beastmen", "Warherd of the Shadowgave", "Warriors of Chaos" 
+
+display_name: Team 1 Player 3 Faction
+variable: cv_army_faction_1_3
+description: Which faction to select with Team 1 Player 3 if that player is active. Defaults to Random.
+dropdown: "Random", "High Elves", "Order of Loremasters", "Avelorn", "Nagarythe", "Lizardmen", "Last Defenders", "Spirit of the Jungle", "Cult of Sotek", "Itza", "Tlaqua", "Dark Elves", "Cult of Pleasure", "Har Ganeth, "The Blessed Dread", "Hag Graef", "Skaven", "Clan Pestilens", "Clan Rictus", "Clan Skryre", "Clan Eshin", "Vampire Coast", "The Dreadfleet", "Pirates of Sartosa", "The Drowned", "Tomb Kings", "Exiles of Nehek", "Court of Lybaras", "Followers of Nagash", "The Empire", "Middenland", "The Golden Order", "The Huntsmarshal's Expedition", "Dwarfs", "Clan Angrund", "Karak Kadrin", "Greenskins", "Crooked Moon", "The Bloody Handz", "Vampire Counts", "Von Carstein", "Mousillon", "The Barrow Legion", "Norsca", "Wintertooth", "Bretonnia", "Bordeleaux", "Carcassonne", "[PH] Chevaliers de Lyonesse", "Wood Elves", "Argwylon", "Beastmen", "Warherd of the Shadowgave", "Warriors of Chaos" 
+
+display_name: Team 1 Player 4 Faction
+variable: cv_army_faction_1_4
+description: Which faction to select with Team 1 Player 4 if that player is active. Defaults to Random.
+dropdown: "Random", "High Elves", "Order of Loremasters", "Avelorn", "Nagarythe", "Lizardmen", "Last Defenders", "Spirit of the Jungle", "Cult of Sotek", "Itza", "Tlaqua", "Dark Elves", "Cult of Pleasure", "Har Ganeth, "The Blessed Dread", "Hag Graef", "Skaven", "Clan Pestilens", "Clan Rictus", "Clan Skryre", "Clan Eshin", "Vampire Coast", "The Dreadfleet", "Pirates of Sartosa", "The Drowned", "Tomb Kings", "Exiles of Nehek", "Court of Lybaras", "Followers of Nagash", "The Empire", "Middenland", "The Golden Order", "The Huntsmarshal's Expedition", "Dwarfs", "Clan Angrund", "Karak Kadrin", "Greenskins", "Crooked Moon", "The Bloody Handz", "Vampire Counts", "Von Carstein", "Mousillon", "The Barrow Legion", "Norsca", "Wintertooth", "Bretonnia", "Bordeleaux", "Carcassonne", "[PH] Chevaliers de Lyonesse", "Wood Elves", "Argwylon", "Beastmen", "Warherd of the Shadowgave", "Warriors of Chaos" 
+
+display_name: Team 2 Player 1 Faction
+variable: cv_army_faction_2_1
+description: Which faction to select with Team 2 Player 1 if that player is active. Defaults to Random.
+dropdown: "Random", "High Elves", "Order of Loremasters", "Avelorn", "Nagarythe", "Lizardmen", "Last Defenders", "Spirit of the Jungle", "Cult of Sotek", "Itza", "Tlaqua", "Dark Elves", "Cult of Pleasure", "Har Ganeth, "The Blessed Dread", "Hag Graef", "Skaven", "Clan Pestilens", "Clan Rictus", "Clan Skryre", "Clan Eshin", "Vampire Coast", "The Dreadfleet", "Pirates of Sartosa", "The Drowned", "Tomb Kings", "Exiles of Nehek", "Court of Lybaras", "Followers of Nagash", "The Empire", "Middenland", "The Golden Order", "The Huntsmarshal's Expedition", "Dwarfs", "Clan Angrund", "Karak Kadrin", "Greenskins", "Crooked Moon", "The Bloody Handz", "Vampire Counts", "Von Carstein", "Mousillon", "The Barrow Legion", "Norsca", "Wintertooth", "Bretonnia", "Bordeleaux", "Carcassonne", "[PH] Chevaliers de Lyonesse", "Wood Elves", "Argwylon", "Beastmen", "Warherd of the Shadowgave", "Warriors of Chaos" 
+
+display_name: Team 2 Player 2 Faction
+variable: cv_army_faction_2_2
+description: Which faction to select with Team 2 Player 2 if that player is active. Defaults to Random.
+dropdown: "Random", "High Elves", "Order of Loremasters", "Avelorn", "Nagarythe", "Lizardmen", "Last Defenders", "Spirit of the Jungle", "Cult of Sotek", "Itza", "Tlaqua", "Dark Elves", "Cult of Pleasure", "Har Ganeth, "The Blessed Dread", "Hag Graef", "Skaven", "Clan Pestilens", "Clan Rictus", "Clan Skryre", "Clan Eshin", "Vampire Coast", "The Dreadfleet", "Pirates of Sartosa", "The Drowned", "Tomb Kings", "Exiles of Nehek", "Court of Lybaras", "Followers of Nagash", "The Empire", "Middenland", "The Golden Order", "The Huntsmarshal's Expedition", "Dwarfs", "Clan Angrund", "Karak Kadrin", "Greenskins", "Crooked Moon", "The Bloody Handz", "Vampire Counts", "Von Carstein", "Mousillon", "The Barrow Legion", "Norsca", "Wintertooth", "Bretonnia", "Bordeleaux", "Carcassonne", "[PH] Chevaliers de Lyonesse", "Wood Elves", "Argwylon", "Beastmen", "Warherd of the Shadowgave", "Warriors of Chaos" 
+
+display_name: Team 2 Player 3 Faction
+variable: cv_army_faction_2_3
+description: Which faction to select with Team 2 Player 3 if that player is active. Defaults to Random.
+dropdown: "Random", "High Elves", "Order of Loremasters", "Avelorn", "Nagarythe", "Lizardmen", "Last Defenders", "Spirit of the Jungle", "Cult of Sotek", "Itza", "Tlaqua", "Dark Elves", "Cult of Pleasure", "Har Ganeth, "The Blessed Dread", "Hag Graef", "Skaven", "Clan Pestilens", "Clan Rictus", "Clan Skryre", "Clan Eshin", "Vampire Coast", "The Dreadfleet", "Pirates of Sartosa", "The Drowned", "Tomb Kings", "Exiles of Nehek", "Court of Lybaras", "Followers of Nagash", "The Empire", "Middenland", "The Golden Order", "The Huntsmarshal's Expedition", "Dwarfs", "Clan Angrund", "Karak Kadrin", "Greenskins", "Crooked Moon", "The Bloody Handz", "Vampire Counts", "Von Carstein", "Mousillon", "The Barrow Legion", "Norsca", "Wintertooth", "Bretonnia", "Bordeleaux", "Carcassonne", "[PH] Chevaliers de Lyonesse", "Wood Elves", "Argwylon", "Beastmen", "Warherd of the Shadowgave", "Warriors of Chaos" 
+
+display_name: Team 2 Player 4 Faction
+variable: cv_army_faction_2_4
+description: Which faction to select with Team 2 Player 4 if that player is active. Defaults to Random.
+dropdown: "Random", "High Elves", "Order of Loremasters", "Avelorn", "Nagarythe", "Lizardmen", "Last Defenders", "Spirit of the Jungle", "Cult of Sotek", "Itza", "Tlaqua", "Dark Elves", "Cult of Pleasure", "Har Ganeth, "The Blessed Dread", "Hag Graef", "Skaven", "Clan Pestilens", "Clan Rictus", "Clan Skryre", "Clan Eshin", "Vampire Coast", "The Dreadfleet", "Pirates of Sartosa", "The Drowned", "Tomb Kings", "Exiles of Nehek", "Court of Lybaras", "Followers of Nagash", "The Empire", "Middenland", "The Golden Order", "The Huntsmarshal's Expedition", "Dwarfs", "Clan Angrund", "Karak Kadrin", "Greenskins", "Crooked Moon", "The Bloody Handz", "Vampire Counts", "Von Carstein", "Mousillon", "The Barrow Legion", "Norsca", "Wintertooth", "Bretonnia", "Bordeleaux", "Carcassonne", "[PH] Chevaliers de Lyonesse", "Wood Elves", "Argwylon", "Beastmen", "Warherd of the Shadowgave", "Warriors of Chaos" 
+
+display_name: Battle Type
+variable: cv_battle_type
+description: which battle type dropdown option is chosen, 1 = 1st from top, 2 = 2nd from top, etc, defaults to random.
+dropdown: "Random", "Land Battle", "Siege Battle", "Ambush Battle", "Chokepoint Battle", "Minor Settlement Battle", "Subterranean Battle"
+
+display_name: Map Choice
+variable: cv_map_preset
+description: which map preset dropdown option is chosen, 1 = 1st from top, 2 = 2nd from top, etc, defaults to random.
+
+display_name: Difficulty Dropdown
+variable: cv_difficulty
+description: which difficulty dropdown option is chosen, 1 = 1st from top, 2 = 2nd from top, etc, defaults to random.
+dropdown: "Random", "Easy", "Normal", "Hard", "Very Hard"
+
+display_name: Time Dropdown
+variable: cv_time
+description: which battle time dropdown option is chosen, 1 = 1st from top, 2 = 2nd from top, etc, defaults to random.
+dropdown: "Random", "20 Minutes", "40 Minutes", "60 Minutes", "Unlimited"
+
+display_name: Funds Dropdown
+variable: cv_funds
+description: which funds dropdown option is chosen, 1 = 1st from top, 2 = 2nd from top, etc, defaults to random.
+dropdown: "Random", "Small", "Medium", "Large", "Ultra"
+
+display_name: Tower Level Dropdown
+variable: cv_tower_level
+description: which tower level dropdown option is chosen, defaults to random.
+dropdown: "Random", "Level 01", "Level 02", "Level 03", "Level 04"
+
+display_name: Realism Checkbox
+variable: cv_realism
+description: turn on/off battle realism, true = on, false = off
+dropdown: "Random", true, false
+
+display_name: Large Armies Checkbox
+variable: cv_large_armies
+description: turn on/off large armies, true = on, false = off
+dropdown: "Random", true, false
+
+display_name: Unit Caps Checkbox
+variable: cv_unit_caps
+description: turn on/off unit caps, true = on, false = off (disables autogenerating armies, use with caution), defaults to false
+dropdown: "Random", true, false

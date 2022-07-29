@@ -1,0 +1,11 @@
+<SCENE_MANAGER_FILE perspective_camera="-357.024,27.2672,-97.5889:-568.644,90.5082,-21.4738" version="23" name="snf.CindySceneManager" start_record_time="0" end_record_time="42.0000021904707">
+ <START_SCENE scene="snf_s01.CindyScene" real_time="0"/>
+ <SCENE_SWITCH switch_scene="snf_s03.CindyScene" real_time="0" time="21.8636"/>
+ <SCENE_SWITCH switch_scene="snf_s04.CindyScene" real_time="0" time="26.5583"/>
+ <NODE name="Scenes">
+  <SCENE scene_file="../scenes/snf_s01.CindyScene" name="snf_s01.CindyScene"/>
+  <SCENE scene_file="../scenes/snf_s02.CindyScene" name="snf_s02.CindyScene"/>
+  <SCENE scene_file="../scenes/snf_s03.CindyScene" name="snf_s03.CindyScene"/>
+  <SCENE scene_file="../scenes/snf_s04.CindyScene" name="snf_s04.CindyScene"/>
+ </NODE>
+</SCENE_MANAGER_FILE>

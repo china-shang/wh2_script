@@ -1,0 +1,24 @@
+<PROP_FILE version="22" id="{647b4540-eeba-46af-9559-c5e07bd163ba}" prop_name="prefabs/sky_lzd_01.bmd" name="skybox_01.kfp">
+ <VECTOR target_pos_y="6.85696e+13" target_orientation_w="0.158598" unique_id="{d6b0c373-696d-4ae0-be4e-4f6e4bc7dfe1}" is_linked="0" target_pos_z="7.24362e+22" id="{d6b0c373-696d-4ae0-be4e-4f6e4bc7dfe1}" link_type="no_link" surface_mode="Freeform" target_orientation_i="7.92233e+34" name="position" link_id="-1" target_orientation_k="1.83194e+25" target_pos_x="7.0964e+22" link_source_type="no_link" target_orientation_j="2.5668e-18">
+  <DOUBLE default="0" name="X" animated="0" single_keyframe_only="1" hidden="false" order="0">
+   <KEYFRAME time="-1" data="163.7846374511719"/>
+  </DOUBLE>
+  <DOUBLE default="0" name="Y" animated="0" single_keyframe_only="1" hidden="false" order="1">
+   <KEYFRAME time="-1" data="6.09502649307251"/>
+  </DOUBLE>
+  <DOUBLE default="0" name="Z" animated="0" single_keyframe_only="1" hidden="false" order="2">
+   <KEYFRAME time="-1" data="143.6837463378906"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{49b3629e-f5dc-4e4d-aba2-d3ca28da3b29}" name="rotation">
+  <RADIAN default="0" name="X" animated="0" single_keyframe_only="1" hidden="false" order="0"/>
+  <RADIAN default="0" name="Y" animated="0" single_keyframe_only="1" hidden="false" order="1"/>
+  <RADIAN default="0" name="Z" animated="0" single_keyframe_only="1" hidden="false" order="2"/>
+ </ROTATION_AXES>
+ <DOUBLE default="1" name="scale" animated="0" single_keyframe_only="1" hidden="false" order="1">
+  <KEYFRAME time="-1" data="300"/>
+ </DOUBLE>
+ <BOOL default="0" name="always visible" animated="0" single_keyframe_only="1" hidden="false" order="3">
+  <KEYFRAME time="-1" data="1"/>
+ </BOOL>
+</PROP_FILE>

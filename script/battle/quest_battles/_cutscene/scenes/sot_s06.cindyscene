@@ -1,0 +1,17 @@
+<SCENE_FILE name="sot_s06.CindyScene" end_record_time="34.00000177323818" start_record_time="0" perspective_camera="-469.489,644.914,259.037:-318.191,675.373,83.6624" version="23">
+ <ENVIRONMENT data="" name="Environment" hidden="false" order="0"/>
+ <VECTOR link_id="0" name="position" is_linked="0" surface_mode="Freeform" unique_id="{5727a20a-d8c1-4f5b-93bd-7f9e0df4e93d}" id="{5727a20a-d8c1-4f5b-93bd-7f9e0df4e93d}">
+  <DOUBLE single_keyframe_only="1" name="X" hidden="false" default="0" order="0" animated="1"/>
+  <DOUBLE single_keyframe_only="1" name="Y" hidden="false" default="0" order="1" animated="1"/>
+  <DOUBLE single_keyframe_only="1" name="Z" hidden="false" default="0" order="2" animated="1"/>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{8501c6f7-c3a1-4162-b62c-3fb488f3b931}">
+  <RADIAN single_keyframe_only="1" name="X" hidden="false" default="0" order="0" animated="1"/>
+  <RADIAN single_keyframe_only="1" name="Y" hidden="false" default="0" order="1" animated="1"/>
+  <RADIAN single_keyframe_only="1" name="Z" hidden="false" default="0" order="2" animated="1"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="sot_c06.xml" warscape_properties_file="../cameras/sot_c06.xml"/>
+ </NODE>
+</SCENE_FILE>

@@ -1,0 +1,29 @@
+<SCENE_FILE name="gt_nakai_01.CindyScene" end_record_time="65.83026700371634" version="23" start_record_time="3" perspective_camera="-479.411,169.383,-308.781:-475.922,162.766,-290.232">
+ <ENVIRONMENT name="Environment" data="" order="0" hidden="false"/>
+ <VECTOR name="position" link_id="0" unique_id="{e8477acb-f2f1-4243-a9f2-696efd484d8e}" surface_mode="Freeform" is_linked="0" id="{e8477acb-f2f1-4243-a9f2-696efd484d8e}">
+  <DOUBLE name="X" order="0" single_keyframe_only="1" hidden="false" default="0" animated="1">
+   <KEYFRAME data="0" time="19.80000114440918"/>
+  </DOUBLE>
+  <DOUBLE name="Y" order="1" single_keyframe_only="1" hidden="false" default="0" animated="1">
+   <KEYFRAME data="0" time="19.80000114440918"/>
+  </DOUBLE>
+  <DOUBLE name="Z" order="2" single_keyframe_only="1" hidden="false" default="0" animated="1">
+   <KEYFRAME data="0" time="19.80000114440918"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{3297708a-3f11-4ba4-9b4f-9d8e9d55018b}">
+  <RADIAN name="X" order="0" single_keyframe_only="1" hidden="false" default="0" animated="1">
+   <KEYFRAME data="0" time="19.80000114440918"/>
+  </RADIAN>
+  <RADIAN name="Y" order="1" single_keyframe_only="1" hidden="false" default="0" animated="1">
+   <KEYFRAME data="0" time="19.80000114440918"/>
+  </RADIAN>
+  <RADIAN name="Z" order="2" single_keyframe_only="1" hidden="false" default="0" animated="1">
+   <KEYFRAME data="0" time="19.80000114440918"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="gt_nakai_01.xml" warscape_properties_file="../cameras/gt_nakai_01.xml"/>
+ </NODE>
+</SCENE_FILE>

@@ -1,0 +1,29 @@
+<SCENE_FILE end_record_time="73.00000380724669" name="imrik_flyover_s01.CindyScene" perspective_camera="421.705,9.70911,136.732:421.988,2.50707,147.817" id="{3e715f7e-54c3-4cd9-be38-315d0f752620}" version="23" start_record_time="0">
+ <ENVIRONMENT name="Environment" order="0" data="Weather/default.environment" id="{0ca57b17-ac85-4137-a211-30ed302154e9}" hidden="false"/>
+ <VECTOR name="position" unique_id="{2b919dcf-d17a-4ab3-a5e8-2b37dfbe61be}" id="{2b919dcf-d17a-4ab3-a5e8-2b37dfbe61be}" is_linked="0" link_id="0" surface_mode="Freeform">
+  <DOUBLE name="X" animated="1" single_keyframe_only="1" order="0" default="0" id="{a09d0b92-c322-4a9c-939d-0e729d142395}" hidden="false">
+   <KEYFRAME data="0" time="20.90000152587891"/>
+  </DOUBLE>
+  <DOUBLE name="Y" animated="1" single_keyframe_only="1" order="1" default="0" id="{add0d3f6-9b1a-426e-9fd6-b10d8569e5f4}" hidden="false">
+   <KEYFRAME data="0" time="20.90000152587891"/>
+  </DOUBLE>
+  <DOUBLE name="Z" animated="1" single_keyframe_only="1" order="2" default="0" id="{44f75c19-6682-4278-9f2e-ae02b0d70385}" hidden="false">
+   <KEYFRAME data="0" time="20.90000152587891"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{90023390-6640-42b9-9e03-f6d4e018083e}">
+  <RADIAN name="X" animated="1" single_keyframe_only="1" order="0" default="0" id="{56fba800-0b27-4705-9e2a-a2e9a5c0d904}" hidden="false">
+   <KEYFRAME data="0" time="20.90000152587891"/>
+  </RADIAN>
+  <RADIAN name="Y" animated="1" single_keyframe_only="1" order="1" default="0" id="{70aca267-acee-44ab-bfdd-2a11f9f5d0a5}" hidden="false">
+   <KEYFRAME data="0" time="20.90000152587891"/>
+  </RADIAN>
+  <RADIAN name="Z" animated="1" single_keyframe_only="1" order="2" default="0" id="{4dbed78f-57a3-46d2-b6da-e25acf06ef2b}" hidden="false">
+   <KEYFRAME data="0" time="20.90000152587891"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links" id="{302c8569-a395-4a46-b88c-2a15f1a83ab5}"/>
+ <NODE name="Warscape Properties" id="{7fe37842-4ba9-41b8-8f7b-5c0203c0bf57}">
+  <WARSCAPE_PROPERTIES name="imrik_flyover_camera_01.xml" id="{89688f41-0573-4c0c-8243-90b2aa8748c6}" warscape_properties_file="../cameras/imrik_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

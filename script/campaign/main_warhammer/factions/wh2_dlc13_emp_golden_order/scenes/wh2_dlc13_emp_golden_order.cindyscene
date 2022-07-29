@@ -1,0 +1,6 @@
+<SCENE_FILE version="23" perspective_camera="376.171,8.18968,282.973:376.171,-3.34848,298.336" name="wh2_dlc13_emp_golden_order.CindyScene" start_record_time="0" end_record_time="73.13333714753389">
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/wh2_dlc13_emp_golden_order.xml" name="wh2_dlc13_emp_golden_order.xml"/>
+ </NODE>
+ <NODE name="Links"/>
+</SCENE_FILE>

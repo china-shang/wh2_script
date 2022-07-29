@@ -1,0 +1,29 @@
+<SCENE_FILE id="{be5aff61-54d6-420e-baaa-e98c95f7b5a0}" name="yvresse_flyover_s01.CindyScene" perspective_camera="376.239,9.16727,158.976:376.328,-2.93181,174.472" version="23" start_record_time="0" end_record_time="86.00000448524952">
+ <ENVIRONMENT id="{0eb9fc18-5313-447a-b103-3812a49c787c}" data="Weather/default.environment" name="Environment" order="0" hidden="false"/>
+ <VECTOR id="{e5eff4ec-2c07-4a77-83a5-cd8a343a2799}" surface_mode="Freeform" is_linked="0" name="position" link_id="0" unique_id="{e5eff4ec-2c07-4a77-83a5-cd8a343a2799}">
+  <DOUBLE default="0" id="{43014f6e-6a02-4f30-96ea-c6aeb32e9b96}" single_keyframe_only="1" animated="1" name="X" order="0" hidden="false">
+   <KEYFRAME time="0" data="0" handle2_type="EASY" handle1_type="EASY"/>
+  </DOUBLE>
+  <DOUBLE default="0" id="{1dd5afb1-ae90-4a2f-8eda-c074de93cfce}" single_keyframe_only="1" animated="1" name="Y" order="1" hidden="false">
+   <KEYFRAME time="0" data="0" handle2_type="EASY" handle1_type="EASY"/>
+  </DOUBLE>
+  <DOUBLE default="0" id="{6004bf6a-8e38-40b1-a95d-26a58c1ab6e5}" single_keyframe_only="1" animated="1" name="Z" order="2" hidden="false">
+   <KEYFRAME time="0" data="0" handle2_type="EASY" handle1_type="EASY"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{a3b7a653-5bae-41c3-b0c8-6e476174f884}" name="rotation">
+  <RADIAN default="0" id="{2dd14407-1878-43ff-81e2-d9c599a5155c}" single_keyframe_only="1" animated="1" name="X" order="0" hidden="false">
+   <KEYFRAME time="0" data="0" handle2_type="EASY" handle1_type="EASY"/>
+  </RADIAN>
+  <RADIAN default="0" id="{bfc03bbc-c986-4ac5-9083-72ed2013c254}" single_keyframe_only="1" animated="1" name="Y" order="1" hidden="false">
+   <KEYFRAME time="0" data="0" handle2_type="EASY" handle1_type="EASY"/>
+  </RADIAN>
+  <RADIAN default="0" id="{a469c100-f8f4-4924-bf86-3a042234d82f}" single_keyframe_only="1" animated="1" name="Z" order="2" hidden="false">
+   <KEYFRAME time="0" data="0" handle2_type="EASY" handle1_type="EASY"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE id="{ab672bab-236b-4e79-83d6-d6536c78585c}" name="Links"/>
+ <NODE id="{53cd4dad-cdd8-48f7-91ee-3128590dd14a}" name="Warscape Properties">
+  <WARSCAPE_PROPERTIES id="{7dc9e598-0b23-4b4d-be71-bd526db5af1b}" name="yvresse_flyover_camera_01.xml" warscape_properties_file="../cameras/yvresse_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

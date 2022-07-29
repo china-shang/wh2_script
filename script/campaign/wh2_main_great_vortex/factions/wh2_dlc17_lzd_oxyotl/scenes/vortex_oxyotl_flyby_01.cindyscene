@@ -1,0 +1,29 @@
+<SCENE_FILE end_record_time="64.00000333786011" version="26" id="{943eec6d-c4b6-4bee-a8cf-297ee2f882a5}" hidden="false" perspective_camera="231.338,12.3511,524.484:231.102,7.22951,531.472" start_record_time="0">
+ <ENVIRONMENT order="0" hidden="false" data="" id="{68fb161e-b085-416d-9bed-c3177a748fdc}" name="Environment"/>
+ <VECTOR surface_mode="Freeform" id="{b38b60aa-9719-4e00-bf1c-ef627c78df34}" hidden="false" name="position" unique_id="{b38b60aa-9719-4e00-bf1c-ef627c78df34}" is_linked="0" link_id="0">
+  <DOUBLE default="0" order="0" hidden="false" single_keyframe_only="1" id="{7e71b94a-8695-4bb9-ae43-53deab8e41e3}" name="X" animated="1">
+   <KEYFRAME time="51.80000305175781" data="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" order="1" hidden="false" single_keyframe_only="1" id="{e2cd4eca-ae98-4199-a7d1-ff30387f1eec}" name="Y" animated="1">
+   <KEYFRAME time="51.80000305175781" data="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" order="2" hidden="false" single_keyframe_only="1" id="{31f7478c-23b9-49d9-b66f-f6a1046f36ff}" name="Z" animated="1">
+   <KEYFRAME time="51.80000305175781" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{a14d4d37-c753-4534-9865-64d9c6edd390}" hidden="false" name="rotation">
+  <RADIAN default="0" order="0" hidden="false" single_keyframe_only="1" id="{a7730f27-3947-4da2-bc08-073bfbdd236f}" name="X" animated="1">
+   <KEYFRAME time="51.80000305175781" data="0"/>
+  </RADIAN>
+  <RADIAN default="0" order="1" hidden="false" single_keyframe_only="1" id="{0d61a52c-a51c-4492-a3b2-9b920ae0598b}" name="Y" animated="1">
+   <KEYFRAME time="51.80000305175781" data="0"/>
+  </RADIAN>
+  <RADIAN default="0" order="2" hidden="false" single_keyframe_only="1" id="{df5f3d44-2fe1-45f4-86e7-88cd28e492a7}" name="Z" animated="1">
+   <KEYFRAME time="51.80000305175781" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE id="{4b181e27-22c2-4a8c-bd18-780bf09a93a0}" hidden="false" name="Links"/>
+ <NODE id="{c26bc6b4-97cd-4fbd-a8a2-297605670c80}" hidden="false" name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/vortex_oxyotl_camera_15.xml" id="{588fd143-823f-4001-a994-f2763e3a5cf6}" hidden="false" name="vortex_oxyotl_camera_15.xml"/>
+ </NODE>
+</SCENE_FILE>

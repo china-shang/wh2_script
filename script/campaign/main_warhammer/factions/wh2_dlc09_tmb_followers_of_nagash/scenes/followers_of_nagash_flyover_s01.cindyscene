@@ -1,0 +1,29 @@
+<SCENE_FILE end_record_time="63.50000331178308" perspective_camera="244.627,8.10647,32.7933:232.197,-70.0274,93.9519" start_record_time="0" name="followers_of_nagash_flyover_s01.CindyScene" version="23">
+ <ENVIRONMENT data="Weather/Default.environment" order="0" hidden="false" name="Environment"/>
+ <VECTOR link_id="0" is_linked="0" unique_id="{9ff91bcc-2696-437a-8dd5-bfee49190581}" surface_mode="Freeform" id="{9ff91bcc-2696-437a-8dd5-bfee49190581}" name="position">
+  <DOUBLE animated="1" single_keyframe_only="1" order="0" hidden="false" name="X" default="0">
+   <KEYFRAME data="0" handle1_y="0" handle2_y="0" handle2_type="SMOOTH" handle2_x="0" handle1_type="SMOOTH" time="0" handle1_x="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" single_keyframe_only="1" order="1" hidden="false" name="Y" default="0">
+   <KEYFRAME data="0" handle1_y="0" handle2_y="0" handle2_type="SMOOTH" handle2_x="0" handle1_type="SMOOTH" time="0" handle1_x="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" single_keyframe_only="1" order="2" hidden="false" name="Z" default="0">
+   <KEYFRAME data="0" handle1_y="0" handle2_y="0" handle2_type="SMOOTH" handle2_x="0" handle1_type="SMOOTH" time="0" handle1_x="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{3e4c5cb8-bbc8-4fc3-9460-5a096e132072}" name="rotation">
+  <RADIAN animated="1" single_keyframe_only="1" order="0" hidden="false" name="X" default="0">
+   <KEYFRAME data="0" handle1_y="0" handle2_y="0" handle2_type="SMOOTH" handle2_x="0" handle1_type="SMOOTH" time="0" handle1_x="0"/>
+  </RADIAN>
+  <RADIAN animated="1" single_keyframe_only="1" order="1" hidden="false" name="Y" default="0">
+   <KEYFRAME data="0" handle1_y="0" handle2_y="0" handle2_type="SMOOTH" handle2_x="0" handle1_type="SMOOTH" time="0" handle1_x="0"/>
+  </RADIAN>
+  <RADIAN animated="1" single_keyframe_only="1" order="2" hidden="false" name="Z" default="0">
+   <KEYFRAME data="0" handle1_y="0" handle2_y="0" handle2_type="SMOOTH" handle2_x="0" handle1_type="SMOOTH" time="0" handle1_x="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/followers_of_nagash_flyover_camera_01.xml" name="followers_of_nagash_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

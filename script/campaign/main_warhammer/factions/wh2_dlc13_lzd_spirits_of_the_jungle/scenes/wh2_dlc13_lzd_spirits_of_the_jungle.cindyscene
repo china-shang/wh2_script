@@ -1,0 +1,17 @@
+<SCENE_FILE version="23" perspective_camera="220.762,15.1087,418.153:224.516,2.23004,432.987" end_record_time="76.10000396892428" name="wh2_dlc13_lzd_spirits_of_the_jungle.CindyScene" start_record_time="0">
+ <ENVIRONMENT order="0" hidden="false" name="Environment" data=""/>
+ <VECTOR id="{86e7fe30-3ab2-4a9f-836a-672c845c68ba}" surface_mode="Freeform" unique_id="{86e7fe30-3ab2-4a9f-836a-672c845c68ba}" name="position" is_linked="0" link_id="0">
+  <DOUBLE order="0" hidden="false" animated="1" single_keyframe_only="1" default="0" name="X"/>
+  <DOUBLE order="1" hidden="false" animated="1" single_keyframe_only="1" default="0" name="Y"/>
+  <DOUBLE order="2" hidden="false" animated="1" single_keyframe_only="1" default="0" name="Z"/>
+ </VECTOR>
+ <ROTATION_AXES id="{a23dc1ad-7071-4003-97fe-73607fd2bd94}" name="rotation">
+  <RADIAN order="0" hidden="false" animated="1" single_keyframe_only="1" default="0" name="X"/>
+  <RADIAN order="1" hidden="false" animated="1" single_keyframe_only="1" default="0" name="Y"/>
+  <RADIAN order="2" hidden="false" animated="1" single_keyframe_only="1" default="0" name="Z"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="wh2_dlc13_lzd_spirits_of_the_jungle.xml" warscape_properties_file="../cameras/wh2_dlc13_lzd_spirits_of_the_jungle.xml"/>
+ </NODE>
+</SCENE_FILE>

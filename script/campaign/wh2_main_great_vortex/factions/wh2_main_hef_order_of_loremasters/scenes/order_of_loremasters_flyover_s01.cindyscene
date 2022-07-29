@@ -1,0 +1,29 @@
+<SCENE_FILE name="order_of_loremasters_flyover_s01.CindyScene" end_record_time="53.0000027641654" version="23" start_record_time="0" perspective_camera="38.6497,9.11403,82.9751:42.7468,-60.9018,154.273">
+ <ENVIRONMENT name="Environment" data="Weather/Default.environment" hidden="false" order="0"/>
+ <VECTOR name="position" unique_id="{8b62a448-9784-40ce-bac3-e6ce8d3ef8c1}" id="{8b62a448-9784-40ce-bac3-e6ce8d3ef8c1}" is_linked="0" surface_mode="Freeform" link_id="0">
+  <DOUBLE name="X" default="0" hidden="false" animated="1" order="0" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" handle2_y="0" data="0" handle2_type="SMOOTH" handle2_x="0" time="0" handle1_x="0" handle1_y="0"/>
+  </DOUBLE>
+  <DOUBLE name="Y" default="0" hidden="false" animated="1" order="1" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" handle2_y="0" data="0" handle2_type="SMOOTH" handle2_x="0" time="0" handle1_x="0" handle1_y="0"/>
+  </DOUBLE>
+  <DOUBLE name="Z" default="0" hidden="false" animated="1" order="2" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" handle2_y="0" data="0" handle2_type="SMOOTH" handle2_x="0" time="0" handle1_x="0" handle1_y="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{969e6373-dbbd-4bad-8732-e9d54b82299a}">
+  <RADIAN name="X" default="0" hidden="false" animated="1" order="0" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" handle2_y="0" data="0" handle2_type="SMOOTH" handle2_x="0" time="0" handle1_x="0" handle1_y="0"/>
+  </RADIAN>
+  <RADIAN name="Y" default="0" hidden="false" animated="1" order="1" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" handle2_y="0" data="0" handle2_type="SMOOTH" handle2_x="0" time="0" handle1_x="0" handle1_y="0"/>
+  </RADIAN>
+  <RADIAN name="Z" default="0" hidden="false" animated="1" order="2" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" handle2_y="0" data="0" handle2_type="SMOOTH" handle2_x="0" time="0" handle1_x="0" handle1_y="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="order_of_loremasters_flyover_camera_01.xml" warscape_properties_file="../cameras/order_of_loremasters_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

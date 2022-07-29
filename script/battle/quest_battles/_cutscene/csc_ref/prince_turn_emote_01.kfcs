@@ -1,0 +1,32 @@
+<COMPOSITE_SCENE_FILE version="23" id="{c0995a18-05cd-422a-a1b8-ea44ebda820e}" directory="script/battle/quest_battles/_composite_scene/snf_prince_turn_emote_01.csc" name="prince_turn_emote_01.kfcs">
+ <VECTOR is_linked="0" link_id="0" unique_id="{e6fb9afa-f470-4647-9326-db20f260439a}" id="{e6fb9afa-f470-4647-9326-db20f260439a}" surface_mode="Freeform" name="position">
+  <DOUBLE default="0" order="0" hidden="false" single_keyframe_only="0" animated="1" name="X">
+   <KEYFRAME data="-49.57076644897461" time="0"/>
+   <KEYFRAME data="-49.57076644897461" time="1.133333444595337"/>
+  </DOUBLE>
+  <DOUBLE default="0" order="1" hidden="false" single_keyframe_only="0" animated="1" name="Y">
+   <KEYFRAME data="101.8925704956055" time="0"/>
+   <KEYFRAME data="101.8925704956055" time="1.133333444595337"/>
+   <KEYFRAME data="101.918571472168" time="22.83333396911621"/>
+  </DOUBLE>
+  <DOUBLE default="0" order="2" hidden="false" single_keyframe_only="0" animated="1" name="Z">
+   <KEYFRAME data="231.5273132324219" time="0"/>
+   <KEYFRAME data="231.5273132324219" time="1.133333444595337"/>
+   <KEYFRAME data="230.4708557128906" time="22.83333396911621"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{6c40b949-1a08-4e5f-b445-d8a4c98f872e}" name="rotation">
+  <RADIAN default="0" order="0" hidden="false" single_keyframe_only="1" animated="0" name="X"/>
+  <RADIAN default="0" order="1" hidden="false" single_keyframe_only="1" animated="0" name="Y">
+   <KEYFRAME data="3.120224237442017" time="0"/>
+  </RADIAN>
+  <RADIAN default="0" order="2" hidden="false" single_keyframe_only="1" animated="0" name="Z"/>
+ </ROTATION_AXES>
+ <DOUBLE default="1" order="2" hidden="false" single_keyframe_only="1" animated="0" name="scale" user_friendy_name="Scale"/>
+ <BOOL default="0" order="3" hidden="false" single_keyframe_only="0" animated="1" name="active" user_friendy_name="Active">
+  <KEYFRAME data="0" time="9.866665840148926"/>
+  <KEYFRAME data="1" time="9.90000057220459"/>
+  <KEYFRAME data="0" time="34"/>
+ </BOOL>
+ <DOUBLE default="1" order="4" hidden="false" single_keyframe_only="0" animated="1" name="speed_multiplier" user_friendy_name="Speed Multiplier"/>
+</COMPOSITE_SCENE_FILE>

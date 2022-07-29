@@ -1,0 +1,29 @@
+<SCENE_FILE perspective_camera="357.286,11.9569,238.278:326.411,-42.5337,309.3" name="wurrzag_main_flyover_s01.CindyScene" end_record_time="60.03333646431565" version="23" start_record_time="0">
+ <ENVIRONMENT hidden="false" order="0" name="Environment" data="Weather/Default.environment"/>
+ <VECTOR link_id="0" surface_mode="Freeform" name="position" unique_id="{c8d56b93-dbda-4880-ae53-65ac4f1e4ccc}" is_linked="0" id="{c8d56b93-dbda-4880-ae53-65ac4f1e4ccc}">
+  <DOUBLE default="0" hidden="false" order="0" animated="1" name="X" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" order="1" animated="1" name="Y" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" order="2" animated="1" name="Z" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{fbfd268b-9cfe-41d1-b142-94c2610189f4}">
+  <RADIAN default="0" hidden="false" order="0" animated="1" name="X" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="0"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" order="1" animated="1" name="Y" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="0"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" order="2" animated="1" name="Z" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="wurrzag_main_flyover.xml" warscape_properties_file="../cameras/wurrzag_main_flyover.xml"/>
+ </NODE>
+ <NODE name="Links"/>
+</SCENE_FILE>

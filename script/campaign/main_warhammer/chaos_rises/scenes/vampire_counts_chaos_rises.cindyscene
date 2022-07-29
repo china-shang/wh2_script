@@ -1,0 +1,6 @@
+<SCENE_FILE version="23" perspective_camera="0,0,0:0,0,0" name="vampire_counts_chaos_rises.CindyScene" start_record_time="0" end_record_time="21.00000109523535">
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="vampire_counts_chaos_rises.xml" name="vampire_counts_chaos_rises.xml"/>
+ </NODE>
+ <NODE name="Links"/>
+</SCENE_FILE>

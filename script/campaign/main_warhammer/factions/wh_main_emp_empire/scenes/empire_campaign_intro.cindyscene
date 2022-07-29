@@ -1,0 +1,5 @@
+<SCENE_FILE perspective_camera="0,0,0:0,0,0" name="empire_campaign_intro.CindyScene" start_record_time="0" version="18" end_record_time="63.00000328570604">
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="empire_campaign_camera_01.xml" warscape_properties_file="../cameras/empire_campaign_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

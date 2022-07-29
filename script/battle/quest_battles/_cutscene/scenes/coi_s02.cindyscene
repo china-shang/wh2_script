@@ -1,0 +1,29 @@
+<SCENE_FILE end_record_time="36.00000187754631" name="coi_s02.CindyScene" start_record_time="0" version="23" perspective_camera="9.80014,324,-601.262:-2.76632,301.35,-375.128">
+ <ENVIRONMENT hidden="false" order="0" name="Environment" data="weather/battle/wh_def_norsca_01_altar_of_darkness.environment"/>
+ <VECTOR id="{c616b414-7b9d-45a4-aa36-fae5a27c3c54}" surface_mode="Freeform" link_id="0" unique_id="{c616b414-7b9d-45a4-aa36-fae5a27c3c54}" is_linked="0" name="position">
+  <DOUBLE default="0" hidden="false" order="0" animated="1" single_keyframe_only="1" name="X">
+   <KEYFRAME time="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" order="1" animated="1" single_keyframe_only="1" name="Y">
+   <KEYFRAME time="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" order="2" animated="1" single_keyframe_only="1" name="Z">
+   <KEYFRAME time="0" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{ef736e40-7ac7-4612-a561-8fae0f257d47}" name="rotation">
+  <RADIAN default="0" hidden="false" order="0" animated="1" single_keyframe_only="1" name="X">
+   <KEYFRAME time="0" data="0"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" order="1" animated="1" single_keyframe_only="1" name="Y">
+   <KEYFRAME time="0" data="0"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" order="2" animated="1" single_keyframe_only="1" name="Z">
+   <KEYFRAME time="0" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/coi_c02.xml" name="coi_c02.xml"/>
+ </NODE>
+</SCENE_FILE>

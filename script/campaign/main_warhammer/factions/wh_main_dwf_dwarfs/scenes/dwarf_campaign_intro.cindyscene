@@ -1,0 +1,5 @@
+<SCENE_FILE start_record_time="0" name="dwarf_campaign_intro.CindyScene" version="18" end_record_time="63.00000328570604" perspective_camera="0,0,0:0,0,0">
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="dwarf_campaign_camera_01.xml" warscape_properties_file="../cameras/dwarf_campaign_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

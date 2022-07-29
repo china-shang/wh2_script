@@ -1,0 +1,29 @@
+<SCENE_FILE end_record_time="1000" version="26" perspective_camera="268.246,11.8361,248.242:376.391,5.78049,280.838" start_record_time="0" hidden="false" id="{70dd8500-8ff3-417e-962e-8e958fef92b0}">
+ <ENVIRONMENT name="Environment" order="0" data="" hidden="false" id="{16a3311d-dade-42e5-8433-8d3326570a57}"/>
+ <VECTOR name="position" unique_id="{2878814d-0d73-40f1-a3dc-126ac922b1c9}" is_linked="0" surface_mode="Freeform" hidden="false" link_id="0" id="{2878814d-0d73-40f1-a3dc-126ac922b1c9}">
+  <DOUBLE animated="1" name="X" default="0" order="0" hidden="false" single_keyframe_only="1" id="{1a365188-86c3-4193-9abc-bbc7cf24cc0e}">
+   <KEYFRAME time="19.26666831970215" data="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" name="Y" default="0" order="1" hidden="false" single_keyframe_only="1" id="{d6efb989-7109-436e-8a5a-e03f7731fd4e}">
+   <KEYFRAME time="19.26666831970215" data="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" name="Z" default="0" order="2" hidden="false" single_keyframe_only="1" id="{9239ad6c-80d7-4636-a18e-625381477b51}">
+   <KEYFRAME time="19.26666831970215" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" hidden="false" id="{464768ce-694b-4328-bdbc-ed9f4534565a}">
+  <RADIAN animated="1" name="X" default="0" order="0" hidden="false" single_keyframe_only="1" id="{46f5ee43-bd0c-4c65-9b11-e8a50f99e491}">
+   <KEYFRAME time="19.26666831970215" data="0"/>
+  </RADIAN>
+  <RADIAN animated="1" name="Y" default="0" order="1" hidden="false" single_keyframe_only="1" id="{edce4a97-8f3e-4529-8113-30cff78eaf6e}">
+   <KEYFRAME time="19.26666831970215" data="0"/>
+  </RADIAN>
+  <RADIAN animated="1" name="Z" default="0" order="2" hidden="false" single_keyframe_only="1" id="{c8ce4115-4e24-4830-a703-fc53be4e7607}">
+   <KEYFRAME time="19.26666831970215" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links" hidden="false" id="{1be4f4e5-0280-4e7c-b427-2372835c7dd1}"/>
+ <NODE name="Warscape Properties" hidden="false" id="{7e81801f-cddf-48b8-8753-895e68b7da49}">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/flyby.xml" name="flyby.xml" hidden="false" id="{1bb97415-6e74-4e5b-b5c0-76ba6fb5fecb}"/>
+ </NODE>
+</SCENE_FILE>

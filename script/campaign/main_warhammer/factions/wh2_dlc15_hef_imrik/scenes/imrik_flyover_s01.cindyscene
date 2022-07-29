@@ -1,0 +1,29 @@
+<SCENE_FILE end_record_time="90.00000469386578" id="{8f1ca320-2efa-42d4-a593-4d47d667ad79}" start_record_time="0" version="23" perspective_camera="594.53,7.06838,183.737:594.63,0.672733,193.99" name="imrik_flyover_s01.CindyScene">
+ <ENVIRONMENT data="Weather/default.environment" hidden="false" id="{3be1e794-5b7b-4516-90d4-68b322b80b4e}" order="0" name="Environment"/>
+ <VECTOR link_id="0" unique_id="{e5eff4ec-2c07-4a77-83a5-cd8a343a2799}" id="{e5eff4ec-2c07-4a77-83a5-cd8a343a2799}" surface_mode="Freeform" is_linked="0" name="position">
+  <DOUBLE animated="1" default="0" hidden="false" id="{d9fc2c85-d5bf-46cd-b4bc-184e10cc4162}" single_keyframe_only="1" order="0" name="X">
+   <KEYFRAME data="0" time="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" default="0" hidden="false" id="{3cd1c023-ed49-464c-97af-afecada5008a}" single_keyframe_only="1" order="1" name="Y">
+   <KEYFRAME data="0" time="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" default="0" hidden="false" id="{b4df3368-dbf8-4040-8362-459f60c0b1ce}" single_keyframe_only="1" order="2" name="Z">
+   <KEYFRAME data="0" time="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{a3b7a653-5bae-41c3-b0c8-6e476174f884}" name="rotation">
+  <RADIAN animated="1" default="0" hidden="false" id="{624d8d85-b48d-48c8-8fa2-f390b45a59b9}" single_keyframe_only="1" order="0" name="X">
+   <KEYFRAME data="0" time="0"/>
+  </RADIAN>
+  <RADIAN animated="1" default="0" hidden="false" id="{ccb2232f-0cc1-4f3b-94b0-d78676e77448}" single_keyframe_only="1" order="1" name="Y">
+   <KEYFRAME data="0" time="0"/>
+  </RADIAN>
+  <RADIAN animated="1" default="0" hidden="false" id="{2135b538-da3e-4719-aa1f-403eda946641}" single_keyframe_only="1" order="2" name="Z">
+   <KEYFRAME data="0" time="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE id="{21983034-d484-4c2b-a090-18ad6bea5edd}" name="Links"/>
+ <NODE id="{533ca2ec-c4ae-4810-bcf5-f6136623be54}" name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/imrik_flyover_camera_01.xml" id="{85a8ad0d-f915-4938-a497-e0ea6565743f}" name="imrik_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

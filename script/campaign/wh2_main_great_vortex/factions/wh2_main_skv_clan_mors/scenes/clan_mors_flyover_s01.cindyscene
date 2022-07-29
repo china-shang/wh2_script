@@ -1,0 +1,29 @@
+<SCENE_FILE end_record_time="61.50000320747495" start_record_time="0" perspective_camera="358.705,9.11403,52.4871:358.617,-62.6888,122.103" version="23" name="clan_mors_flyover_s01.CindyScene">
+ <ENVIRONMENT order="0" hidden="false" data="Weather/Default.environment" name="Environment"/>
+ <VECTOR unique_id="{8b62a448-9784-40ce-bac3-e6ce8d3ef8c1}" link_id="0" surface_mode="Freeform" id="{8b62a448-9784-40ce-bac3-e6ce8d3ef8c1}" is_linked="0" name="position">
+  <DOUBLE single_keyframe_only="1" default="0" animated="1" order="0" hidden="false" name="X">
+   <KEYFRAME handle1_x="0" handle1_y="0" handle2_y="0" handle2_x="0" handle1_type="SMOOTH" data="0" time="0" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" default="0" animated="1" order="1" hidden="false" name="Y">
+   <KEYFRAME handle1_x="0" handle1_y="0" handle2_y="0" handle2_x="0" handle1_type="SMOOTH" data="0" time="0" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" default="0" animated="1" order="2" hidden="false" name="Z">
+   <KEYFRAME handle1_x="0" handle1_y="0" handle2_y="0" handle2_x="0" handle1_type="SMOOTH" data="0" time="0" handle2_type="SMOOTH"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{969e6373-dbbd-4bad-8732-e9d54b82299a}" name="rotation">
+  <RADIAN single_keyframe_only="1" default="0" animated="1" order="0" hidden="false" name="X">
+   <KEYFRAME handle1_x="0" handle1_y="0" handle2_y="0" handle2_x="0" handle1_type="SMOOTH" data="0" time="0" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" default="0" animated="1" order="1" hidden="false" name="Y">
+   <KEYFRAME handle1_x="0" handle1_y="0" handle2_y="0" handle2_x="0" handle1_type="SMOOTH" data="0" time="0" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" default="0" animated="1" order="2" hidden="false" name="Z">
+   <KEYFRAME handle1_x="0" handle1_y="0" handle2_y="0" handle2_x="0" handle1_type="SMOOTH" data="0" time="0" handle2_type="SMOOTH"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/clan_mors_flyover_camera_01.xml" name="clan_mors_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

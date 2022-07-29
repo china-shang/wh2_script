@@ -1,0 +1,17 @@
+<SCENE_FILE start_record_time="0" version="20" end_record_time="64.00000333786011" perspective_camera="346.277,6.06369,414.354:350.25,1.56191,422.21" name="we_ morghur_mc_intro.CindyScene">
+ <ENVIRONMENT hidden="false" order="0" data="Weather/Default.environment" name="Environment"/>
+ <VECTOR link_source_type="no_link" target_pos_x="0.158387" target_pos_y="1.17598e+10" target_pos_z="3332.96" link_id="0" target_orientation_w="3.61242e+12" surface_mode="Freeform" id="{2678158c-833b-4878-8e8d-08ef9a360dbe}" target_orientation_i="0.212236" link_type="no_link" target_orientation_j="1.6495e-33" target_orientation_k="3.52847e+09" unique_id="{2678158c-833b-4878-8e8d-08ef9a360dbe}" is_linked="0" name="position">
+  <DOUBLE hidden="false" single_keyframe_only="0" order="0" default="0" animated="1" name="X"/>
+  <DOUBLE hidden="false" single_keyframe_only="0" order="1" default="0" animated="1" name="Y"/>
+  <DOUBLE hidden="false" single_keyframe_only="0" order="2" default="0" animated="1" name="Z"/>
+ </VECTOR>
+ <ROTATION_AXES id="{1cd78360-0f7c-43c3-ae40-14e53fe762e3}" name="rotation">
+  <RADIAN hidden="false" single_keyframe_only="0" order="0" default="0" animated="1" name="X"/>
+  <RADIAN hidden="false" single_keyframe_only="0" order="1" default="0" animated="1" name="Y"/>
+  <RADIAN hidden="false" single_keyframe_only="0" order="2" default="0" animated="1" name="Z"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/morghur_mc_intro.xml" name="morghur_mc_intro.xml"/>
+ </NODE>
+</SCENE_FILE>

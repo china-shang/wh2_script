@@ -1,0 +1,29 @@
+<SCENE_FILE name="dlc14_flyby_me_repanse.CindyScene" start_record_time="0" end_record_time="1000" perspective_camera="266.885,12.9706,73.1804:272.185,-2.84787,86.1326" version="23">
+ <ENVIRONMENT name="Environment" data="Weather/default.environment" order="0" hidden="false"/>
+ <VECTOR name="position" unique_id="{f044747d-ebec-472f-8dd4-54643a4905f6}" is_linked="0" link_id="-1" id="{f044747d-ebec-472f-8dd4-54643a4905f6}" surface_mode="Freeform">
+  <DOUBLE name="X" order="0" hidden="false" animated="1" default="0" single_keyframe_only="1">
+   <KEYFRAME data="0" handle1_x="1.03333" handle2_type="SMOOTH" time="1.033333420753479" handle2_y="0" handle1_type="SMOOTH" handle1_y="0" handle2_x="1.03333"/>
+  </DOUBLE>
+  <DOUBLE name="Y" order="1" hidden="false" animated="1" default="0" single_keyframe_only="1">
+   <KEYFRAME data="0" handle1_x="1.03333" handle2_type="SMOOTH" time="1.033333420753479" handle2_y="0" handle1_type="SMOOTH" handle1_y="0" handle2_x="1.03333"/>
+  </DOUBLE>
+  <DOUBLE name="Z" order="2" hidden="false" animated="1" default="0" single_keyframe_only="1">
+   <KEYFRAME data="0" handle1_x="1.03333" handle2_type="SMOOTH" time="1.033333420753479" handle2_y="0" handle1_type="SMOOTH" handle1_y="0" handle2_x="1.03333"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{0345db9f-9d8d-459c-8b71-d3c5954ba11d}">
+  <RADIAN name="X" order="0" hidden="false" animated="1" default="0" single_keyframe_only="1">
+   <KEYFRAME data="0" handle1_x="1.03333" handle2_type="SMOOTH" time="1.033333420753479" handle2_y="0" handle1_type="SMOOTH" handle1_y="0" handle2_x="1.03333"/>
+  </RADIAN>
+  <RADIAN name="Y" order="1" hidden="false" animated="1" default="0" single_keyframe_only="1">
+   <KEYFRAME data="0" handle1_x="1.03333" handle2_type="SMOOTH" time="1.033333420753479" handle2_y="0" handle1_type="SMOOTH" handle1_y="0" handle2_x="1.03333"/>
+  </RADIAN>
+  <RADIAN name="Z" order="2" hidden="false" animated="1" default="0" single_keyframe_only="1">
+   <KEYFRAME data="0" handle1_x="1.03333" handle2_type="SMOOTH" time="1.033333420753479" handle2_y="0" handle1_type="SMOOTH" handle1_y="0" handle2_x="1.03333"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="dlc14_flyby_me_repanse.xml" warscape_properties_file="../cameras/dlc14_flyby_me_repanse.xml"/>
+ </NODE>
+</SCENE_FILE>

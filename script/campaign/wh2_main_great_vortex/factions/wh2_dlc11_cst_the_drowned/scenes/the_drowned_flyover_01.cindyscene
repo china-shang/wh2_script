@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" version="23" name="the_drowned_flyover_01.CindyScene" end_record_time="121.5000063367188" perspective_camera="114.564,100.084,334.147:115.564,0.0838146,335.147">
+ <ENVIRONMENT data="" hidden="false" name="Environment" order="0"/>
+ <VECTOR unique_id="{909a61d4-c3dc-4dbf-86ab-5140b7816074}" surface_mode="Freeform" link_id="0" id="{909a61d4-c3dc-4dbf-86ab-5140b7816074}" name="position" is_linked="0">
+  <DOUBLE default="0" hidden="false" animated="1" single_keyframe_only="1" name="X" order="0">
+   <KEYFRAME handle1_x="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_y="0" data="0" handle2_y="0" time="0" handle2_x="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" animated="1" single_keyframe_only="1" name="Y" order="1">
+   <KEYFRAME handle1_x="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_y="0" data="0" handle2_y="0" time="0" handle2_x="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" animated="1" single_keyframe_only="1" name="Z" order="2">
+   <KEYFRAME handle1_x="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_y="0" data="0" handle2_y="0" time="0" handle2_x="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{077cc87c-388c-41eb-aa2d-8eb585f57a57}" name="rotation">
+  <RADIAN default="0" hidden="false" animated="1" single_keyframe_only="1" name="X" order="0">
+   <KEYFRAME handle1_x="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_y="0" data="0" handle2_y="0" time="0" handle2_x="0"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" animated="1" single_keyframe_only="1" name="Y" order="1">
+   <KEYFRAME handle1_x="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_y="0" data="0" handle2_y="0" time="0" handle2_x="0"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" animated="1" single_keyframe_only="1" name="Z" order="2">
+   <KEYFRAME handle1_x="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_y="0" data="0" handle2_y="0" time="0" handle2_x="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/the_drowned_camera_01.xml" name="the_drowned_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

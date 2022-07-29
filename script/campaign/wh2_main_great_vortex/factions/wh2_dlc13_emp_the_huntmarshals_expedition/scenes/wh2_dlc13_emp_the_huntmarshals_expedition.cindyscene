@@ -1,0 +1,29 @@
+<SCENE_FILE version="23" end_record_time="69.93333698064089" perspective_camera="94.8089,11.0206,261.718:99.7353,-32.0716,305.139" start_record_time="0" name="wh2_dlc13_emp_the_huntmarshals_expedition.CindyScene">
+ <ENVIRONMENT order="0" hidden="false" name="Environment" data="Weather/default.environment"/>
+ <VECTOR surface_mode="Freeform" is_linked="0" link_id="0" unique_id="{3573527e-0517-4677-b036-a1f2fe6c580a}" id="{3573527e-0517-4677-b036-a1f2fe6c580a}" name="position">
+  <DOUBLE order="0" default="0" hidden="false" single_keyframe_only="1" animated="1" name="X">
+   <KEYFRAME time="6.066667079925537" data="0"/>
+  </DOUBLE>
+  <DOUBLE order="1" default="0" hidden="false" single_keyframe_only="1" animated="1" name="Y">
+   <KEYFRAME time="6.066667079925537" data="0"/>
+  </DOUBLE>
+  <DOUBLE order="2" default="0" hidden="false" single_keyframe_only="1" animated="1" name="Z">
+   <KEYFRAME time="6.066667079925537" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{a64dce43-707d-43e3-8896-d9a6c11c97d8}" name="rotation">
+  <RADIAN order="0" default="0" hidden="false" single_keyframe_only="1" animated="1" name="X">
+   <KEYFRAME time="6.066667079925537" data="0"/>
+  </RADIAN>
+  <RADIAN order="1" default="0" hidden="false" single_keyframe_only="1" animated="1" name="Y">
+   <KEYFRAME time="6.066667079925537" data="0"/>
+  </RADIAN>
+  <RADIAN order="2" default="0" hidden="false" single_keyframe_only="1" animated="1" name="Z">
+   <KEYFRAME time="6.066667079925537" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/wh2_dlc13_emp_the_huntmarshals_expedition.xml" name="wh2_dlc13_emp_the_huntmarshals_expedition.xml"/>
+ </NODE>
+</SCENE_FILE>

@@ -1,0 +1,28 @@
+<SCENE_FILE version="23" end_record_time="130.9832611083984" perspective_camera="315.006,6.22805,448.302:336.102,-39.4591,534.719" start_record_time="20.00000104308128" name="norsca_scene_r03_s01.CindyScene">
+ <VECTOR unique_id="{a59c202b-8695-446f-b505-b809813a63e7}" is_linked="0" link_id="0" surface_mode="Freeform" id="{a59c202b-8695-446f-b505-b809813a63e7}" name="position">
+  <DOUBLE single_keyframe_only="1" default="0" animated="1" hidden="false" order="0" name="X">
+   <KEYFRAME data="0" time="32.13333511352539"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" default="0" animated="1" hidden="false" order="1" name="Y">
+   <KEYFRAME data="0" time="32.13333511352539"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" default="0" animated="1" hidden="false" order="2" name="Z">
+   <KEYFRAME data="0" time="32.13333511352539"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{c130a977-52e0-4686-a677-150eafc8d2e2}" name="rotation">
+  <RADIAN single_keyframe_only="1" default="0" animated="1" hidden="false" order="0" name="X">
+   <KEYFRAME data="0" time="32.13333511352539"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" default="0" animated="1" hidden="false" order="1" name="Y">
+   <KEYFRAME data="0" time="32.13333511352539"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" default="0" animated="1" hidden="false" order="2" name="Z">
+   <KEYFRAME data="0.001533128554001451" time="69.36671447753906"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="norsca_campaign_flyby.xml" warscape_properties_file="../cameras/norsca_campaign_flyby.xml"/>
+ </NODE>
+</SCENE_FILE>

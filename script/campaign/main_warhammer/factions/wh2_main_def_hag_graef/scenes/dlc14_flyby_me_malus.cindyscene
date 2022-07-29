@@ -1,0 +1,29 @@
+<SCENE_FILE perspective_camera="657.498,10.3779,43.942:651.369,-5.32096,63.8208" start_record_time="0" end_record_time="76.66667066514492" name="dlc14_flyby_me_malus.CindyScene" version="23">
+ <ENVIRONMENT name="Environment" hidden="false" order="0" data=""/>
+ <VECTOR unique_id="{47325d5f-9758-4013-b005-b18ad69917db}" is_linked="0" link_id="-1" name="position" surface_mode="Freeform" id="{47325d5f-9758-4013-b005-b18ad69917db}">
+  <DOUBLE animated="1" default="0" name="X" hidden="false" single_keyframe_only="1" order="0">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="1.2" handle1_x="1.2" time="1.200000047683716" handle2_y="0" data="0" handle1_y="0" handle1_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE animated="1" default="0" name="Y" hidden="false" single_keyframe_only="1" order="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="1.2" handle1_x="1.2" time="1.200000047683716" handle2_y="0" data="0" handle1_y="0" handle1_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE animated="1" default="0" name="Z" hidden="false" single_keyframe_only="1" order="2">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="1.2" handle1_x="1.2" time="1.200000047683716" handle2_y="0" data="0" handle1_y="0" handle1_type="SMOOTH"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{fac3959a-eef6-4bdf-a23e-d7dc9d5ce2d2}">
+  <RADIAN animated="1" default="0" name="X" hidden="false" single_keyframe_only="1" order="0">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="1.2" handle1_x="1.2" time="1.200000047683716" handle2_y="0" data="0" handle1_y="0" handle1_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN animated="1" default="0" name="Y" hidden="false" single_keyframe_only="1" order="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="1.2" handle1_x="1.2" time="1.200000047683716" handle2_y="0" data="0" handle1_y="0" handle1_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN animated="1" default="0" name="Z" hidden="false" single_keyframe_only="1" order="2">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="-0.081926" handle1_x="-0.081926" time="-0.08192597329616547" handle2_y="0" data="0" handle1_y="0" handle1_type="SMOOTH"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="dlc14_flyby_me_malus.xml" warscape_properties_file="../cameras/dlc14_flyby_me_malus.xml"/>
+ </NODE>
+</SCENE_FILE>

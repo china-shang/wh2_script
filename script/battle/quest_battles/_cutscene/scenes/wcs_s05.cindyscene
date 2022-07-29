@@ -1,0 +1,17 @@
+<SCENE_FILE end_record_time="43.50000226870179" name="wcs_s05.CindyScene" start_record_time="0" version="23" perspective_camera="2.97294,161.046,21.2798:-208.585,148.017,-76.9457">
+ <ENVIRONMENT name="Environment" data="weather/battle/wh_lzd_01_bat_cavern.environment" hidden="false" order="0"/>
+ <VECTOR link_id="0" name="position" unique_id="{d12c8bb2-2a1a-4478-931f-3cc03053c5ce}" id="{d12c8bb2-2a1a-4478-931f-3cc03053c5ce}" is_linked="0" surface_mode="Freeform">
+  <DOUBLE name="X" animated="1" single_keyframe_only="1" hidden="false" order="0" default="0"/>
+  <DOUBLE name="Y" animated="1" single_keyframe_only="1" hidden="false" order="1" default="0"/>
+  <DOUBLE name="Z" animated="1" single_keyframe_only="1" hidden="false" order="2" default="0"/>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{dc17c5de-4aa0-44aa-98ba-e6561c84d74d}">
+  <RADIAN name="X" animated="1" single_keyframe_only="1" hidden="false" order="0" default="0"/>
+  <RADIAN name="Y" animated="1" single_keyframe_only="1" hidden="false" order="1" default="0"/>
+  <RADIAN name="Z" animated="1" single_keyframe_only="1" hidden="false" order="2" default="0"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="wcs_c05.xml" warscape_properties_file="../cameras/wcs_c05.xml"/>
+ </NODE>
+</SCENE_FILE>

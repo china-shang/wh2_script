@@ -1,0 +1,17 @@
+<SCENE_FILE name="bordeleaux_main_flyover_s01.CindyScene" version="23" start_record_time="0" end_record_time="81.80000426620245" perspective_camera="295.719,7.85653,354.049:207.778,-58.6399,390.135">
+ <ENVIRONMENT hidden="false" data="Weather/Default.environment" name="Environment" order="0"/>
+ <VECTOR is_linked="0" surface_mode="Freeform" id="{1fe5e357-5a1b-4a8e-8349-9ad6418e8ffb}" name="position" unique_id="{1fe5e357-5a1b-4a8e-8349-9ad6418e8ffb}" link_id="0">
+  <DOUBLE hidden="false" single_keyframe_only="0" name="X" order="0" default="0" animated="1"/>
+  <DOUBLE hidden="false" single_keyframe_only="0" name="Y" order="1" default="0" animated="1"/>
+  <DOUBLE hidden="false" single_keyframe_only="0" name="Z" order="2" default="0" animated="1"/>
+ </VECTOR>
+ <ROTATION_AXES id="{93b8e4cb-2880-4366-8fd3-d3fe4d933139}" name="rotation">
+  <RADIAN hidden="false" single_keyframe_only="0" name="X" order="0" default="0" animated="1"/>
+  <RADIAN hidden="false" single_keyframe_only="0" name="Y" order="1" default="0" animated="1"/>
+  <RADIAN hidden="false" single_keyframe_only="0" name="Z" order="2" default="0" animated="1"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/bordeleaux_main_flyover_camera_01.xml" name="bordeleaux_main_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

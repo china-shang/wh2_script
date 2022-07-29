@@ -1,0 +1,6 @@
+<SCENE_FILE perspective_camera="0,0,0:0,0,0" name="chaos_campaign_intro.CindyScene" end_record_time="53.0000027641654" version="23" start_record_time="0">
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="chaos_campaign_camera_01.xml" warscape_properties_file="../cameras/chaos_campaign_camera_01.xml"/>
+ </NODE>
+ <NODE name="Links"/>
+</SCENE_FILE>

@@ -1,0 +1,28 @@
+<SCENE_FILE perspective_camera="425.115,6.77607,508.79:470.118,-32.3529,589.295" version="23" name="norsca_scene_r03_s02.CindyScene" start_record_time="20.00000104308128" end_record_time="117.3363647460938">
+ <VECTOR link_id="0" unique_id="{f423ec10-50db-4ea8-937c-0d1df4cbf436}" surface_mode="Freeform" is_linked="0" name="position" id="{f423ec10-50db-4ea8-937c-0d1df4cbf436}">
+  <DOUBLE default="0" single_keyframe_only="1" order="0" name="X" hidden="false" animated="1">
+   <KEYFRAME data="0" time="39.13323974609375"/>
+  </DOUBLE>
+  <DOUBLE default="0" single_keyframe_only="1" order="1" name="Y" hidden="false" animated="1">
+   <KEYFRAME data="0" time="39.13323974609375"/>
+  </DOUBLE>
+  <DOUBLE default="0" single_keyframe_only="1" order="2" name="Z" hidden="false" animated="1">
+   <KEYFRAME data="0" time="39.13323974609375"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{cb5340fc-cc24-40f8-8f8f-3d958b472bce}">
+  <RADIAN default="0" single_keyframe_only="1" order="0" name="X" hidden="false" animated="1">
+   <KEYFRAME data="0" time="39.13323974609375"/>
+  </RADIAN>
+  <RADIAN default="0" single_keyframe_only="1" order="1" name="Y" hidden="false" animated="1">
+   <KEYFRAME data="0" time="39.13323974609375"/>
+  </RADIAN>
+  <RADIAN default="0" single_keyframe_only="1" order="2" name="Z" hidden="false" animated="1">
+   <KEYFRAME data="0" time="75.57777404785156"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="wintertooth_campaign_flyby.xml" warscape_properties_file="../cameras/wintertooth_campaign_flyby.xml"/>
+ </NODE>
+</SCENE_FILE>

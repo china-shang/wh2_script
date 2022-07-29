@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" end_record_time="83.00000432878733" version="23" name="the_blessed_dread_flyby_scene_file_01.CindyScene" perspective_camera="148.2,9.51337,19.3881:148.2,1.98828,27.6506">
+ <ENVIRONMENT order="0" name="Environment" data="" hidden="false"/>
+ <VECTOR unique_id="{f4867fa0-f782-4183-929b-390a789189f8}" name="position" is_linked="0" id="{f4867fa0-f782-4183-929b-390a789189f8}" link_id="0" surface_mode="Freeform">
+  <DOUBLE default="0" single_keyframe_only="1" order="0" name="X" animated="1" hidden="false">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="0" handle2_y="0" handle1_type="SMOOTH" handle1_x="0" handle1_y="0" time="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" single_keyframe_only="1" order="1" name="Y" animated="1" hidden="false">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="0" handle2_y="0" handle1_type="SMOOTH" handle1_x="0" handle1_y="0" time="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" single_keyframe_only="1" order="2" name="Z" animated="1" hidden="false">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="0" handle2_y="0" handle1_type="SMOOTH" handle1_x="0" handle1_y="0" time="0" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{97d6d32e-ad37-4816-ad49-a42ed8e041c2}">
+  <RADIAN default="0" single_keyframe_only="1" order="0" name="X" animated="1" hidden="false">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="0" handle2_y="0" handle1_type="SMOOTH" handle1_x="0" handle1_y="0" time="0" data="0"/>
+  </RADIAN>
+  <RADIAN default="0" single_keyframe_only="1" order="1" name="Y" animated="1" hidden="false">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="0" handle2_y="0" handle1_type="SMOOTH" handle1_x="0" handle1_y="0" time="0" data="0"/>
+  </RADIAN>
+  <RADIAN default="0" single_keyframe_only="1" order="2" name="Z" animated="1" hidden="false">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="0" handle2_y="0" handle1_type="SMOOTH" handle1_x="0" handle1_y="0" time="0" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/the_blessed_dread_camera_01.xml" name="the_blessed_dread_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

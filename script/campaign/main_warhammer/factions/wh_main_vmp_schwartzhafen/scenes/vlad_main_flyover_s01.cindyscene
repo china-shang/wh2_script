@@ -1,0 +1,35 @@
+<SCENE_FILE perspective_camera="435.403,5.65642,302.789:417.507,-54.1769,380.902" name="vlad_main_flyover_s01.CindyScene" end_record_time="63.73332977294922" version="23" start_record_time="0">
+ <ENVIRONMENT hidden="false" order="0" name="Environment" data="Weather/Default.environment"/>
+ <VECTOR link_id="0" surface_mode="Freeform" name="position" unique_id="{c388d11b-94bb-46d9-951f-43ae8d281ac4}" is_linked="0" id="{c388d11b-94bb-46d9-951f-43ae8d281ac4}">
+  <DOUBLE default="0" hidden="false" order="0" animated="1" name="X" single_keyframe_only="0">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="21.2444"/>
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="63.73332977294922" data="0" handle1_x="42.4889" handle2_x="63.7333"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" order="1" animated="1" name="Y" single_keyframe_only="0">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="21.2444"/>
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="63.73332977294922" data="0" handle1_x="42.4889" handle2_x="63.7333"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" order="2" animated="1" name="Z" single_keyframe_only="0">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="21.2444"/>
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="63.73332977294922" data="0" handle1_x="42.4889" handle2_x="63.7333"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{b85eb000-ac6f-4a6c-b3aa-e988b19e60c9}">
+  <RADIAN default="0" hidden="false" order="0" animated="1" name="X" single_keyframe_only="0">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="21.2444"/>
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="63.73332977294922" data="0" handle1_x="42.4889" handle2_x="63.7333"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" order="1" animated="1" name="Y" single_keyframe_only="0">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="21.2444"/>
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="63.73332977294922" data="0" handle1_x="42.4889" handle2_x="63.7333"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" order="2" animated="1" name="Z" single_keyframe_only="0">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="21.2444"/>
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="63.73332977294922" data="0" handle1_x="42.4889" handle2_x="63.7333"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="vlad_main_flyover_camera_01.xml" warscape_properties_file="../cameras/vlad_main_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

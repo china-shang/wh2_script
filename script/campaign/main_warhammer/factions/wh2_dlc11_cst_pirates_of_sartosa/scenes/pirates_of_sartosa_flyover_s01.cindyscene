@@ -1,0 +1,29 @@
+<SCENE_FILE version="23" end_record_time="90.00000469386578" perspective_camera="308.2,9.14234,147.476:308.2,-3.677,164.335" name="pirates_of_sartosa_flyover_s01.CindyScene" start_record_time="0">
+ <ENVIRONMENT data="Weather/default.environment" hidden="false" order="0" name="Environment"/>
+ <VECTOR unique_id="{29e90222-ef94-449a-9a38-98f2d177861a}" surface_mode="Freeform" is_linked="0" link_id="0" name="position" id="{29e90222-ef94-449a-9a38-98f2d177861a}">
+  <DOUBLE animated="1" hidden="false" order="0" name="X" default="0" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" data="0" handle2_type="SMOOTH" time="0" handle2_y="0" handle1_y="0" handle1_x="0" handle2_x="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" hidden="false" order="1" name="Y" default="0" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" data="0" handle2_type="SMOOTH" time="0" handle2_y="0" handle1_y="0" handle1_x="0" handle2_x="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" hidden="false" order="2" name="Z" default="0" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" data="0" handle2_type="SMOOTH" time="0" handle2_y="0" handle1_y="0" handle1_x="0" handle2_x="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{4a5f8f98-a0d1-4d7d-a22e-2cba9d0888d5}">
+  <RADIAN animated="1" hidden="false" order="0" name="X" default="0" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" data="0" handle2_type="SMOOTH" time="0" handle2_y="0" handle1_y="0" handle1_x="0" handle2_x="0"/>
+  </RADIAN>
+  <RADIAN animated="1" hidden="false" order="1" name="Y" default="0" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" data="0" handle2_type="SMOOTH" time="0" handle2_y="0" handle1_y="0" handle1_x="0" handle2_x="0"/>
+  </RADIAN>
+  <RADIAN animated="1" hidden="false" order="2" name="Z" default="0" single_keyframe_only="1">
+   <KEYFRAME handle1_type="SMOOTH" data="0" handle2_type="SMOOTH" time="0" handle2_y="0" handle1_y="0" handle1_x="0" handle2_x="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/pirates_of_sartosa_flyover_camera_01.xml" name="pirates_of_sartosa_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

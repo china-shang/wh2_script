@@ -1,0 +1,17 @@
+<SCENE_FILE start_record_time="0.995000422000885" version="26" perspective_camera="231.282,19.9738,547.16:231.283,16.5539,539.202" id="{a1247536-8603-4d68-bc8f-555b7e79f523}" end_record_time="85.00000443309546" hidden="false">
+ <ENVIRONMENT order="0" data="" name="Environment" id="{aaa22c34-769f-4e05-b177-4a72c91de7b6}" hidden="false"/>
+ <VECTOR name="position" link_id="0" unique_id="{7c2773e8-0333-4f13-a90a-e0931a340526}" surface_mode="Freeform" id="{7c2773e8-0333-4f13-a90a-e0931a340526}" is_linked="0" hidden="false">
+  <DOUBLE animated="1" order="0" single_keyframe_only="1" name="X" id="{9baeeb29-d069-4a3c-aee9-a8e56a942ce4}" default="0" hidden="false"/>
+  <DOUBLE animated="1" order="1" single_keyframe_only="1" name="Y" id="{873a8e0d-d60c-4b3b-9cc7-c3a818ccb962}" default="0" hidden="false"/>
+  <DOUBLE animated="1" order="2" single_keyframe_only="1" name="Z" id="{4b8ae287-b36b-4484-9a60-4bb20e9e7e7d}" default="0" hidden="false"/>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{047ed1f9-f8f7-418b-9352-0c33334c6350}" hidden="false">
+  <RADIAN animated="1" order="0" single_keyframe_only="1" name="X" id="{afcba7d8-55d5-4a21-9b3c-08d9e4c49757}" default="0" hidden="false"/>
+  <RADIAN animated="1" order="1" single_keyframe_only="1" name="Y" id="{3734d891-afad-4b6b-aad2-b89cd4ed9525}" default="0" hidden="false"/>
+  <RADIAN animated="1" order="2" single_keyframe_only="1" name="Z" id="{af73dc93-8793-4060-a042-2f64b66aa21e}" default="0" hidden="false"/>
+ </ROTATION_AXES>
+ <NODE name="Links" id="{d6e38f50-fb13-4031-9e90-35be63b4ff94}" hidden="false"/>
+ <NODE name="Warscape Properties" id="{d079e22a-82a7-48cf-b909-567d9ef0a883}" hidden="false">
+  <WARSCAPE_PROPERTIES name="mortal_empires_oxyotl_camera_09.xml" warscape_properties_file="../cameras/mortal_empires_oxyotl_camera_09.xml" id="{71cf8105-943d-41ca-8ad5-c2b6b178afe0}" hidden="false"/>
+ </NODE>
+</SCENE_FILE>

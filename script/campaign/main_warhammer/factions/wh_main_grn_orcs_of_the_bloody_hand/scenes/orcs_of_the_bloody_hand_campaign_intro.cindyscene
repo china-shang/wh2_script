@@ -1,0 +1,5 @@
+<SCENE_FILE name="greenskins_campaign_intro.CindyScene" version="18" end_record_time="59.00000307708979" perspective_camera="0,0,0:0,0,0" start_record_time="0">
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="greenskins_campaign_camera_01.xml" warscape_properties_file="../cameras/greenskins_campaign_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

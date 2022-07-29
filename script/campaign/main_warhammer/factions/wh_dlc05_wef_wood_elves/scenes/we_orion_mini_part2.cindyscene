@@ -1,0 +1,29 @@
+<SCENE_FILE version="20" name="we_orion_mini_part2.CindyScene" start_record_time="0" end_record_time="20.13333438336849" perspective_camera="128.212,16.1299,189.222:103.09,3.43103,194.883">
+ <ENVIRONMENT order="0" name="Environment" hidden="false" data="Weather/Default.environment"/>
+ <VECTOR link_id="-1" target_pos_y="0" target_orientation_k="0" link_source_type="no_link" unique_id="{4f1ef386-c82e-432a-8846-321284885c06}" target_pos_z="0" id="{4f1ef386-c82e-432a-8846-321284885c06}" is_linked="0" name="position" surface_mode="Freeform" target_orientation_w="0" link_type="no_link" target_orientation_i="0" target_pos_x="0" target_orientation_j="0">
+  <DOUBLE default="0" order="0" name="X" single_keyframe_only="1" animated="1" hidden="false">
+   <KEYFRAME data="0" time="0.1000000089406967"/>
+  </DOUBLE>
+  <DOUBLE default="0" order="1" name="Y" single_keyframe_only="1" animated="1" hidden="false">
+   <KEYFRAME data="0" time="0.1000000089406967"/>
+  </DOUBLE>
+  <DOUBLE default="0" order="2" name="Z" single_keyframe_only="1" animated="1" hidden="false">
+   <KEYFRAME data="0" time="0.1000000089406967"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{14dd4ade-dec8-4ad5-8c58-7c93c8e70fa8}" name="rotation">
+  <RADIAN default="0" order="0" name="X" single_keyframe_only="1" animated="1" hidden="false">
+   <KEYFRAME data="0" time="0.1000000089406967"/>
+  </RADIAN>
+  <RADIAN default="0" order="1" name="Y" single_keyframe_only="1" animated="1" hidden="false">
+   <KEYFRAME data="0" time="0.1000000089406967"/>
+  </RADIAN>
+  <RADIAN default="0" order="2" name="Z" single_keyframe_only="1" animated="1" hidden="false">
+   <KEYFRAME data="0" time="0.1000000089406967"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="orion_mini_part2.xml" warscape_properties_file="../cameras/orion_mini_part2.xml"/>
+ </NODE>
+</SCENE_FILE>

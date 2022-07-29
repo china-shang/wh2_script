@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" name="naggarond_flyover_s01.CindyScene" end_record_time="60.00000312924385" version="23" perspective_camera="52.9316,7.89466,473.486:69.4592,-59.9268,545.102">
+ <ENVIRONMENT hidden="false" name="Environment" data="Weather/Default.environment" order="0"/>
+ <VECTOR name="position" unique_id="{9ff91bcc-2696-437a-8dd5-bfee49190581}" surface_mode="Freeform" link_id="0" is_linked="0" id="{9ff91bcc-2696-437a-8dd5-bfee49190581}">
+  <DOUBLE single_keyframe_only="1" hidden="false" name="X" default="0" order="0" animated="1">
+   <KEYFRAME handle2_y="0" handle2_type="SMOOTH" data="0" handle1_type="SMOOTH" handle1_y="0" time="0" handle2_x="0" handle1_x="0"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" hidden="false" name="Y" default="0" order="1" animated="1">
+   <KEYFRAME handle2_y="0" handle2_type="SMOOTH" data="0" handle1_type="SMOOTH" handle1_y="0" time="0" handle2_x="0" handle1_x="0"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" hidden="false" name="Z" default="0" order="2" animated="1">
+   <KEYFRAME handle2_y="0" handle2_type="SMOOTH" data="0" handle1_type="SMOOTH" handle1_y="0" time="0" handle2_x="0" handle1_x="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{3e4c5cb8-bbc8-4fc3-9460-5a096e132072}">
+  <RADIAN single_keyframe_only="1" hidden="false" name="X" default="0" order="0" animated="1">
+   <KEYFRAME handle2_y="0" handle2_type="SMOOTH" data="0" handle1_type="SMOOTH" handle1_y="0" time="0" handle2_x="0" handle1_x="0"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" hidden="false" name="Y" default="0" order="1" animated="1">
+   <KEYFRAME handle2_y="0" handle2_type="SMOOTH" data="0" handle1_type="SMOOTH" handle1_y="0" time="0" handle2_x="0" handle1_x="0"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" hidden="false" name="Z" default="0" order="2" animated="1">
+   <KEYFRAME handle2_y="0" handle2_type="SMOOTH" data="0" handle1_type="SMOOTH" handle1_y="0" time="0" handle2_x="0" handle1_x="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="naggarond_flyover_camera_01.xml" warscape_properties_file="../cameras/naggarond_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" perspective_camera="298.341,8.25399,193.963:305.47,-63.6416,263.111" version="23" name="followers_of_nagash_flyover_s01.CindyScene" end_record_time="104.5000054500997">
+ <ENVIRONMENT data="Weather/Default.environment" order="0" hidden="false" name="Environment"/>
+ <VECTOR id="{8b62a448-9784-40ce-bac3-e6ce8d3ef8c1}" is_linked="0" link_id="0" name="position" surface_mode="Freeform" unique_id="{8b62a448-9784-40ce-bac3-e6ce8d3ef8c1}">
+  <DOUBLE single_keyframe_only="1" animated="1" order="0" default="0" hidden="false" name="X">
+   <KEYFRAME time="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" animated="1" order="1" default="0" hidden="false" name="Y">
+   <KEYFRAME time="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" animated="1" order="2" default="0" hidden="false" name="Z">
+   <KEYFRAME time="0" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{969e6373-dbbd-4bad-8732-e9d54b82299a}" name="rotation">
+  <RADIAN single_keyframe_only="1" animated="1" order="0" default="0" hidden="false" name="X">
+   <KEYFRAME time="0" data="0"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" animated="1" order="1" default="0" hidden="false" name="Y">
+   <KEYFRAME time="0" data="0"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" animated="1" order="2" default="0" hidden="false" name="Z">
+   <KEYFRAME time="0" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/followers_of_nagash_flyover_camera_01.xml" name="followers_of_nagash_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

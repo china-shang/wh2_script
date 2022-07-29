@@ -1,0 +1,17 @@
+<SCENE_FILE name="carcassonne_main_flyover_s01.CindyScene" version="23" start_record_time="0" end_record_time="80.00000417232513" perspective_camera="265.988,6.71279,216.476:337.253,-41.6824,255.929">
+ <ENVIRONMENT hidden="false" data="Weather/Default.environment" name="Environment" order="0"/>
+ <VECTOR is_linked="0" surface_mode="Freeform" id="{f56644d5-0aba-466b-a51e-55b89b262e04}" name="position" unique_id="{f56644d5-0aba-466b-a51e-55b89b262e04}" link_id="0">
+  <DOUBLE hidden="false" single_keyframe_only="0" name="X" order="0" default="0" animated="1"/>
+  <DOUBLE hidden="false" single_keyframe_only="0" name="Y" order="1" default="0" animated="1"/>
+  <DOUBLE hidden="false" single_keyframe_only="0" name="Z" order="2" default="0" animated="1"/>
+ </VECTOR>
+ <ROTATION_AXES id="{7867d2cd-55c6-49ad-93ef-addcf10c02b7}" name="rotation">
+  <RADIAN hidden="false" single_keyframe_only="0" name="X" order="0" default="0" animated="1"/>
+  <RADIAN hidden="false" single_keyframe_only="0" name="Y" order="1" default="0" animated="1"/>
+  <RADIAN hidden="false" single_keyframe_only="0" name="Z" order="2" default="0" animated="1"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/carcassonne_main_flyover_camera_01.xml" name="carcassonne_main_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

@@ -1,0 +1,16 @@
+<NOISE_FILE name="vortex_light_noise.xml" version="22">
+ <DOUBLE single_keyframe_only="1" order="0" user_friendy_name="Amplitude" default="20" name="amplitude" hidden="false" animated="0">
+  <KEYFRAME data="50" time="-1"/>
+ </DOUBLE>
+ <DOUBLE single_keyframe_only="1" order="1" user_friendy_name="Frequency" default="5" name="frequency" hidden="false" animated="0">
+  <KEYFRAME data="3" time="-1"/>
+ </DOUBLE>
+ <INT single_keyframe_only="0" order="2" user_friendy_name="Number of Octaves" default="3" name="number_of_octaves" hidden="false" animated="1">
+  <KEYFRAME data="1" time="43.00000381469727"/>
+ </INT>
+ <DOUBLE single_keyframe_only="0" order="3" user_friendy_name="Offset" default="10" name="offset" hidden="false" animated="1">
+  <KEYFRAME data="10" time="42.16666793823242"/>
+ </DOUBLE>
+ <DOUBLE single_keyframe_only="0" order="4" user_friendy_name="Persistence" default="0.5" name="persistence" hidden="false" animated="1"/>
+ <DOUBLE single_keyframe_only="0" order="5" user_friendy_name="Lacunarity" default="2" name="lacunarity" hidden="false" animated="1"/>
+</NOISE_FILE>

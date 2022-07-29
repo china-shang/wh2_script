@@ -1,0 +1,5 @@
+<SCENE_MANAGER_FILE name="40_mal_r02.CindySceneManager" perspective_camera="85.4483,406.252,-64.1974:85.2567,402.736,-72.9285" start_record_time="0" version="23" end_record_time="74.8333372361958">
+ <NODE name="Scenes">
+  <SCENE name="40_mal_r02.CindyScene" scene_file="../scenes/40_mal_r02.CindyScene"/>
+ </NODE>
+</SCENE_MANAGER_FILE>

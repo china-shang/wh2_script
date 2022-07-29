@@ -1,0 +1,29 @@
+<SCENE_FILE perspective_camera="0,0,0:0,0,1" name="beastmen_main_flyover_s02_malagor.CindyScene" end_record_time="109.000005684793" version="23" start_record_time="0">
+ <ENVIRONMENT hidden="false" order="0" name="Environment" data="Weather/Default.environment"/>
+ <VECTOR link_id="0" surface_mode="Freeform" name="position" unique_id="{2bebfc10-bde6-4c4b-8df1-4bdc90c4ad68}" is_linked="0" id="{2bebfc10-bde6-4c4b-8df1-4bdc90c4ad68}">
+  <DOUBLE default="0" hidden="false" order="0" animated="1" name="X" single_keyframe_only="0">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" order="1" animated="1" name="Y" single_keyframe_only="0">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" order="2" animated="1" name="Z" single_keyframe_only="0">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{2313dd1e-6963-44fd-a572-af63b4fa1cc3}">
+  <RADIAN default="0" hidden="false" order="0" animated="1" name="X" single_keyframe_only="0">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="0"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" order="1" animated="1" name="Y" single_keyframe_only="0">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="0"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" order="2" animated="1" name="Z" single_keyframe_only="0">
+   <KEYFRAME handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_y="0" time="0" data="0" handle1_x="0" handle2_x="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="beastmen_main_flyover_malagor.xml" warscape_properties_file="../cameras/beastmen_main_flyover_malagor.xml"/>
+ </NODE>
+ <NODE name="Links"/>
+</SCENE_FILE>

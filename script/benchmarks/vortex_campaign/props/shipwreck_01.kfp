@@ -1,0 +1,14 @@
+<PROP_FILE name="shipwreck_01.kfp" version="22" id="{53e69b38-2561-4eb2-9fae-1fe76a7fcd64}" prop_name="prefabs/campaign/island_06.bmd">
+ <VECTOR link_type="no_link" target_orientation_w="2.23536e+11" is_linked="0" target_orientation_j="2.62582e-6" link_id="-1" target_pos_x="7.09755e+22" surface_mode="Freeform" name="position" id="{d059ba11-8294-4fa7-9041-cd9c699200fe}" target_pos_y="7.70522e+31" target_orientation_i="4.18919e-11" target_orientation_k="4.3207e-5" link_source_type="no_link" unique_id="{d059ba11-8294-4fa7-9041-cd9c699200fe}" target_pos_z="1.12587e+24">
+  <DOUBLE animated="0" name="X" default="0" single_keyframe_only="1" hidden="false" order="0"/>
+  <DOUBLE animated="0" name="Y" default="0" single_keyframe_only="1" hidden="false" order="1"/>
+  <DOUBLE animated="0" name="Z" default="0" single_keyframe_only="1" hidden="false" order="2"/>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{8df92ace-2916-4e07-9ef0-f237434d159c}">
+  <RADIAN animated="0" name="X" default="0" single_keyframe_only="1" hidden="false" order="0"/>
+  <RADIAN animated="0" name="Y" default="0" single_keyframe_only="1" hidden="false" order="1"/>
+  <RADIAN animated="0" name="Z" default="0" single_keyframe_only="1" hidden="false" order="2"/>
+ </ROTATION_AXES>
+ <DOUBLE animated="0" name="scale" default="1" single_keyframe_only="1" hidden="false" order="1"/>
+ <BOOL animated="0" name="always visible" default="0" single_keyframe_only="1" hidden="false" order="3"/>
+</PROP_FILE>

@@ -1,0 +1,9 @@
+display_name: Benchmark
+variable: cv_benchmark
+description: Choose which benchmark to load. Defaults to "campaign_benchmark"
+dropdown: "battle benchmark", "campaign benchmark", "skaven benchmark"
+
+display_name: Graphics Preset
+variable: cv_gfx_preset
+description: Choose the graphics preset to load the benchmark in. Defaults to using whatever the game booted in.
+dropdown: "Default", "Low", "Medium", "High", "Ultra"

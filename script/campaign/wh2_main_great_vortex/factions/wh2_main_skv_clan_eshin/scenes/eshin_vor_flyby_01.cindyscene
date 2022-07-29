@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" name="eshin_vor_flyby_01.CindyScene" end_record_time="1000" version="23" perspective_camera="333.695,11.0075,177.58:337.31,-4.01089,192.072">
+ <ENVIRONMENT order="0" name="Environment" data="" hidden="false"/>
+ <VECTOR is_linked="0" name="position" surface_mode="Freeform" unique_id="{0d25c265-9faf-48e2-8498-a3a8484edd25}" id="{0d25c265-9faf-48e2-8498-a3a8484edd25}" link_id="-1">
+  <DOUBLE order="0" animated="1" single_keyframe_only="1" default="0" name="X" hidden="false">
+   <KEYFRAME handle2_y="0" time="1.900000095367432" handle2_type="SMOOTH" handle2_x="1.9" handle1_x="1.9" data="0" handle1_y="0" handle1_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE order="1" animated="1" single_keyframe_only="1" default="0" name="Y" hidden="false">
+   <KEYFRAME handle2_y="0" time="1.900000095367432" handle2_type="SMOOTH" handle2_x="1.9" handle1_x="1.9" data="0" handle1_y="0" handle1_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE order="2" animated="1" single_keyframe_only="1" default="0" name="Z" hidden="false">
+   <KEYFRAME handle2_y="0" time="1.900000095367432" handle2_type="SMOOTH" handle2_x="1.9" handle1_x="1.9" data="0" handle1_y="0" handle1_type="SMOOTH"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{a6c462a4-5b3b-4ca6-a4ac-216fae553da7}">
+  <RADIAN order="0" animated="1" single_keyframe_only="1" default="0" name="X" hidden="false">
+   <KEYFRAME handle2_y="0" time="1.900000095367432" handle2_type="SMOOTH" handle2_x="1.9" handle1_x="1.9" data="0" handle1_y="0" handle1_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN order="1" animated="1" single_keyframe_only="1" default="0" name="Y" hidden="false">
+   <KEYFRAME handle2_y="0" time="1.900000095367432" handle2_type="SMOOTH" handle2_x="1.9" handle1_x="1.9" data="0" handle1_y="0" handle1_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN order="2" animated="1" single_keyframe_only="1" default="0" name="Z" hidden="false">
+   <KEYFRAME handle2_y="0" time="1.900000095367432" handle2_type="SMOOTH" handle2_x="1.9" handle1_x="1.9" data="0" handle1_y="0" handle1_type="SMOOTH"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/eshin_vor_flyby_01.xml" name="eshin_vor_flyby_01.xml"/>
+ </NODE>
+</SCENE_FILE>

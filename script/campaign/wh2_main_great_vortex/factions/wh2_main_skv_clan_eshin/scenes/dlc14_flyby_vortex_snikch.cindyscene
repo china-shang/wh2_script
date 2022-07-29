@@ -1,0 +1,29 @@
+<SCENE_FILE version="23" perspective_camera="331.235,8.9932,173.751:332.012,-2.14067,187.397" name="dlc14_flyby_vortex_snikch.CindyScene" end_record_time="1000" start_record_time="0">
+ <ENVIRONMENT hidden="false" data="Weather/default.environment" order="0" name="Environment"/>
+ <VECTOR link_id="-1" unique_id="{2061a0d0-bae2-4713-990f-9145f9592d34}" id="{2061a0d0-bae2-4713-990f-9145f9592d34}" is_linked="0" name="position" surface_mode="Freeform">
+  <DOUBLE single_keyframe_only="1" hidden="false" default="0" order="0" name="X" animated="1">
+   <KEYFRAME handle2_type="SMOOTH" time="0" handle2_y="0" data="0" handle1_x="0" handle1_y="0" handle2_x="0" handle1_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" hidden="false" default="0" order="1" name="Y" animated="1">
+   <KEYFRAME handle2_type="SMOOTH" time="0" handle2_y="0" data="0" handle1_x="0" handle1_y="0" handle2_x="0" handle1_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" hidden="false" default="0" order="2" name="Z" animated="1">
+   <KEYFRAME handle2_type="SMOOTH" time="0" handle2_y="0" data="0" handle1_x="0" handle1_y="0" handle2_x="0" handle1_type="SMOOTH"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{86635bbe-ab80-4511-8c89-3e0b7746eff4}" name="rotation">
+  <RADIAN single_keyframe_only="1" hidden="false" default="0" order="0" name="X" animated="1">
+   <KEYFRAME handle2_type="SMOOTH" time="0" handle2_y="0" data="0" handle1_x="0" handle1_y="0" handle2_x="0" handle1_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" hidden="false" default="0" order="1" name="Y" animated="1">
+   <KEYFRAME handle2_type="SMOOTH" time="0" handle2_y="0" data="0" handle1_x="0" handle1_y="0" handle2_x="0" handle1_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" hidden="false" default="0" order="2" name="Z" animated="1">
+   <KEYFRAME handle2_type="SMOOTH" time="0" handle2_y="0" data="0" handle1_x="0" handle1_y="0" handle2_x="0" handle1_type="SMOOTH"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/dlc14_flyby_vortex_snikch.xml" name="dlc14_flyby_vortex_snikch.xml"/>
+ </NODE>
+</SCENE_FILE>

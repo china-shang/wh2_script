@@ -1,0 +1,17 @@
+<SCENE_FILE end_record_time="43.00000234693289" name="we_durthu_mini_intro.CindyScene" start_record_time="0" version="21" perspective_camera="187.154,7.67104,156.259:185.536,2.3854,165.833">
+ <ENVIRONMENT hidden="false" name="Environment" order="0" data="Weather/Default.environment"/>
+ <VECTOR target_orientation_k="1.24064e+28" link_source_type="no_link" id="{255a097b-838a-4098-91a0-9e330e0c2a8a}" surface_mode="Freeform" name="position" link_id="0" link_type="no_link" target_orientation_w="0.0560125" target_pos_x="2.23536e+11" unique_id="{255a097b-838a-4098-91a0-9e330e0c2a8a}" target_pos_y="2.11864e+11" target_pos_z="9.16497e-33" target_orientation_i="2.2359e+11" is_linked="0" target_orientation_j="2.11864e+11">
+  <DOUBLE animated="1" single_keyframe_only="0" hidden="false" name="X" default="0" order="0"/>
+  <DOUBLE animated="1" single_keyframe_only="0" hidden="false" name="Y" default="0" order="1"/>
+  <DOUBLE animated="1" single_keyframe_only="0" hidden="false" name="Z" default="0" order="2"/>
+ </VECTOR>
+ <ROTATION_AXES id="{38a93698-9b72-4c42-be2b-48f448a3b43a}" name="rotation">
+  <RADIAN animated="1" single_keyframe_only="0" hidden="false" name="X" default="0" order="0"/>
+  <RADIAN animated="1" single_keyframe_only="0" hidden="false" name="Y" default="0" order="1"/>
+  <RADIAN animated="1" single_keyframe_only="0" hidden="false" name="Z" default="0" order="2"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/durthu_mini_intro.xml" name="durthu_mini_intro.xml"/>
+ </NODE>
+</SCENE_FILE>

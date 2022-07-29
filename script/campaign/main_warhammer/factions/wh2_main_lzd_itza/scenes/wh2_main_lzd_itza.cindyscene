@@ -1,0 +1,29 @@
+<SCENE_FILE version="23" start_record_time="0" end_record_time="68.73333691805601" name="wh2_main_lzd_itza.CindyScene" perspective_camera="92.0241,8.15238,33.1746:93.8236,-12.3809,69.6682">
+ <ENVIRONMENT data="" hidden="false" name="Environment" order="0"/>
+ <VECTOR unique_id="{7ccf8960-3259-47dc-a049-dcb82e34b183}" is_linked="0" id="{7ccf8960-3259-47dc-a049-dcb82e34b183}" name="position" link_id="0" surface_mode="Freeform">
+  <DOUBLE hidden="false" animated="1" name="X" default="0" single_keyframe_only="1" order="0">
+   <KEYFRAME data="0" time="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" animated="1" name="Y" default="0" single_keyframe_only="1" order="1">
+   <KEYFRAME data="0" time="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" animated="1" name="Z" default="0" single_keyframe_only="1" order="2">
+   <KEYFRAME data="0" time="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{3d769f3c-dbbc-4b1d-ac55-883ca0447c9f}" name="rotation">
+  <RADIAN hidden="false" animated="1" name="X" default="0" single_keyframe_only="1" order="0">
+   <KEYFRAME data="0" time="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" animated="1" name="Y" default="0" single_keyframe_only="1" order="1">
+   <KEYFRAME data="0" time="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" animated="1" name="Z" default="0" single_keyframe_only="1" order="2">
+   <KEYFRAME data="-0.003836485091596842" time="-0.1333333402872086"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/wh2_main_lzd_itza.xml" name="wh2_main_lzd_itza.xml"/>
+ </NODE>
+</SCENE_FILE>

@@ -1,0 +1,17 @@
+<SCENE_FILE name="we_orion_mc_intro.CindyScene" version="23" start_record_time="0" end_record_time="84.30000476166606" perspective_camera="261.231,7.63077,313.819:264.444,3.49102,326.197">
+ <ENVIRONMENT hidden="false" data="Weather/Default.environment" name="Environment" order="0"/>
+ <VECTOR is_linked="0" surface_mode="Freeform" id="{a616ba85-94e2-4d4e-ab72-77366536d936}" name="position" unique_id="{a616ba85-94e2-4d4e-ab72-77366536d936}" link_id="0">
+  <DOUBLE hidden="false" single_keyframe_only="0" name="X" order="0" default="0" animated="1"/>
+  <DOUBLE hidden="false" single_keyframe_only="0" name="Y" order="1" default="0" animated="1"/>
+  <DOUBLE hidden="false" single_keyframe_only="0" name="Z" order="2" default="0" animated="1"/>
+ </VECTOR>
+ <ROTATION_AXES id="{59a9eb41-dde2-4cb0-9c40-692b78fa2e02}" name="rotation">
+  <RADIAN hidden="false" single_keyframe_only="0" name="X" order="0" default="0" animated="1"/>
+  <RADIAN hidden="false" single_keyframe_only="0" name="Y" order="1" default="0" animated="1"/>
+  <RADIAN hidden="false" single_keyframe_only="0" name="Z" order="2" default="0" animated="1"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/orion_mc_intro.xml" name="orion_mc_intro.xml"/>
+ </NODE>
+</SCENE_FILE>

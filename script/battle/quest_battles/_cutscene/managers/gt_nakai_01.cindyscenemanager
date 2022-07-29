@@ -1,0 +1,5 @@
+<SCENE_MANAGER_FILE name="gt_nakai_01.CindySceneManager" end_record_time="62.83026700371634" version="23" start_record_time="0.4691520200140764" perspective_camera="-479.411,169.383,-308.781:-475.922,162.766,-290.232">
+ <NODE name="Scenes">
+  <SCENE name="gt_nakai_01.CindyScene" scene_file="../scenes/gt_nakai_01.CindyScene"/>
+ </NODE>
+</SCENE_MANAGER_FILE>

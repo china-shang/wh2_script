@@ -1,0 +1,30 @@
+<PROP_FILE prop_name="art/campaign/ships/mediumship05/hef/hef_army_ship.rigid_model_v2" version="22" name="hef_ship_01.kfp" id="{6537328f-564f-4198-b6b1-68b83c9f6109}">
+ <VECTOR target_pos_z="1.64103e-7" target_orientation_i="1.17598e+10" target_orientation_w="1.17598e+10" surface_mode="Freeform" unique_id="{8aa9dff5-cec4-49b5-bda0-8c9a5838fea1}" name="position" link_type="no_link" target_orientation_j="3332.96" target_pos_y="1.03845e-5" id="{8aa9dff5-cec4-49b5-bda0-8c9a5838fea1}" link_id="0" target_pos_x="3.73031e-8" is_linked="0" target_orientation_k="0.212236" link_source_type="no_link">
+  <DOUBLE default="0" single_keyframe_only="0" hidden="false" order="0" name="X" animated="1">
+   <KEYFRAME data="271.9413452148438" time="151.0333404541016"/>
+   <KEYFRAME data="219.7165832519531" time="162.2333374023438"/>
+  </DOUBLE>
+  <DOUBLE default="0" single_keyframe_only="0" hidden="false" order="1" name="Y" animated="1">
+   <KEYFRAME data="0.001819133758544922" time="159.0333404541016"/>
+  </DOUBLE>
+  <DOUBLE default="0" single_keyframe_only="0" hidden="false" order="2" name="Z" animated="1">
+   <KEYFRAME data="321.5246887207031" time="151.0333404541016"/>
+   <KEYFRAME data="308.6812133789063" time="162.2333374023438"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{089c546c-bf60-4984-8f49-4cf4d0a8d440}">
+  <RADIAN default="0" single_keyframe_only="1" hidden="false" order="0" name="X" animated="0">
+   <KEYFRAME data="0" time="0"/>
+  </RADIAN>
+  <RADIAN default="0" single_keyframe_only="1" hidden="false" order="1" name="Y" animated="0">
+   <KEYFRAME data="4.47124719619751" time="660.6333618164063"/>
+  </RADIAN>
+  <RADIAN default="0" single_keyframe_only="1" hidden="false" order="2" name="Z" animated="0">
+   <KEYFRAME data="0" time="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <DOUBLE default="1" single_keyframe_only="1" hidden="false" order="1" name="scale" animated="0">
+  <KEYFRAME data="1" time="0"/>
+ </DOUBLE>
+ <BOOL default="0" single_keyframe_only="1" hidden="false" order="3" name="always visible" animated="0"/>
+</PROP_FILE>

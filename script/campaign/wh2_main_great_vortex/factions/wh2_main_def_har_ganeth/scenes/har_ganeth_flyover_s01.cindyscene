@@ -1,0 +1,29 @@
+<SCENE_FILE version="23" name="har_ganeth_flyover_s01.CindyScene" end_record_time="75.33333726227284" perspective_camera="194.936,2.74701,499.409:200.553,-0.60098,520.354" start_record_time="0">
+ <ENVIRONMENT order="0" name="Environment" hidden="false" data="Weather/default.environment"/>
+ <VECTOR surface_mode="Freeform" name="position" unique_id="{b1f298bd-693a-4e40-8a0a-9b4f24eba953}" link_id="0" id="{b1f298bd-693a-4e40-8a0a-9b4f24eba953}" is_linked="0">
+  <DOUBLE default="0" order="0" name="X" hidden="false" single_keyframe_only="1" animated="1">
+   <KEYFRAME handle2_type="EASY" time="10.10000038146973" data="0" handle1_type="EASY"/>
+  </DOUBLE>
+  <DOUBLE default="0" order="1" name="Y" hidden="false" single_keyframe_only="1" animated="1">
+   <KEYFRAME handle2_type="EASY" time="10.10000038146973" data="0" handle1_type="EASY"/>
+  </DOUBLE>
+  <DOUBLE default="0" order="2" name="Z" hidden="false" single_keyframe_only="1" animated="1">
+   <KEYFRAME handle2_type="EASY" time="10.10000038146973" data="0" handle1_type="EASY"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{e0471bc9-2dbe-4f4a-ad16-f5c413e871eb}">
+  <RADIAN default="0" order="0" name="X" hidden="false" single_keyframe_only="1" animated="1">
+   <KEYFRAME handle2_type="EASY" time="10.10000038146973" data="0" handle1_type="EASY"/>
+  </RADIAN>
+  <RADIAN default="0" order="1" name="Y" hidden="false" single_keyframe_only="1" animated="1">
+   <KEYFRAME handle2_type="EASY" time="10.10000038146973" data="0" handle1_type="EASY"/>
+  </RADIAN>
+  <RADIAN default="0" order="2" name="Z" hidden="false" single_keyframe_only="1" animated="1">
+   <KEYFRAME handle2_type="EASY" time="10.10000038146973" data="0" handle1_type="EASY"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/har_ganeth_flyover_camera_01.xml" name="har_ganeth_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

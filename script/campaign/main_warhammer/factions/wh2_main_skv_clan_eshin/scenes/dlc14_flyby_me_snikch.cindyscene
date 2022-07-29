@@ -1,0 +1,29 @@
+<SCENE_FILE name="dlc14_flyby_me_snikch.CindyScene" version="23" start_record_time="0" end_record_time="1000" perspective_camera="653.463,12.3205,216.583:646.784,1.46928,224.322">
+ <ENVIRONMENT hidden="false" name="Environment" data="" order="0"/>
+ <VECTOR name="position" link_id="-1" unique_id="{305e482c-13ca-4855-8d86-2ee0f037530d}" id="{305e482c-13ca-4855-8d86-2ee0f037530d}" surface_mode="Freeform" is_linked="0">
+  <DOUBLE animated="1" hidden="false" name="X" default="0" single_keyframe_only="1" order="0">
+   <KEYFRAME handle2_x="0" time="0" handle1_y="0" data="0" handle1_type="SMOOTH" handle2_y="0" handle2_type="SMOOTH" handle1_x="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" hidden="false" name="Y" default="0" single_keyframe_only="1" order="1">
+   <KEYFRAME handle2_x="0" time="0" handle1_y="0" data="0" handle1_type="SMOOTH" handle2_y="0" handle2_type="SMOOTH" handle1_x="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" hidden="false" name="Z" default="0" single_keyframe_only="1" order="2">
+   <KEYFRAME handle2_x="0" time="0" handle1_y="0" data="0" handle1_type="SMOOTH" handle2_y="0" handle2_type="SMOOTH" handle1_x="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{17edf58b-ddaf-499f-ad41-21399b769893}">
+  <RADIAN animated="1" hidden="false" name="X" default="0" single_keyframe_only="1" order="0">
+   <KEYFRAME handle2_x="0" time="0" handle1_y="0" data="0" handle1_type="SMOOTH" handle2_y="0" handle2_type="SMOOTH" handle1_x="0"/>
+  </RADIAN>
+  <RADIAN animated="1" hidden="false" name="Y" default="0" single_keyframe_only="1" order="1">
+   <KEYFRAME handle2_x="0" time="0" handle1_y="0" data="0" handle1_type="SMOOTH" handle2_y="0" handle2_type="SMOOTH" handle1_x="0"/>
+  </RADIAN>
+  <RADIAN animated="1" hidden="false" name="Z" default="0" single_keyframe_only="1" order="2">
+   <KEYFRAME handle2_x="27.101" time="27.10100173950195" handle1_y="0" data="0" handle1_type="SMOOTH" handle2_y="0" handle2_type="SMOOTH" handle1_x="27.101"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/dlc14_flyby_me_snikch.xml" name="dlc14_flyby_me_snikch.xml"/>
+ </NODE>
+</SCENE_FILE>

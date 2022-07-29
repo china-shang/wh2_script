@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" version="23" name="noctilus_flyover_s01.CindyScene" end_record_time="93.500004876405" perspective_camera="105.37,8.8695,149.49:10.1385,-78.193,210.154">
+ <ENVIRONMENT hidden="false" data="Weather/default.environment" name="Environment" order="0"/>
+ <VECTOR is_linked="0" id="{29e90222-ef94-449a-9a38-98f2d177861a}" unique_id="{29e90222-ef94-449a-9a38-98f2d177861a}" name="position" link_id="0" surface_mode="Freeform">
+  <DOUBLE hidden="false" default="0" name="X" order="0" animated="1" single_keyframe_only="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="7.23333" time="7.233333587646484" handle1_y="0" handle1_x="7.23333" data="0" handle2_y="0" handle1_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" default="0" name="Y" order="1" animated="1" single_keyframe_only="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="7.23333" time="7.233333587646484" handle1_y="0" handle1_x="7.23333" data="0" handle2_y="0" handle1_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" default="0" name="Z" order="2" animated="1" single_keyframe_only="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="7.23333" time="7.233333587646484" handle1_y="0" handle1_x="7.23333" data="0" handle2_y="0" handle1_type="SMOOTH"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{4a5f8f98-a0d1-4d7d-a22e-2cba9d0888d5}" name="rotation">
+  <RADIAN hidden="false" default="0" name="X" order="0" animated="1" single_keyframe_only="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="7.23333" time="7.233333587646484" handle1_y="0" handle1_x="7.23333" data="0" handle2_y="0" handle1_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN hidden="false" default="0" name="Y" order="1" animated="1" single_keyframe_only="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="7.23333" time="7.233333587646484" handle1_y="0" handle1_x="7.23333" data="0" handle2_y="0" handle1_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN hidden="false" default="0" name="Z" order="2" animated="1" single_keyframe_only="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_x="7.23333" time="7.233333587646484" handle1_y="0" handle1_x="7.23333" data="0" handle2_y="0" handle1_type="SMOOTH"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/noctilus_flyover_camera_01.xml" name="noctilus_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

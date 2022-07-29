@@ -1,0 +1,32 @@
+<SCENE_FILE name="wh2_camp_pan_benchmark.CindyScene" end_record_time="92.83333817496896" perspective_camera="185.292,8.48089,257.566:162.855,3.90863,232.206" start_record_time="0" version="23">
+ <ENVIRONMENT hidden="false" data="" name="Environment" order="0"/>
+ <VECTOR id="{984b344d-f3bb-42cc-8fce-41e4536438c9}" unique_id="{984b344d-f3bb-42cc-8fce-41e4536438c9}" name="position" link_id="0" is_linked="0" surface_mode="Freeform">
+  <DOUBLE single_keyframe_only="1" animated="1" hidden="false" name="X" default="0" order="0">
+   <KEYFRAME data="0" time="70.60000610351563"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" animated="1" hidden="false" name="Y" default="0" order="1">
+   <KEYFRAME data="0" time="70.60000610351563"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" animated="1" hidden="false" name="Z" default="0" order="2">
+   <KEYFRAME data="0" time="70.60000610351563"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{1a7aedcb-4eb6-4d84-a229-16d79f95c886}" name="rotation">
+  <RADIAN single_keyframe_only="1" animated="1" hidden="false" name="X" default="0" order="0">
+   <KEYFRAME data="0" time="70.60000610351563"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" animated="1" hidden="false" name="Y" default="0" order="1">
+   <KEYFRAME data="0" time="70.60000610351563"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" animated="1" hidden="false" name="Z" default="0" order="2">
+   <KEYFRAME data="0" time="70.60000610351563"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="wh2_camp_pan_benchmark.xml" warscape_properties_file="../cameras/wh2_camp_pan_benchmark.xml"/>
+ </NODE>
+ <NODE name="Composite Scenes"/>
+ <NODE name="Props"/>
+ <NODE name="Point Lights"/>
+</SCENE_FILE>

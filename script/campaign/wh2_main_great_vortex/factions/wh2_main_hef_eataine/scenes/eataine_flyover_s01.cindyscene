@@ -1,0 +1,29 @@
+<SCENE_FILE end_record_time="54.5000028423965" name="eataine_flyover_s01.CindyScene" start_record_time="0" version="23" perspective_camera="346.2,8.68401,322.742:345.055,-66.1998,389.023">
+ <ENVIRONMENT hidden="false" name="Environment" data="Weather/Default.environment" order="0"/>
+ <VECTOR id="{8b62a448-9784-40ce-bac3-e6ce8d3ef8c1}" name="position" is_linked="0" unique_id="{8b62a448-9784-40ce-bac3-e6ce8d3ef8c1}" surface_mode="Freeform" link_id="0">
+  <DOUBLE single_keyframe_only="1" hidden="false" name="X" default="0" animated="1" order="0">
+   <KEYFRAME handle2_x="0" time="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_x="0" handle2_y="0" data="0" handle1_y="0"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" hidden="false" name="Y" default="0" animated="1" order="1">
+   <KEYFRAME handle2_x="0" time="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_x="0" handle2_y="0" data="0" handle1_y="0"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" hidden="false" name="Z" default="0" animated="1" order="2">
+   <KEYFRAME handle2_x="0" time="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_x="0" handle2_y="0" data="0" handle1_y="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{969e6373-dbbd-4bad-8732-e9d54b82299a}" name="rotation">
+  <RADIAN single_keyframe_only="1" hidden="false" name="X" default="0" animated="1" order="0">
+   <KEYFRAME handle2_x="0" time="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_x="0" handle2_y="0" data="0" handle1_y="0"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" hidden="false" name="Y" default="0" animated="1" order="1">
+   <KEYFRAME handle2_x="0" time="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_x="0" handle2_y="0" data="0" handle1_y="0"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" hidden="false" name="Z" default="0" animated="1" order="2">
+   <KEYFRAME handle2_x="0" time="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_x="0" handle2_y="0" data="0" handle1_y="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="eataine_flyover_camera_01.xml" warscape_properties_file="../cameras/eataine_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

@@ -1,0 +1,77 @@
+<WARSCAPE_PROPERTIES_FILE id="{e7c9a647-7e6a-45ed-9ef6-5425bfdc77c4}" supported_warscape_properties="16" name="coi_c02.xml" version="23">
+ <NODE name="Camera">
+  <VECTOR id="{ffc19ff5-3b73-443b-affd-3e360b24d1fc}" surface_mode="Freeform" link_id="0" unique_id="{ffc19ff5-3b73-443b-affd-3e360b24d1fc}" is_linked="0" name="position">
+   <DOUBLE default="-568.2047119140625" hidden="false" order="0" animated="1" single_keyframe_only="0" name="X">
+    <KEYFRAME time="21.35284042358398" data="19.35078620910645"/>
+    <KEYFRAME handle2_y="19.7032" handle2_x="28.1111" time="24.20000076293945" handle2_type="SMOOTH" data="19.49925804138184"/>
+    <KEYFRAME handle1_type="EASY" time="35.93333435058594" handle2_type="EASY" data="165.4245452880859"/>
+   </DOUBLE>
+   <DOUBLE default="517.9802856445313" hidden="false" order="1" animated="1" single_keyframe_only="0" name="Y">
+    <KEYFRAME time="21.35284042358398" data="338.9213256835938"/>
+    <KEYFRAME handle2_y="338.921" handle2_x="28.1111" time="24.20000076293945" handle2_type="SMOOTH" data="338.9213256835938"/>
+    <KEYFRAME handle1_type="EASY" time="35.93333435058594" handle2_type="EASY" data="285.5453186035156"/>
+   </DOUBLE>
+   <DOUBLE default="86.93627166748047" hidden="false" order="2" animated="1" single_keyframe_only="0" name="Z">
+    <KEYFRAME time="21.35284042358398" data="-73.38788604736328"/>
+    <KEYFRAME handle2_y="-77.6643" handle2_x="28.1111" time="24.20000076293945" handle2_type="SMOOTH" data="-75.18948364257813"/>
+    <KEYFRAME handle1_type="EASY" time="35.93333435058594" handle2_type="EASY" data="-603.5076293945313"/>
+   </DOUBLE>
+  </VECTOR>
+  <VECTOR id="{75da76a3-6001-42b3-b74e-5ff032a53a1f}" surface_mode="Freeform" link_id="0" unique_id="{75da76a3-6001-42b3-b74e-5ff032a53a1f}" is_linked="0" name="target">
+   <DOUBLE default="-792.4552001953125" hidden="false" order="0" animated="1" single_keyframe_only="0" name="X">
+    <KEYFRAME time="21.35284042358398" data="0.6564412117004395"/>
+    <KEYFRAME handle2_y="1.00888" handle2_x="28.1111" time="24.20000076293945" handle2_type="SMOOTH" data="0.8049163818359375"/>
+    <KEYFRAME handle1_type="EASY" time="35.93333435058594" handle2_type="EASY" data="41.11672973632813"/>
+   </DOUBLE>
+   <DOUBLE default="525.9583740234375" hidden="false" order="1" animated="1" single_keyframe_only="0" name="Y">
+    <KEYFRAME time="21.35284042358398" data="338.6264343261719"/>
+    <KEYFRAME handle2_y="338.626" handle2_x="28.1111" time="24.20000076293945" handle2_type="SMOOTH" data="338.6264343261719"/>
+    <KEYFRAME handle1_type="EASY" time="35.93333435058594" handle2_type="EASY" data="290.9352416992188"/>
+   </DOUBLE>
+   <DOUBLE default="125.0923767089844" hidden="false" order="2" animated="1" single_keyframe_only="0" name="Z">
+    <KEYFRAME time="21.35284042358398" data="153.4554748535156"/>
+    <KEYFRAME handle2_y="149.179" handle2_x="28.1111" time="24.20000076293945" handle2_type="SMOOTH" data="151.6538391113281"/>
+    <KEYFRAME handle1_type="EASY" time="35.93333435058594" handle2_type="EASY" data="-412.9140625"/>
+   </DOUBLE>
+  </VECTOR>
+  <NODE name="rotation">
+   <RADIAN default="0" hidden="false" user_friendy_name="Yaw" order="3" animated="0" single_keyframe_only="1" name="yaw"/>
+   <RADIAN default="0" hidden="false" user_friendy_name="Pitch" order="4" animated="0" single_keyframe_only="1" name="pitch"/>
+   <RADIAN default="0" hidden="false" user_friendy_name="Roll" order="5" animated="1" single_keyframe_only="0" name="roll">
+    <KEYFRAME time="21.35284042358398" data="0"/>
+    <KEYFRAME handle2_y="0" handle2_x="28.1111" time="24.20000076293945" handle2_type="SMOOTH" data="0"/>
+    <KEYFRAME handle1_type="EASY" time="35.93333435058594" handle2_type="EASY" data="0"/>
+   </RADIAN>
+   <NOISE noise_file="gentle_wobble_01.xml" name="Noise" noise_path="../noise/gentle_wobble_01.xml">
+    <DOUBLE default="1" hidden="false" order="0" animated="0" single_keyframe_only="1" name="Amount"/>
+    <INT default="76" hidden="false" order="1" animated="1" single_keyframe_only="0" name="Offset Multiplier"/>
+   </NOISE>
+  </NODE>
+  <RADIAN default="1.134464025497437" hidden="false" user_friendy_name="Field of View" order="6" animated="0" single_keyframe_only="1" name="vertical_fov">
+   <KEYFRAME time="0" data="0.8726645112037659"/>
+  </RADIAN>
+  <DOUBLE default="1" hidden="false" user_friendy_name="Near Distance" order="9" animated="0" single_keyframe_only="1" name="near_distance"/>
+  <DOUBLE default="13000" hidden="false" user_friendy_name="Far Distance" order="10" animated="0" single_keyframe_only="1" name="far_distance"/>
+  <VARIANCE name="DOF_focus">
+   <DOUBLE default="0" hidden="true" order="0" animated="1" single_keyframe_only="0" name="Variable">
+    <KEYFRAME time="21.35284042358398" data="0"/>
+    <KEYFRAME time="35.93333435058594" data="0"/>
+   </DOUBLE>
+   <DOUBLE default="40" hidden="true" order="1" animated="1" single_keyframe_only="0" name="Variance">
+    <KEYFRAME time="21.35284042358398" data="40"/>
+    <KEYFRAME time="35.93333435058594" data="40"/>
+   </DOUBLE>
+  </VARIANCE>
+  <DOUBLE default="20" hidden="false" user_friendy_name="Focal Distance" order="2" animated="0" single_keyframe_only="1" name="focal_length"/>
+  <DOUBLE default="0" hidden="true" user_friendy_name="DOF Blur Size" order="12" animated="1" single_keyframe_only="0" name="DOF_blur_size">
+   <KEYFRAME time="21.35284042358398" data="0"/>
+   <KEYFRAME time="35.93333435058594" data="0"/>
+  </DOUBLE>
+  <DOUBLE default="0.300000011920929" hidden="false" user_friendy_name="Exposure" order="7" animated="0" single_keyframe_only="1" name="exposure"/>
+  <NODE name="time speed multipliers">
+   <DOUBLE default="1" hidden="false" user_friendy_name="Global" order="0" animated="0" single_keyframe_only="1" name="global"/>
+   <DOUBLE default="1" hidden="false" user_friendy_name="Cinematic" order="1" animated="0" single_keyframe_only="1" name="cinematic"/>
+   <DOUBLE default="1" hidden="false" user_friendy_name="Game Logic" order="2" animated="0" single_keyframe_only="1" name="game logic"/>
+  </NODE>
+ </NODE>
+</WARSCAPE_PROPERTIES_FILE>

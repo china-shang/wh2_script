@@ -1,0 +1,5 @@
+<SCENE_FILE name="greenskins_chaos_rises.CindyScene" version="18" end_record_time="21.00000109523535" perspective_camera="0,0,0:0,0,0" start_record_time="0">
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="greenskins_chaos_rises.xml" warscape_properties_file="greenskins_chaos_rises.xml"/>
+ </NODE>
+</SCENE_FILE>

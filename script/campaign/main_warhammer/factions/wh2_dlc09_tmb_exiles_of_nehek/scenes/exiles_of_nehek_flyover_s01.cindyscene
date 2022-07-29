@@ -1,0 +1,29 @@
+<SCENE_FILE name="exiles_of_nehek_flyover_s01.CindyScene" start_record_time="0" version="23" end_record_time="68.00000354647636" perspective_camera="15.2842,10.2711,380.745:16.3167,-61.0656,450.829">
+ <ENVIRONMENT hidden="false" name="Environment" data="Weather/Default.environment" order="0"/>
+ <VECTOR surface_mode="Freeform" name="position" is_linked="0" link_id="0" id="{9ff91bcc-2696-437a-8dd5-bfee49190581}" unique_id="{9ff91bcc-2696-437a-8dd5-bfee49190581}">
+  <DOUBLE hidden="false" name="X" single_keyframe_only="1" default="0" order="0" animated="1">
+   <KEYFRAME handle2_x="0" time="0" handle1_y="0" data="0" handle2_type="SMOOTH" handle2_y="0" handle1_type="SMOOTH" handle1_x="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" name="Y" single_keyframe_only="1" default="0" order="1" animated="1">
+   <KEYFRAME handle2_x="0" time="0" handle1_y="0" data="0" handle2_type="SMOOTH" handle2_y="0" handle1_type="SMOOTH" handle1_x="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" name="Z" single_keyframe_only="1" default="0" order="2" animated="1">
+   <KEYFRAME handle2_x="0" time="0" handle1_y="0" data="0" handle2_type="SMOOTH" handle2_y="0" handle1_type="SMOOTH" handle1_x="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{3e4c5cb8-bbc8-4fc3-9460-5a096e132072}">
+  <RADIAN hidden="false" name="X" single_keyframe_only="1" default="0" order="0" animated="1">
+   <KEYFRAME handle2_x="0" time="0" handle1_y="0" data="0" handle2_type="SMOOTH" handle2_y="0" handle1_type="SMOOTH" handle1_x="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" name="Y" single_keyframe_only="1" default="0" order="1" animated="1">
+   <KEYFRAME handle2_x="0" time="0" handle1_y="0" data="0" handle2_type="SMOOTH" handle2_y="0" handle1_type="SMOOTH" handle1_x="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" name="Z" single_keyframe_only="1" default="0" order="2" animated="1">
+   <KEYFRAME handle2_x="0" time="0" handle1_y="0" data="0" handle2_type="SMOOTH" handle2_y="0" handle1_type="SMOOTH" handle1_x="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="exiles_of_nehek_flyover_camera_01.xml" warscape_properties_file="../cameras/exiles_of_nehek_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

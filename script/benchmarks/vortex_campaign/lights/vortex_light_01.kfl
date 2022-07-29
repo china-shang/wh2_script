@@ -1,0 +1,28 @@
+<POINT_LIGHT_FILE version="22" name="vortex_light_01.kfl" id="{81ece0f4-9644-4410-8710-a6261c328f24}">
+ <VECTOR target_orientation_j="3332.96" target_pos_z="0.212236" surface_mode="Freeform" unique_id="{d660e140-8e4f-4e84-a4ba-d15280a8fb05}" target_orientation_w="7.00624e+22" name="position" target_pos_x="1.17598e+10" target_orientation_i="1.26188e+10" target_pos_y="3332.96" link_id="0" id="{d660e140-8e4f-4e84-a4ba-d15280a8fb05}" link_type="no_link" target_orientation_k="1.84085e-19" is_linked="0" link_source_type="no_link">
+  <DOUBLE order="0" name="X" default="0" animated="0" hidden="false" single_keyframe_only="1">
+   <KEYFRAME data="348.6854248046875" time="0"/>
+  </DOUBLE>
+  <DOUBLE order="1" name="Y" default="0" animated="0" hidden="false" single_keyframe_only="1">
+   <KEYFRAME data="5.71513843536377" time="0"/>
+  </DOUBLE>
+  <DOUBLE order="2" name="Z" default="0" animated="0" hidden="false" single_keyframe_only="1">
+   <KEYFRAME data="387.3106689453125" time="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <RGB name="colour">
+  <DOUBLE order="0" name="R" default="1024" animated="0" hidden="false" single_keyframe_only="1"/>
+  <DOUBLE order="1" name="G" default="1024" animated="0" hidden="false" single_keyframe_only="1"/>
+  <DOUBLE order="2" name="B" default="1024" animated="0" hidden="false" single_keyframe_only="1"/>
+ </RGB>
+ <DOUBLE order="3" name="Multiplier" default="100" animated="0" hidden="false" single_keyframe_only="1">
+  <KEYFRAME data="50" time="0"/>
+ </DOUBLE>
+ <DOUBLE order="4" name="Range" default="10" animated="0" hidden="false" single_keyframe_only="1">
+  <KEYFRAME data="20" time="0"/>
+ </DOUBLE>
+ <DOUBLE order="5" name="Scatter Diameter" default="0.2000000029802322" animated="0" hidden="false" single_keyframe_only="1"/>
+ <BOOL order="6" name="Casts Shadows" default="1" animated="0" hidden="false" single_keyframe_only="1">
+  <KEYFRAME data="0" time="0"/>
+ </BOOL>
+</POINT_LIGHT_FILE>

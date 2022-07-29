@@ -1,0 +1,29 @@
+<SCENE_FILE version="23" name="karak_kadrin_flyover_s01.CindyScene" start_record_time="0" perspective_camera="474.453,11.6112,341.287:478.413,6.58694,348.979" end_record_time="69.91488452778478">
+ <ENVIRONMENT name="Environment" hidden="false" order="0" data=""/>
+ <VECTOR id="{e739dee9-93de-43e6-8f9b-55078b47c681}" link_id="0" name="position" unique_id="{e739dee9-93de-43e6-8f9b-55078b47c681}" surface_mode="Freeform" is_linked="0">
+  <DOUBLE animated="1" name="X" hidden="false" single_keyframe_only="1" default="0" order="0">
+   <KEYFRAME handle2_x="0" time="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_x="0" handle1_y="0" handle2_y="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" name="Y" hidden="false" single_keyframe_only="1" default="0" order="1">
+   <KEYFRAME handle2_x="0" time="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_x="0" handle1_y="0" handle2_y="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" name="Z" hidden="false" single_keyframe_only="1" default="0" order="2">
+   <KEYFRAME handle2_x="0" time="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_x="0" handle1_y="0" handle2_y="0" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{8798386e-9ec7-4c82-bf4d-8fcd7f5764f9}" name="rotation">
+  <RADIAN animated="1" name="X" hidden="false" single_keyframe_only="1" default="0" order="0">
+   <KEYFRAME handle2_x="0" time="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_x="0" handle1_y="0" handle2_y="0" data="0"/>
+  </RADIAN>
+  <RADIAN animated="1" name="Y" hidden="false" single_keyframe_only="1" default="0" order="1">
+   <KEYFRAME handle2_x="0" time="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_x="0" handle1_y="0" handle2_y="0" data="0"/>
+  </RADIAN>
+  <RADIAN animated="1" name="Z" hidden="false" single_keyframe_only="1" default="0" order="2">
+   <KEYFRAME handle2_x="0" time="0" handle2_type="SMOOTH" handle1_type="SMOOTH" handle1_x="0" handle1_y="0" handle2_y="0" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="karak_kadrin_flyover_camera_01.xml" warscape_properties_file="../cameras/karak_kadrin_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

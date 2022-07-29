@@ -1,0 +1,29 @@
+<SCENE_FILE version="23" name="hag_graef_vor_flyover_s01.CindyScene" end_record_time="62.86666994541884" perspective_camera="448.273,14.4648,4.39158:448.424,2.49017,14.7425" start_record_time="0">
+ <ENVIRONMENT data="Weather/default.environment" name="Environment" hidden="false" order="0"/>
+ <VECTOR is_linked="0" surface_mode="Freeform" name="position" link_id="-1" id="{335052ce-b300-4e66-8b56-99d06936ff8d}" unique_id="{335052ce-b300-4e66-8b56-99d06936ff8d}">
+  <DOUBLE single_keyframe_only="1" animated="1" name="X" default="0" hidden="false" order="0">
+   <KEYFRAME time="0.8333333730697632" data="0" handle2_y="0" handle1_x="0.833333" handle2_type="SMOOTH" handle1_type="SMOOTH" handle2_x="0.833333" handle1_y="0"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" animated="1" name="Y" default="0" hidden="false" order="1">
+   <KEYFRAME time="0.8333333730697632" data="0" handle2_y="0" handle1_x="0.833333" handle2_type="SMOOTH" handle1_type="SMOOTH" handle2_x="0.833333" handle1_y="0"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" animated="1" name="Z" default="0" hidden="false" order="2">
+   <KEYFRAME time="0.8333333730697632" data="0" handle2_y="0" handle1_x="0.833333" handle2_type="SMOOTH" handle1_type="SMOOTH" handle2_x="0.833333" handle1_y="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{8bf9a7fb-dbe5-482a-80ee-0e43ced0f934}">
+  <RADIAN single_keyframe_only="1" animated="1" name="X" default="0" hidden="false" order="0">
+   <KEYFRAME time="0.8333333730697632" data="0" handle2_y="0" handle1_x="0.833333" handle2_type="SMOOTH" handle1_type="SMOOTH" handle2_x="0.833333" handle1_y="0"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" animated="1" name="Y" default="0" hidden="false" order="1">
+   <KEYFRAME time="0.8333333730697632" data="0" handle2_y="0" handle1_x="0.833333" handle2_type="SMOOTH" handle1_type="SMOOTH" handle2_x="0.833333" handle1_y="0"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" animated="1" name="Z" default="0" hidden="false" order="2">
+   <KEYFRAME time="0.8333333730697632" data="0" handle2_y="0" handle1_x="0.833333" handle2_type="SMOOTH" handle1_type="SMOOTH" handle2_x="0.833333" handle1_y="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="hag_graef_vor_flyover_s01.xml" warscape_properties_file="../cameras/hag_graef_vor_flyover_s01.xml"/>
+ </NODE>
+</SCENE_FILE>

@@ -1,0 +1,17 @@
+<SCENE_FILE end_record_time="69.60000362992287" start_record_time="0" version="23" name="wh2_main_lzd_itza.CindyScene" perspective_camera="91.4798,15.9311,132.92:109.889,8.40005,135.019">
+ <ENVIRONMENT hidden="false" order="0" data="" name="Environment"/>
+ <VECTOR id="{043848d1-f2b9-4c1d-9777-c3ff2d8e0b3d}" surface_mode="Freeform" is_linked="0" name="position" unique_id="{043848d1-f2b9-4c1d-9777-c3ff2d8e0b3d}" link_id="0">
+  <DOUBLE animated="1" hidden="false" order="0" default="0" name="X" single_keyframe_only="1"/>
+  <DOUBLE animated="1" hidden="false" order="1" default="0" name="Y" single_keyframe_only="1"/>
+  <DOUBLE animated="1" hidden="false" order="2" default="0" name="Z" single_keyframe_only="1"/>
+ </VECTOR>
+ <ROTATION_AXES id="{21a50dc5-9053-41d5-83a3-8c2f16d392b1}" name="rotation">
+  <RADIAN animated="1" hidden="false" order="0" default="0" name="X" single_keyframe_only="1"/>
+  <RADIAN animated="1" hidden="false" order="1" default="0" name="Y" single_keyframe_only="1"/>
+  <RADIAN animated="1" hidden="false" order="2" default="0" name="Z" single_keyframe_only="1"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/wh2_main_lzd_itza.xml" name="wh2_main_lzd_itza.xml"/>
+ </NODE>
+</SCENE_FILE>

@@ -1,0 +1,5 @@
+<SCENE_FILE start_record_time="0" name="vampire_counts_campaign_intro.CindyScene" version="18" end_record_time="61.00000318139792" perspective_camera="0,0,0:0,0,0">
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="vampire_counts_campaign_camera_01.xml" warscape_properties_file="../cameras/vampire_counts_campaign_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

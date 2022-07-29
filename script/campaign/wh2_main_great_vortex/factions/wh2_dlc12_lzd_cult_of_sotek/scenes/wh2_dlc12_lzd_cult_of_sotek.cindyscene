@@ -1,0 +1,29 @@
+<SCENE_FILE end_record_time="93" perspective_camera="169.505,12.5693,29.1969:170.45,-1.93873,42.931" name="wh2_dlc12_lzd_cult_of_sotek.CindyScene" start_record_time="0" version="23">
+ <ENVIRONMENT hidden="false" data="" name="Environment" order="0"/>
+ <VECTOR link_id="0" is_linked="0" surface_mode="Freeform" name="position" id="{efde1364-7b96-48eb-bef6-d48c800e097d}" unique_id="{efde1364-7b96-48eb-bef6-d48c800e097d}">
+  <DOUBLE hidden="false" single_keyframe_only="1" animated="1" default="0" name="X" order="0">
+   <KEYFRAME data="0" time="71.46666717529297"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" single_keyframe_only="1" animated="1" default="0" name="Y" order="1">
+   <KEYFRAME data="0" time="71.46666717529297"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" single_keyframe_only="1" animated="1" default="0" name="Z" order="2">
+   <KEYFRAME data="0" time="71.46666717529297"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{fb2e3055-23da-41dc-b9d2-03eda2aa8f28}">
+  <RADIAN hidden="false" single_keyframe_only="1" animated="1" default="0" name="X" order="0">
+   <KEYFRAME data="0" time="71.46666717529297"/>
+  </RADIAN>
+  <RADIAN hidden="false" single_keyframe_only="1" animated="1" default="0" name="Y" order="1">
+   <KEYFRAME data="0" time="71.46666717529297"/>
+  </RADIAN>
+  <RADIAN hidden="false" single_keyframe_only="1" animated="1" default="0" name="Z" order="2">
+   <KEYFRAME data="0" time="71.46666717529297"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/wh2_dlc12_lzd_cult_of_sotek.xml" name="wh2_dlc12_lzd_cult_of_sotek.xml"/>
+ </NODE>
+</SCENE_FILE>

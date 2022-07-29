@@ -1,0 +1,29 @@
+<SCENE_FILE perspective_camera="321.974,11.5114,309.24:310.613,0.244382,320.369" name="skarsnik_main_flyover_s01.CindyScene" end_record_time="70.00357133261117" version="23" start_record_time="0">
+ <ENVIRONMENT hidden="false" order="0" name="Environment" data="Weather/Default.environment"/>
+ <VECTOR link_id="0" surface_mode="Freeform" name="position" unique_id="{619a5d99-c0f1-42e7-9dce-8182191269a0}" is_linked="0" id="{619a5d99-c0f1-42e7-9dce-8182191269a0}">
+  <DOUBLE default="0" hidden="false" order="0" animated="1" name="X" single_keyframe_only="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_y="0" time="0" data="0" handle2_x="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" order="1" animated="1" name="Y" single_keyframe_only="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_y="0" time="0" data="0" handle2_x="0"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" order="2" animated="1" name="Z" single_keyframe_only="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_y="0" time="0" data="0" handle2_x="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{7082907a-6aee-43c0-9865-e32cb8caf3a4}">
+  <RADIAN default="0" hidden="false" order="0" animated="1" name="X" single_keyframe_only="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_y="0" time="0" data="0" handle2_x="0"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" order="1" animated="1" name="Y" single_keyframe_only="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_y="0" time="0" data="0" handle2_x="0"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" order="2" animated="1" name="Z" single_keyframe_only="1">
+   <KEYFRAME handle2_type="SMOOTH" handle2_y="0" time="0" data="0" handle2_x="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="skarsnik_main_flyover.xml" warscape_properties_file="../cameras/skarsnik_main_flyover.xml"/>
+ </NODE>
+ <NODE name="Links"/>
+</SCENE_FILE>

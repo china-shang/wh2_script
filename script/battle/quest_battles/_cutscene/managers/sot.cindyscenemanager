@@ -1,0 +1,16 @@
+<SCENE_MANAGER_FILE start_record_time="0" name="sot.CindySceneManager" perspective_camera="-15.859,616.211,-681.156:-14.2317,531.309,-463.562" version="23" end_record_time="34.00000177323818">
+ <START_SCENE scene="sot_s01.CindyScene" real_time="0"/>
+ <SCENE_SWITCH time="5.05542" real_time="0" switch_scene="sot_s02.CindyScene"/>
+ <SCENE_SWITCH time="10.0436" real_time="0" switch_scene="sot_s03.CindyScene"/>
+ <SCENE_SWITCH time="14.348" real_time="0" switch_scene="sot_s04.CindyScene"/>
+ <SCENE_SWITCH time="19.9663" real_time="0" switch_scene="sot_s05.CindyScene"/>
+ <SCENE_SWITCH time="24.7667" real_time="0" switch_scene="sot_s06.CindyScene"/>
+ <NODE name="Scenes">
+  <SCENE name="sot_s01.CindyScene" scene_file="../scenes/sot_s01.CindyScene"/>
+  <SCENE name="sot_s02.CindyScene" scene_file="../scenes/sot_s02.CindyScene"/>
+  <SCENE name="sot_s03.CindyScene" scene_file="../scenes/sot_s03.CindyScene"/>
+  <SCENE name="sot_s04.CindyScene" scene_file="../scenes/sot_s04.CindyScene"/>
+  <SCENE name="sot_s05.CindyScene" scene_file="../scenes/sot_s05.CindyScene"/>
+  <SCENE name="sot_s06.CindyScene" scene_file="../scenes/sot_s06.CindyScene"/>
+ </NODE>
+</SCENE_MANAGER_FILE>

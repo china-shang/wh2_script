@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" name="wh2_main_lzd_tlaqua.CindyScene" perspective_camera="320.503,8.1706,7.19226:318.489,-1.15508,24.4554" version="23" end_record_time="73">
+ <ENVIRONMENT hidden="false" name="Environment" data="" order="0"/>
+ <VECTOR link_id="0" is_linked="0" name="position" unique_id="{11bd0d60-c66f-451a-9046-3e7cabb66fe5}" surface_mode="Freeform" id="{11bd0d60-c66f-451a-9046-3e7cabb66fe5}">
+  <DOUBLE hidden="false" default="0" single_keyframe_only="1" name="X" order="0" animated="1">
+   <KEYFRAME time="13.26666736602783" data="0.5160941481590271"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" default="0" single_keyframe_only="1" name="Y" order="1" animated="1">
+   <KEYFRAME time="13.26666736602783" data="0.5160941481590271"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" default="0" single_keyframe_only="1" name="Z" order="2" animated="1">
+   <KEYFRAME time="13.26666736602783" data="0.5160941481590271"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{918fc674-5181-41e0-9232-1777f47f6407}">
+  <RADIAN hidden="false" default="0" single_keyframe_only="1" name="X" order="0" animated="1">
+   <KEYFRAME time="13.26666736602783" data="0.00900754239410162"/>
+  </RADIAN>
+  <RADIAN hidden="false" default="0" single_keyframe_only="1" name="Y" order="1" animated="1">
+   <KEYFRAME time="13.26666736602783" data="0.00900754239410162"/>
+  </RADIAN>
+  <RADIAN hidden="false" default="0" single_keyframe_only="1" name="Z" order="2" animated="1">
+   <KEYFRAME time="13.26666736602783" data="0.00900754239410162"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="wh2_main_lzad_tlaqua.xml" warscape_properties_file="../cameras/wh2_main_lzad_tlaqua.xml"/>
+ </NODE>
+</SCENE_FILE>

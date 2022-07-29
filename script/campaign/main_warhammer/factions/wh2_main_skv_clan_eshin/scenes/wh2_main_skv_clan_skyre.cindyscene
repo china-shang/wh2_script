@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" name="wh2_main_skv_clan_skyre.CindyScene" perspective_camera="295.17,9.23098,193.063:287.104,-15.277,224.779" version="23" end_record_time="66">
+ <ENVIRONMENT hidden="false" name="Environment" data="" order="0"/>
+ <VECTOR link_id="0" is_linked="0" name="position" unique_id="{bd354917-28e9-4c5e-a47d-204d52cc3221}" surface_mode="Freeform" id="{bd354917-28e9-4c5e-a47d-204d52cc3221}">
+  <DOUBLE hidden="false" default="0" single_keyframe_only="1" name="X" order="0" animated="1">
+   <KEYFRAME time="59.23331069946289" data="0.9338747262954712"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" default="0" single_keyframe_only="1" name="Y" order="1" animated="1">
+   <KEYFRAME time="59.23331069946289" data="0.9338747262954712"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" default="0" single_keyframe_only="1" name="Z" order="2" animated="1">
+   <KEYFRAME time="59.23331069946289" data="0.9338747262954712"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{a910bad5-2c72-4c03-8563-616c1823f002}">
+  <RADIAN hidden="false" default="0" single_keyframe_only="1" name="X" order="0" animated="1">
+   <KEYFRAME time="59.23331069946289" data="0.01629918813705444"/>
+  </RADIAN>
+  <RADIAN hidden="false" default="0" single_keyframe_only="1" name="Y" order="1" animated="1">
+   <KEYFRAME time="59.23331069946289" data="0.01629918813705444"/>
+  </RADIAN>
+  <RADIAN hidden="false" default="0" single_keyframe_only="1" name="Z" order="2" animated="1">
+   <KEYFRAME time="59.23331069946289" data="0.01629918813705444"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="wh2_main_skv_clan_skyre.xml" warscape_properties_file="../cameras/wh2_main_skv_clan_skyre.xml"/>
+ </NODE>
+</SCENE_FILE>

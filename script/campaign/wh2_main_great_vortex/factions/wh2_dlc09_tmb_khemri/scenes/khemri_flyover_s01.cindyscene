@@ -1,0 +1,29 @@
+<SCENE_FILE perspective_camera="441.964,8.63244,202.934:457.687,-66.0745,267.539" end_record_time="86.00000448524952" version="23" name="khemri_flyover_s01.CindyScene" start_record_time="0">
+ <ENVIRONMENT data="Weather/Default.environment" hidden="false" order="0" name="Environment"/>
+ <VECTOR is_linked="0" link_id="0" unique_id="{8b62a448-9784-40ce-bac3-e6ce8d3ef8c1}" surface_mode="Freeform" name="position" id="{8b62a448-9784-40ce-bac3-e6ce8d3ef8c1}">
+  <DOUBLE hidden="false" order="0" default="0" name="X" animated="1" single_keyframe_only="1">
+   <KEYFRAME handle1_x="0" data="0" time="0" handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_x="0" handle2_y="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" order="1" default="0" name="Y" animated="1" single_keyframe_only="1">
+   <KEYFRAME handle1_x="0" data="0" time="0" handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_x="0" handle2_y="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" order="2" default="0" name="Z" animated="1" single_keyframe_only="1">
+   <KEYFRAME handle1_x="0" data="0" time="0" handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_x="0" handle2_y="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{969e6373-dbbd-4bad-8732-e9d54b82299a}">
+  <RADIAN hidden="false" order="0" default="0" name="X" animated="1" single_keyframe_only="1">
+   <KEYFRAME handle1_x="0" data="0" time="0" handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_x="0" handle2_y="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" order="1" default="0" name="Y" animated="1" single_keyframe_only="1">
+   <KEYFRAME handle1_x="0" data="0" time="0" handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_x="0" handle2_y="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" order="2" default="0" name="Z" animated="1" single_keyframe_only="1">
+   <KEYFRAME handle1_x="0" data="0" time="0" handle1_type="SMOOTH" handle2_type="SMOOTH" handle1_y="0" handle2_x="0" handle2_y="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/khemri_flyover_camera_01.xml" name="khemri_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

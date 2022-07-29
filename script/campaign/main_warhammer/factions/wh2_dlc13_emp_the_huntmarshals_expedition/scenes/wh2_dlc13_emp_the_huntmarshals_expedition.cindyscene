@@ -1,0 +1,17 @@
+<SCENE_FILE name="wh2_dlc13_emp_the_huntmarshals_expedition.CindyScene" start_record_time="0" end_record_time="1000" version="23" perspective_camera="105.692,8.56211,88.5327:119.19,-1.62458,93.1319">
+ <ENVIRONMENT name="Environment" hidden="false" data="" order="0"/>
+ <VECTOR name="position" is_linked="0" id="{84fd13bc-fd85-48db-92f1-223ebcabeebd}" surface_mode="Freeform" link_id="0" unique_id="{84fd13bc-fd85-48db-92f1-223ebcabeebd}">
+  <DOUBLE name="X" hidden="false" animated="1" default="0" single_keyframe_only="1" order="0"/>
+  <DOUBLE name="Y" hidden="false" animated="1" default="0" single_keyframe_only="1" order="1"/>
+  <DOUBLE name="Z" hidden="false" animated="1" default="0" single_keyframe_only="1" order="2"/>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{9a67be84-77f1-40f4-a39d-c6e3e99c8be2}">
+  <RADIAN name="X" hidden="false" animated="1" default="0" single_keyframe_only="1" order="0"/>
+  <RADIAN name="Y" hidden="false" animated="1" default="0" single_keyframe_only="1" order="1"/>
+  <RADIAN name="Z" hidden="false" animated="1" default="0" single_keyframe_only="1" order="2"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="wh2_dlc13_emp_the_huntmarshals_expedition.xml" warscape_properties_file="../cameras/wh2_dlc13_emp_the_huntmarshals_expedition.xml"/>
+ </NODE>
+</SCENE_FILE>

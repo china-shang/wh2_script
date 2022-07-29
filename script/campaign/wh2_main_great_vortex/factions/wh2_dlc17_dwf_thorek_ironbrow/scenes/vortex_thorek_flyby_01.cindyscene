@@ -1,0 +1,29 @@
+<SCENE_FILE version="26" id="{6d9775e4-d932-459d-8676-2ce8033e569b}" hidden="false" end_record_time="68.26667022705078" start_record_time="0" perspective_camera="71.2954,18.3437,195.181:68.2777,9.71521,208">
+ <ENVIRONMENT name="Environment" id="{0710a1be-a2e1-4efa-9f1f-a703f2acbfcb}" hidden="false" order="0" data="Weather/default.environment"/>
+ <VECTOR surface_mode="Freeform" unique_id="{2a4231d1-eeaf-4fe4-a5a7-690e7d9e1626}" name="position" link_id="0" is_linked="0" id="{2a4231d1-eeaf-4fe4-a5a7-690e7d9e1626}" hidden="false">
+  <DOUBLE animated="1" default="0" name="X" id="{23398e8c-15a0-4bb8-84fe-60d811c1ad3a}" hidden="false" order="0" single_keyframe_only="1">
+   <KEYFRAME time="63.83333587646484" data="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" default="0" name="Y" id="{ece9f4b5-917d-4287-898a-17858449623b}" hidden="false" order="1" single_keyframe_only="1">
+   <KEYFRAME time="63.83333587646484" data="0"/>
+  </DOUBLE>
+  <DOUBLE animated="1" default="0" name="Z" id="{3495ffae-b161-4ea7-9766-bb9b4125e87e}" hidden="false" order="2" single_keyframe_only="1">
+   <KEYFRAME time="63.83333587646484" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{1d7d2b29-4b91-4c85-b3e5-7892f672c7d7}" hidden="false">
+  <RADIAN animated="1" default="0" name="X" id="{2463b0a2-d5e0-4ff7-a703-989a103c6f28}" hidden="false" order="0" single_keyframe_only="1">
+   <KEYFRAME time="63.83333587646484" data="0"/>
+  </RADIAN>
+  <RADIAN animated="1" default="0" name="Y" id="{91628160-b2e3-4d17-b6ef-fddb8b6e34d6}" hidden="false" order="1" single_keyframe_only="1">
+   <KEYFRAME time="63.83333587646484" data="0"/>
+  </RADIAN>
+  <RADIAN animated="1" default="0" name="Z" id="{82183d95-6601-4617-92db-5e5239c87c77}" hidden="false" order="2" single_keyframe_only="1">
+   <KEYFRAME time="63.83333587646484" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links" id="{f3a1c789-1ce5-4e00-be99-557896996d73}" hidden="false"/>
+ <NODE name="Warscape Properties" id="{696a4356-78ce-45f0-8ff6-d32068f1be5a}" hidden="false">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/vortex_thorek_flyby_01_cam.xml" name="vortex_thorek_flyby_01_cam.xml" id="{9dbe685e-0382-440a-88f1-a80f479d0df9}" hidden="false"/>
+ </NODE>
+</SCENE_FILE>

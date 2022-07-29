@@ -1,0 +1,17 @@
+<SCENE_FILE end_record_time="40.00000381469727" perspective_camera="255.246,11.2448,363.764:236.15,-53.509,437.547" start_record_time="0" version="21" name="isabella_main_flyover_s01.CindyScene">
+ <ENVIRONMENT order="0" data="Weather/Default.environment" hidden="false" name="Environment"/>
+ <VECTOR target_pos_y="0" target_orientation_k="0" target_pos_z="0" link_source_type="no_link" surface_mode="Freeform" link_id="0" link_type="no_link" target_orientation_w="0" unique_id="{64275a9b-2945-4167-a1b9-1fb7f345bf1d}" id="{64275a9b-2945-4167-a1b9-1fb7f345bf1d}" name="position" is_linked="0" target_orientation_i="0" target_pos_x="0" target_orientation_j="0">
+  <DOUBLE animated="1" order="0" single_keyframe_only="0" default="0" hidden="false" name="X"/>
+  <DOUBLE animated="1" order="1" single_keyframe_only="0" default="0" hidden="false" name="Y"/>
+  <DOUBLE animated="1" order="2" single_keyframe_only="0" default="0" hidden="false" name="Z"/>
+ </VECTOR>
+ <ROTATION_AXES id="{fac89981-999c-4f95-972c-4bceee30f1de}" name="rotation">
+  <RADIAN animated="1" order="0" single_keyframe_only="0" default="0" hidden="false" name="X"/>
+  <RADIAN animated="1" order="1" single_keyframe_only="0" default="0" hidden="false" name="Y"/>
+  <RADIAN animated="1" order="2" single_keyframe_only="0" default="0" hidden="false" name="Z"/>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/isabella_main_flyover_camera_01.xml" name="isabella_main_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

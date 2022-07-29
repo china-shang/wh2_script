@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" end_record_time="65.5000034160912" version="23" perspective_camera="205.8,9.80604,63.0114:205.8,-54.7964,139.071" name="the_blessed_dread_flyby_scene_01.CindyScene">
+ <ENVIRONMENT data="Weather/default.environment" name="Environment" order="0" hidden="false"/>
+ <VECTOR link_id="0" id="{71bc214f-ec63-4000-af9d-0862d8d915c1}" unique_id="{71bc214f-ec63-4000-af9d-0862d8d915c1}" name="position" surface_mode="Freeform" is_linked="0">
+  <DOUBLE single_keyframe_only="1" name="X" default="0" order="0" hidden="false" animated="1">
+   <KEYFRAME data="0" handle1_type="SMOOTH" time="0" handle1_y="0" handle2_x="0" handle2_y="0" handle1_x="0" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" name="Y" default="0" order="1" hidden="false" animated="1">
+   <KEYFRAME data="0" handle1_type="SMOOTH" time="0" handle1_y="0" handle2_x="0" handle2_y="0" handle1_x="0" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" name="Z" default="0" order="2" hidden="false" animated="1">
+   <KEYFRAME data="0" handle1_type="SMOOTH" time="0" handle1_y="0" handle2_x="0" handle2_y="0" handle1_x="0" handle2_type="SMOOTH"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{5eca8b84-a365-4ba0-b94b-e90357749563}" name="rotation">
+  <RADIAN single_keyframe_only="1" name="X" default="0" order="0" hidden="false" animated="1">
+   <KEYFRAME data="0" handle1_type="SMOOTH" time="0" handle1_y="0" handle2_x="0" handle2_y="0" handle1_x="0" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" name="Y" default="0" order="1" hidden="false" animated="1">
+   <KEYFRAME data="0" handle1_type="SMOOTH" time="0" handle1_y="0" handle2_x="0" handle2_y="0" handle1_x="0" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" name="Z" default="0" order="2" hidden="false" animated="1">
+   <KEYFRAME data="0" handle1_type="SMOOTH" time="0" handle1_y="0" handle2_x="0" handle2_y="0" handle1_x="0" handle2_type="SMOOTH"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/the_blessed_dread_flyby_camera_01.xml" name="the_blessed_dread_flyby_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

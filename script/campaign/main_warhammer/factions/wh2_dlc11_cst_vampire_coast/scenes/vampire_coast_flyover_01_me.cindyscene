@@ -1,0 +1,29 @@
+<SCENE_FILE version="23" name="vampire_coast_flyover_01_me.CindyScene" perspective_camera="153.2,8.23643,94.6662:153.2,-17.9241,132.701" start_record_time="0" end_record_time="98.00000511109829">
+ <ENVIRONMENT data="" name="Environment" hidden="false" order="0"/>
+ <VECTOR unique_id="{a7fb5100-a3f2-4fc2-ada9-5523d6c6b19b}" surface_mode="Freeform" name="position" id="{a7fb5100-a3f2-4fc2-ada9-5523d6c6b19b}" is_linked="0" link_id="0">
+  <DOUBLE name="X" single_keyframe_only="1" hidden="false" default="0" animated="1" order="0">
+   <KEYFRAME data="0" handle1_x="1.77636e-15" handle2_y="0" handle1_y="0" handle2_x="1.77636e-15" time="1.776356839400251e-015" handle1_type="SMOOTH" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE name="Y" single_keyframe_only="1" hidden="false" default="0" animated="1" order="1">
+   <KEYFRAME data="0" handle1_x="1.77636e-15" handle2_y="0" handle1_y="0" handle2_x="1.77636e-15" time="1.776356839400251e-015" handle1_type="SMOOTH" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE name="Z" single_keyframe_only="1" hidden="false" default="0" animated="1" order="2">
+   <KEYFRAME data="0" handle1_x="1.77636e-15" handle2_y="0" handle1_y="0" handle2_x="1.77636e-15" time="1.776356839400251e-015" handle1_type="SMOOTH" handle2_type="SMOOTH"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{1adf91fd-3514-4374-a7df-215b38609971}">
+  <RADIAN name="X" single_keyframe_only="1" hidden="false" default="0" animated="1" order="0">
+   <KEYFRAME data="0" handle1_x="1.77636e-15" handle2_y="0" handle1_y="0" handle2_x="1.77636e-15" time="1.776356839400251e-015" handle1_type="SMOOTH" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN name="Y" single_keyframe_only="1" hidden="false" default="0" animated="1" order="1">
+   <KEYFRAME data="0" handle1_x="1.77636e-15" handle2_y="0" handle1_y="0" handle2_x="1.77636e-15" time="1.776356839400251e-015" handle1_type="SMOOTH" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN name="Z" single_keyframe_only="1" hidden="false" default="0" animated="1" order="2">
+   <KEYFRAME data="0" handle1_x="1.77636e-15" handle2_y="0" handle1_y="0" handle2_x="1.77636e-15" time="1.776356839400251e-015" handle1_type="SMOOTH" handle2_type="SMOOTH"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="vampire_coast_camera_01_me.xml" warscape_properties_file="../cameras/vampire_coast_camera_01_me.xml"/>
+ </NODE>
+</SCENE_FILE>

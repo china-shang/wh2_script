@@ -1,0 +1,29 @@
+<SCENE_FILE version="23" end_record_time="55.00000286847353" start_record_time="0" name="clan_rictus_flyover_s01.CindyScene" perspective_camera="96.3374,7.58982,401.189:109.954,-65.6819,467.881">
+ <ENVIRONMENT data="Weather/Default.environment" hidden="false" order="0" name="Environment"/>
+ <VECTOR unique_id="{8b62a448-9784-40ce-bac3-e6ce8d3ef8c1}" surface_mode="Freeform" link_id="0" id="{8b62a448-9784-40ce-bac3-e6ce8d3ef8c1}" name="position" is_linked="0">
+  <DOUBLE single_keyframe_only="1" hidden="false" animated="1" default="0" order="0" name="X">
+   <KEYFRAME handle2_type="SMOOTH" data="0" time="0" handle1_y="0" handle2_y="0" handle1_type="SMOOTH" handle1_x="0" handle2_x="0"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" hidden="false" animated="1" default="0" order="1" name="Y">
+   <KEYFRAME handle2_type="SMOOTH" data="0" time="0" handle1_y="0" handle2_y="0" handle1_type="SMOOTH" handle1_x="0" handle2_x="0"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" hidden="false" animated="1" default="0" order="2" name="Z">
+   <KEYFRAME handle2_type="SMOOTH" data="0" time="0" handle1_y="0" handle2_y="0" handle1_type="SMOOTH" handle1_x="0" handle2_x="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{969e6373-dbbd-4bad-8732-e9d54b82299a}" name="rotation">
+  <RADIAN single_keyframe_only="1" hidden="false" animated="1" default="0" order="0" name="X">
+   <KEYFRAME handle2_type="SMOOTH" data="0" time="0" handle1_y="0" handle2_y="0" handle1_type="SMOOTH" handle1_x="0" handle2_x="0"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" hidden="false" animated="1" default="0" order="1" name="Y">
+   <KEYFRAME handle2_type="SMOOTH" data="0" time="0" handle1_y="0" handle2_y="0" handle1_type="SMOOTH" handle1_x="0" handle2_x="0"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" hidden="false" animated="1" default="0" order="2" name="Z">
+   <KEYFRAME handle2_type="SMOOTH" data="0" time="0" handle1_y="0" handle2_y="0" handle1_type="SMOOTH" handle1_x="0" handle2_x="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/clan_rictus_flyover_camera_01.xml" name="clan_rictus_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

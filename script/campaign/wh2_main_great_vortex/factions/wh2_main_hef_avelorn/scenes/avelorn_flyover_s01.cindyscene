@@ -1,0 +1,29 @@
+<SCENE_FILE perspective_camera="336.044,6.28932,446.282:340.257,4.70798,433.926" name="avelorn_flyover_s01.CindyScene" start_record_time="0" version="23" end_record_time="80.26667085289955">
+ <ENVIRONMENT hidden="false" order="0" name="Environment" data="Weather/default.environment"/>
+ <VECTOR is_linked="0" name="position" link_id="0" surface_mode="Freeform" unique_id="{2b919dcf-d17a-4ab3-a5e8-2b37dfbe61be}" id="{2b919dcf-d17a-4ab3-a5e8-2b37dfbe61be}">
+  <DOUBLE hidden="false" order="0" name="X" single_keyframe_only="1" animated="1" default="0">
+   <KEYFRAME time="20.90000152587891" data="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" order="1" name="Y" single_keyframe_only="1" animated="1" default="0">
+   <KEYFRAME time="20.90000152587891" data="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" order="2" name="Z" single_keyframe_only="1" animated="1" default="0">
+   <KEYFRAME time="20.90000152587891" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{90023390-6640-42b9-9e03-f6d4e018083e}">
+  <RADIAN hidden="false" order="0" name="X" single_keyframe_only="1" animated="1" default="0">
+   <KEYFRAME time="20.90000152587891" data="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" order="1" name="Y" single_keyframe_only="1" animated="1" default="0">
+   <KEYFRAME time="20.90000152587891" data="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" order="2" name="Z" single_keyframe_only="1" animated="1" default="0">
+   <KEYFRAME time="20.90000152587891" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="avelorn_flyover_camera_01.xml" warscape_properties_file="../cameras/avelorn_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

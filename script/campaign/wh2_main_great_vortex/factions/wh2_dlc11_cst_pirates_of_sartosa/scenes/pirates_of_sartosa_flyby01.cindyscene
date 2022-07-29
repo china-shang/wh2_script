@@ -1,0 +1,29 @@
+<SCENE_FILE perspective_camera="413.48,6.01468,314.071:413.48,-11.0341,340.574" version="23" name="pirates_of_sartosa_flyby01.CindyScene" end_record_time="68.5000035725534" start_record_time="0">
+ <ENVIRONMENT data="Weather/default.environment" hidden="false" order="0" name="Environment"/>
+ <VECTOR is_linked="0" link_id="0" surface_mode="Freeform" unique_id="{dcec1ccb-08d3-433e-a0a6-a7644890aad0}" name="position" id="{dcec1ccb-08d3-433e-a0a6-a7644890aad0}">
+  <DOUBLE single_keyframe_only="1" animated="1" hidden="false" order="0" name="X" default="0">
+   <KEYFRAME handle1_type="SMOOTH" data="0" handle2_type="SMOOTH" handle2_y="0" handle1_y="0" handle2_x="24.2" handle1_x="24.2" time="24.20000267028809"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" animated="1" hidden="false" order="1" name="Y" default="0">
+   <KEYFRAME handle1_type="SMOOTH" data="0" handle2_type="SMOOTH" handle2_y="0" handle1_y="0" handle2_x="24.2" handle1_x="24.2" time="24.20000267028809"/>
+  </DOUBLE>
+  <DOUBLE single_keyframe_only="1" animated="1" hidden="false" order="2" name="Z" default="0">
+   <KEYFRAME handle1_type="SMOOTH" data="0" handle2_type="SMOOTH" handle2_y="0" handle1_y="0" handle2_x="24.2" handle1_x="24.2" time="24.20000267028809"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{cb4c9714-1926-45f6-82e1-e5bca572ffc9}">
+  <RADIAN single_keyframe_only="1" animated="1" hidden="false" order="0" name="X" default="0">
+   <KEYFRAME handle1_type="SMOOTH" data="0" handle2_type="SMOOTH" handle2_y="0" handle1_y="0" handle2_x="24.2" handle1_x="24.2" time="24.20000267028809"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" animated="1" hidden="false" order="1" name="Y" default="0">
+   <KEYFRAME handle1_type="SMOOTH" data="0" handle2_type="SMOOTH" handle2_y="0" handle1_y="0" handle2_x="24.2" handle1_x="24.2" time="24.20000267028809"/>
+  </RADIAN>
+  <RADIAN single_keyframe_only="1" animated="1" hidden="false" order="2" name="Z" default="0">
+   <KEYFRAME handle1_type="SMOOTH" data="0" handle2_type="SMOOTH" handle2_y="0" handle1_y="0" handle2_x="24.2" handle1_x="24.2" time="24.20000267028809"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/pirates_of_sartosa_flyby_camera01.xml" name="pirates_of_sartosa_flyby_camera01.xml"/>
+ </NODE>
+</SCENE_FILE>

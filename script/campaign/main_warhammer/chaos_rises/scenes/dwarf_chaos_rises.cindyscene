@@ -1,0 +1,5 @@
+<SCENE_FILE end_record_time="21.00000109523535" start_record_time="0" perspective_camera="0,0,0:0,0,0" name="dwarf_chaos_rises.CindyScene" version="18">
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="dwarf_chaos_rises.xml" name="dwarf_chaos_rises.xml"/>
+ </NODE>
+</SCENE_FILE>

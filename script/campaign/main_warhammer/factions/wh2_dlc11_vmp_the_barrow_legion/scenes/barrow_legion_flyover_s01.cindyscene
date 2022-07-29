@@ -1,0 +1,29 @@
+<SCENE_FILE perspective_camera="239.552,5.33367,308.565:235.528,-0.00137316,318.565" name="barrow_legion_flyover_s01.CindyScene" end_record_time="69.00000359863043" start_record_time="0" version="23">
+ <ENVIRONMENT hidden="false" data="Weather/default.environment" name="Environment" order="0"/>
+ <VECTOR unique_id="{29e90222-ef94-449a-9a38-98f2d177861a}" surface_mode="Freeform" id="{29e90222-ef94-449a-9a38-98f2d177861a}" name="position" link_id="0" is_linked="0">
+  <DOUBLE hidden="false" default="0" single_keyframe_only="1" name="X" order="0" animated="1">
+   <KEYFRAME data="0" time="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" default="0" single_keyframe_only="1" name="Y" order="1" animated="1">
+   <KEYFRAME data="0" time="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" default="0" single_keyframe_only="1" name="Z" order="2" animated="1">
+   <KEYFRAME data="0" time="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{4a5f8f98-a0d1-4d7d-a22e-2cba9d0888d5}" name="rotation">
+  <RADIAN hidden="false" default="0" single_keyframe_only="1" name="X" order="0" animated="1">
+   <KEYFRAME data="0" time="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" default="0" single_keyframe_only="1" name="Y" order="1" animated="1">
+   <KEYFRAME data="0" time="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" default="0" single_keyframe_only="1" name="Z" order="2" animated="1">
+   <KEYFRAME data="0" time="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/barrow_legion_flyover_camera_01.xml" name="barrow_legion_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

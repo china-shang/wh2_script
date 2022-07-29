@@ -1,0 +1,29 @@
+<SCENE_FILE version="23" end_record_time="144.5000075362623" perspective_camera="184.4,5.87502,220.092:184.4,-2.87348,230.815" name="vampire_coast_flyby.CindyScene" start_record_time="0">
+ <ENVIRONMENT order="0" data="Weather/default.environment" hidden="false" name="Environment"/>
+ <VECTOR surface_mode="Freeform" id="{681eea9a-d09a-426a-ada7-aca26ec7fdff}" name="position" is_linked="0" link_id="0" unique_id="{681eea9a-d09a-426a-ada7-aca26ec7fdff}">
+  <DOUBLE order="0" default="0" single_keyframe_only="1" animated="1" hidden="false" name="X">
+   <KEYFRAME handle2_x="9.76667" time="9.766667366027832" handle2_y="0" data="0" handle1_type="SMOOTH" handle1_x="9.76667" handle1_y="0" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE order="1" default="0" single_keyframe_only="1" animated="1" hidden="false" name="Y">
+   <KEYFRAME handle2_x="9.76667" time="9.766667366027832" handle2_y="0" data="0" handle1_type="SMOOTH" handle1_x="9.76667" handle1_y="0" handle2_type="SMOOTH"/>
+  </DOUBLE>
+  <DOUBLE order="2" default="0" single_keyframe_only="1" animated="1" hidden="false" name="Z">
+   <KEYFRAME handle2_x="9.76667" time="9.766667366027832" handle2_y="0" data="0" handle1_type="SMOOTH" handle1_x="9.76667" handle1_y="0" handle2_type="SMOOTH"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{f77e9ece-a1e0-4aaa-9fb8-48d1e8339e46}" name="rotation">
+  <RADIAN order="0" default="0" single_keyframe_only="1" animated="1" hidden="false" name="X">
+   <KEYFRAME handle2_x="9.76667" time="9.766667366027832" handle2_y="0" data="0" handle1_type="SMOOTH" handle1_x="9.76667" handle1_y="0" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN order="1" default="0" single_keyframe_only="1" animated="1" hidden="false" name="Y">
+   <KEYFRAME handle2_x="9.76667" time="9.766667366027832" handle2_y="0" data="0" handle1_type="SMOOTH" handle1_x="9.76667" handle1_y="0" handle2_type="SMOOTH"/>
+  </RADIAN>
+  <RADIAN order="2" default="0" single_keyframe_only="1" animated="1" hidden="false" name="Z">
+   <KEYFRAME handle2_x="9.76667" time="9.766667366027832" handle2_y="0" data="0" handle1_type="SMOOTH" handle1_x="9.76667" handle1_y="0" handle2_type="SMOOTH"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/vampire_coast_flyby.xml" name="vampire_coast_flyby.xml"/>
+ </NODE>
+</SCENE_FILE>

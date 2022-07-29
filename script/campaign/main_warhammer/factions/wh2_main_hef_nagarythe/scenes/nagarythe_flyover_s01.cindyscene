@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" end_record_time="75.76667061820626" name="nagarythe_flyover_s01.CindyScene" version="23" perspective_camera="73.8308,4.35786,285.93:68.4337,0.0727215,295.062">
+ <ENVIRONMENT data="" name="Environment" hidden="false" order="0"/>
+ <VECTOR unique_id="{aa47b0b4-cbf2-4e24-830a-9bb792cc23b1}" is_linked="0" name="position" id="{aa47b0b4-cbf2-4e24-830a-9bb792cc23b1}" surface_mode="Freeform" link_id="0">
+  <DOUBLE animated="1" name="X" default="0" hidden="false" single_keyframe_only="1" order="0">
+   <KEYFRAME data="0" handle1_type="EASY" time="11.76294422149658" handle2_type="EASY"/>
+  </DOUBLE>
+  <DOUBLE animated="1" name="Y" default="0" hidden="false" single_keyframe_only="1" order="1">
+   <KEYFRAME data="0" handle1_type="EASY" time="11.76294422149658" handle2_type="EASY"/>
+  </DOUBLE>
+  <DOUBLE animated="1" name="Z" default="0" hidden="false" single_keyframe_only="1" order="2">
+   <KEYFRAME data="0" handle1_type="EASY" time="11.76294422149658" handle2_type="EASY"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{0e18b7c6-8900-4920-8cdb-442977426a4f}">
+  <RADIAN animated="1" name="X" default="0" hidden="false" single_keyframe_only="1" order="0">
+   <KEYFRAME data="0" handle1_type="EASY" time="11.76294422149658" handle2_type="EASY"/>
+  </RADIAN>
+  <RADIAN animated="1" name="Y" default="0" hidden="false" single_keyframe_only="1" order="1">
+   <KEYFRAME data="0" handle1_type="EASY" time="11.76294422149658" handle2_type="EASY"/>
+  </RADIAN>
+  <RADIAN animated="1" name="Z" default="0" hidden="false" single_keyframe_only="1" order="2">
+   <KEYFRAME data="0" handle1_type="EASY" time="0" handle2_type="EASY"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="nagarythe_flyover_camera_01.xml" warscape_properties_file="../cameras/nagarythe_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

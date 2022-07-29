@@ -1,0 +1,19 @@
+display_name: Campaign Type
+variable: cv_campaign_type
+description: The type of campaign you want to load
+dropdown:  "Mortal Empire","Vortex"
+
+display_name: Mortal Empire Faction Choice
+variable: cv_mortal_empire_faction
+description: The faction leader to load,requires the "Mortal Empire" campaign_type to be selected
+dropdown:  "Random","Tyrion","Teclis","Alarielle the Radiant","Alith Anar","Eltharion","Imrik","Lord Mazdamundi","Kroq-Gar","Nakai the Wanderer","Tehenhauin","Gor-Rok","Tiktaq'to","Malekith","Morathi","Crone Hellebron","Lokhir Fellheart","Queek Headtaker","Lord Skrolk","Tretch Craventail","Ikit Claw","Luthor Harkon","Count Noctilus","Aranessa Saltspite","Cylostra Direfin","Settra the Imperishable","Grand Hierophant Khatep","High Queen Khalida","Arkhan the Black","Emperor Karl Franz","Volkmar the Grim","Markus Wulfhart","Balthasar Gelt","Thorgrim Grudgebearer","Grombrindal - The White Dwarf","Belegar Ironhammer","Ungrim Ironfist","Grimgor Ironhide","Azhag the Slaughterer","Skarsnik","Wurrzag Da Great Green Prophet","Grom the Paunch","Mannfred von Carstein","Helman Ghorst","Vlad von Carstein","Isabella von Carstein","Heinrich Kemmler","Wulfrik the Wanderer","Throgg","Louen Leoncoeur","Alberic de Bordeleaux","The Fay Enchantress","Orion","Durthu","Khazrak the One-Eye","Malagor the Dark Omen","Morghur the Shadowgave","Archaon the Everchosen","Kholek Suneater","Prince Sigvald the Magnificent","Malus Darkblade","Rakarth", "Deathmaster Snikch","Repanse de Lyonesse","Throt the Unclean","[PH] Sisters of Twilight [PH] (Arahan & Naestra)","[PH] Drycha"
+
+display_name: Vortex Faction Choice
+variable: cv_vortex_faction
+description: The faction leader to load,requires the "Vortex" campaign_type to be selected
+dropdown:  "Random","Tyrion","Teclis","Alarielle the Radiant","Alith Anar","Eltharion","Imrik","Lord Mazdamundi","Kroq-Gar","Nakai the Wanderer","Tehenhauin","Gor-Rok","Tiktaq'to","Malekith","Morathi","Crone Hellebron","Lokhir Fellheart","Queek Headtaker","Lord Skrolk","Tretch Craventail","Ikit Claw","Luthor Harkon","Count Noctilus","Aranessa Saltspite","Cylostra Direfin","Settra the Imperishable","Grand Hierophant Khatep","High Queen Khalida","Arkhan the Black","Markus Wulfhart","Malus Darkblade", "Rakarth", "Deathmaster Snikch","Grom the Paunch","Repanse de Lyonesse","Throt the Unclean","[PH] Sisters of Twilight [PH] (Arahan & Naestra)"
+
+display_name: Take Screenshots
+variable: cv_turn_screenshots
+description: Choose if you want the script to take screenshots at the start of each turn. Link to screenshots can be found in the email report.
+dropdown:  false,true

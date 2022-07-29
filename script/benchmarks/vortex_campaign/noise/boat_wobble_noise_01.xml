@@ -1,0 +1,16 @@
+<NOISE_FILE name="boat_wobble_noise_01.xml" version="22">
+ <DOUBLE hidden="false" animated="0" name="amplitude" user_friendy_name="Amplitude" single_keyframe_only="1" default="20" order="0">
+  <KEYFRAME time="-1" data="30"/>
+ </DOUBLE>
+ <DOUBLE hidden="false" animated="0" name="frequency" user_friendy_name="Frequency" single_keyframe_only="1" default="5" order="1">
+  <KEYFRAME time="-1" data="0.5"/>
+ </DOUBLE>
+ <INT hidden="false" animated="1" name="number_of_octaves" user_friendy_name="Number of Octaves" single_keyframe_only="0" default="3" order="2">
+  <KEYFRAME time="148.6333465576172" data="1"/>
+ </INT>
+ <DOUBLE hidden="false" animated="1" name="offset" user_friendy_name="Offset" single_keyframe_only="0" default="10" order="3"/>
+ <DOUBLE hidden="false" animated="1" name="persistence" user_friendy_name="Persistence" single_keyframe_only="0" default="0.5" order="4"/>
+ <DOUBLE hidden="false" animated="1" name="lacunarity" user_friendy_name="Lacunarity" single_keyframe_only="0" default="2" order="5">
+  <KEYFRAME time="147.4333343505859" data="1"/>
+ </DOUBLE>
+</NOISE_FILE>

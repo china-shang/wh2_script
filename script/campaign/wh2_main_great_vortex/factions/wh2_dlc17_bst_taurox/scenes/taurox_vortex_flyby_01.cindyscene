@@ -1,0 +1,17 @@
+<SCENE_FILE version="26" start_record_time="0" end_record_time="65.366670075804" perspective_camera="149.172,13.1459,416.014:149.77,7.62952,422.663" id="{672bdd61-6acb-407e-877e-df1a49ee1cb9}" hidden="false">
+ <ENVIRONMENT data="" order="0" name="Environment" id="{fbfd9bb5-5bee-492e-a6d5-ed081ac59cdf}" hidden="false"/>
+ <VECTOR is_linked="0" surface_mode="Freeform" unique_id="{3a14851f-d035-4207-a1e9-42b736841ab9}" name="position" link_id="0" id="{3a14851f-d035-4207-a1e9-42b736841ab9}" hidden="false">
+  <DOUBLE default="0" order="0" animated="1" name="X" id="{842f1435-e09d-4db8-acc0-0edad460883c}" hidden="false" single_keyframe_only="1"/>
+  <DOUBLE default="0" order="1" animated="1" name="Y" id="{2cff6924-dd28-43af-8b44-09cbb1380ee0}" hidden="false" single_keyframe_only="1"/>
+  <DOUBLE default="0" order="2" animated="1" name="Z" id="{efe550e7-dc86-4a5b-8228-d10a19892c32}" hidden="false" single_keyframe_only="1"/>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{49317481-2f57-4e4c-b2f9-afa56b0cea64}" hidden="false">
+  <RADIAN default="0" order="0" animated="1" name="X" id="{b68b8f98-b2c0-4550-aaed-6f6e6e7ddbf7}" hidden="false" single_keyframe_only="1"/>
+  <RADIAN default="0" order="1" animated="1" name="Y" id="{b8b74892-8ba9-47dc-b358-f8c53b7ad70e}" hidden="false" single_keyframe_only="1"/>
+  <RADIAN default="0" order="2" animated="1" name="Z" id="{91bfa1e4-7338-49e6-af6e-78898b9eaa57}" hidden="false" single_keyframe_only="1"/>
+ </ROTATION_AXES>
+ <NODE name="Links" id="{7a2c4df7-4e0f-4657-9eae-98a6b87f8075}" hidden="false"/>
+ <NODE name="Warscape Properties" id="{ffe87b84-fac1-4a41-a453-d5c44b4556c9}" hidden="false">
+  <WARSCAPE_PROPERTIES name="taurox_vortex_camera_07.xml" warscape_properties_file="../cameras/taurox_vortex_camera_07.xml" id="{2dd39b41-d6c8-45a4-8df7-4c18d2042691}" hidden="false"/>
+ </NODE>
+</SCENE_FILE>

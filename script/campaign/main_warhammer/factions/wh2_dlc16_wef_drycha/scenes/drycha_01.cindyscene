@@ -1,0 +1,17 @@
+<SCENE_FILE hidden="false" perspective_camera="429.018,13.5977,357.583:422.612,-16.0839,401.579" start_record_time="0" end_record_time="94.46667159348726" version="26" id="{7a0ba2ea-5b12-4f4c-a8dc-5ba0ef1b9424}">
+ <ENVIRONMENT hidden="false" name="Environment" order="0" id="{3e676281-80be-4172-b2a5-f5a3739b8851}" data="Weather/default.environment"/>
+ <VECTOR hidden="false" name="position" link_id="0" is_linked="0" surface_mode="Freeform" unique_id="{8ecc333d-1137-4d62-9fcc-b16beb7005f2}" id="{8ecc333d-1137-4d62-9fcc-b16beb7005f2}">
+  <DOUBLE hidden="false" name="X" single_keyframe_only="1" default="0" order="0" animated="1" id="{49b27171-afab-4459-b660-d53d97fe121e}"/>
+  <DOUBLE hidden="false" name="Y" single_keyframe_only="1" default="0" order="1" animated="1" id="{d37ccd6c-a7a1-420b-8de8-e6ac63202e7d}"/>
+  <DOUBLE hidden="false" name="Z" single_keyframe_only="1" default="0" order="2" animated="1" id="{153d9bd3-6353-4740-ba50-d29f3cdd81d7}"/>
+ </VECTOR>
+ <ROTATION_AXES hidden="false" name="rotation" id="{f800fcd3-0061-4dad-aa8d-d33dcc9a6738}">
+  <RADIAN hidden="false" name="X" single_keyframe_only="1" default="0" order="0" animated="1" id="{51253ebb-4fa7-4f28-ae4f-83bd8a434148}"/>
+  <RADIAN hidden="false" name="Y" single_keyframe_only="1" default="0" order="1" animated="1" id="{4aefa07f-3048-4b7f-94f8-631debea6527}"/>
+  <RADIAN hidden="false" name="Z" single_keyframe_only="1" default="0" order="2" animated="1" id="{41d1b611-acb2-4e33-a945-fa0cd5fc0fd1}"/>
+ </ROTATION_AXES>
+ <NODE hidden="false" name="Links" id="{6003e5eb-6dde-40ed-a3c0-7057af3cd53a}"/>
+ <NODE hidden="false" name="Warscape Properties" id="{5e887dc9-703f-4d9a-a649-39df9c109a37}">
+  <WARSCAPE_PROPERTIES hidden="false" name="wh2_dlc16_wef_drycha.xml" warscape_properties_file="../cameras/wh2_dlc16_wef_drycha.xml" id="{bbf1c25b-a02a-47bd-987f-8aa5f44e010d}"/>
+ </NODE>
+</SCENE_FILE>

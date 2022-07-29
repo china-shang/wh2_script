@@ -1,0 +1,17 @@
+<SCENE_FILE name="grom_axe_s04.CindyScene" id="{106831ec-f76c-479d-b150-22ed0d0d780d}" start_record_time="0" end_record_time="49.00000255554914" perspective_camera="-8.61713,102.801,-153.46:-209.657,-50.9774,-260.122" version="23">
+ <ENVIRONMENT name="Environment" id="{ed14910a-e01c-4205-9b29-01ad10fda226}" hidden="false" order="0" data="weather/battle/wh_qb_swamp_of_terror.environment"/>
+ <VECTOR name="position" id="{286f80d4-e0b8-4b40-9529-6e5c8cb5a4be}" unique_id="{286f80d4-e0b8-4b40-9529-6e5c8cb5a4be}" surface_mode="Freeform" is_linked="0" link_id="0">
+  <DOUBLE name="X" id="{e3831581-3866-4d01-9b7c-dd1d2cafbae6}" animated="1" default="0" single_keyframe_only="1" hidden="false" order="0"/>
+  <DOUBLE name="Y" id="{207ca468-dd11-4cf5-b2d1-984c00c7db43}" animated="1" default="0" single_keyframe_only="1" hidden="false" order="1"/>
+  <DOUBLE name="Z" id="{cc4867f0-6a94-46b4-b867-c90e7fe074c2}" animated="1" default="0" single_keyframe_only="1" hidden="false" order="2"/>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{dc0c0e08-80db-4d75-90c6-9b27501a4ccf}">
+  <RADIAN name="X" id="{aa240ce5-b187-48bc-b708-7023b952b299}" animated="1" default="0" single_keyframe_only="1" hidden="false" order="0"/>
+  <RADIAN name="Y" id="{c5ff6442-ba92-48d9-8fd3-a4e7bb7b8fa1}" animated="1" default="0" single_keyframe_only="1" hidden="false" order="1"/>
+  <RADIAN name="Z" id="{2928f2e8-f87f-4645-909e-5d234a50cf10}" animated="1" default="0" single_keyframe_only="1" hidden="false" order="2"/>
+ </ROTATION_AXES>
+ <NODE name="Links" id="{cd84dda7-c396-4e11-9008-8958900b12b8}"/>
+ <NODE name="Warscape Properties" id="{b8fa1a8b-5635-454a-af54-0856cbbcfcac}">
+  <WARSCAPE_PROPERTIES name="grom_axe_c04.xml" id="{5808f4ce-df8e-4038-8c32-ac374239aef4}" warscape_properties_file="../cameras/grom_axe_c04.xml"/>
+ </NODE>
+</SCENE_FILE>

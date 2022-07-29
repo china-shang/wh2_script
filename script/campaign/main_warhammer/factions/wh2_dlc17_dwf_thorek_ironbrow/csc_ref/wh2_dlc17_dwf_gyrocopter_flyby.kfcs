@@ -1,0 +1,33 @@
+<COMPOSITE_SCENE_FILE hidden="false" directory="composite_scene/wh2_dlc17_dwf_gyrocopter_flyby.csc" version="26" id="{f35b382b-8bb6-4118-a5a1-4438a511d362}">
+ <VECTOR unique_id="{b89faea1-5ca2-4736-b985-2dc23b6c9eb6}" hidden="false" is_linked="0" surface_mode="Freeform" link_id="-1" name="position" id="{b89faea1-5ca2-4736-b985-2dc23b6c9eb6}">
+  <DOUBLE default="0" hidden="false" single_keyframe_only="1" name="X" animated="0" order="0" id="{f5d9f0cf-ca21-4736-86ff-6377392680d9}">
+   <KEYFRAME time="-1" data="510.85015869140625"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" single_keyframe_only="1" name="Y" animated="0" order="1" id="{5f64b055-ada1-43ab-82b7-54c8c968306f}">
+   <KEYFRAME time="-1" data="4.468756675720215"/>
+  </DOUBLE>
+  <DOUBLE default="0" hidden="false" single_keyframe_only="1" name="Z" animated="0" order="2" id="{39abbcdf-1555-4d2c-925a-d1c696a27e46}">
+   <KEYFRAME time="-1" data="151.85719299316406"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES hidden="false" name="rotation" id="{551d45ad-6b30-45aa-805f-87726708a144}">
+  <RADIAN default="0" hidden="false" single_keyframe_only="1" name="X" animated="0" order="0" id="{1fe26a3a-bdb1-4ce3-a43b-33ed9b7a2de3}">
+   <KEYFRAME time="-1" data="0"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" single_keyframe_only="1" name="Y" animated="0" order="1" id="{0d8d0989-df91-4b6e-bd65-9629b3529a14}">
+   <KEYFRAME time="-1" data="0"/>
+  </RADIAN>
+  <RADIAN default="0" hidden="false" single_keyframe_only="1" name="Z" animated="0" order="2" id="{fe0885e7-1e6d-4ebd-9332-118692d8de12}">
+   <KEYFRAME time="-1" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <DOUBLE default="1" hidden="false" single_keyframe_only="1" name="scale" user_friendy_name="Scale" animated="0" order="2" id="{e77ef0ef-af81-44a8-84af-4f3427ccbdd5}">
+  <KEYFRAME time="-1" data="0.5"/>
+ </DOUBLE>
+ <BOOL default="0" hidden="false" single_keyframe_only="0" name="active" user_friendy_name="Active" animated="1" order="3" id="{f4a92d2c-0e57-4b5a-a0e3-ce933ac5d6b1}">
+  <KEYFRAME time="30.33333587646484" data="0"/>
+  <KEYFRAME time="30.33433532714844" data="1"/>
+  <KEYFRAME time="30.33433532714844" data="1"/>
+ </BOOL>
+ <DOUBLE default="1" hidden="false" single_keyframe_only="0" name="speed_multiplier" user_friendy_name="Speed Multiplier" animated="1" order="4" id="{b8ab2d6b-d7f8-4e3d-b105-1954a070d15a}"/>
+</COMPOSITE_SCENE_FILE>

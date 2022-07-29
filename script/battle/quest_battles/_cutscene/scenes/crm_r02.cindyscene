@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="11.00000057369471" name="crm_r02.CindyScene" end_record_time="24.13333459198475" version="23" perspective_camera="59.3427,541.76,-284.165:97.422,532.268,-273.715">
+ <ENVIRONMENT name="Environment" hidden="false" order="0" data=""/>
+ <VECTOR is_linked="0" id="{4e3c7435-8c4e-452d-b76f-574781d4994a}" link_id="0" name="position" unique_id="{4e3c7435-8c4e-452d-b76f-574781d4994a}" surface_mode="Freeform">
+  <DOUBLE default="0" animated="1" name="X" hidden="false" order="0" single_keyframe_only="1">
+   <KEYFRAME data="0" time="34"/>
+  </DOUBLE>
+  <DOUBLE default="0" animated="1" name="Y" hidden="false" order="1" single_keyframe_only="1">
+   <KEYFRAME data="0" time="34"/>
+  </DOUBLE>
+  <DOUBLE default="0" animated="1" name="Z" hidden="false" order="2" single_keyframe_only="1">
+   <KEYFRAME data="0" time="34"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{e9de1a87-fe0c-4c24-a2a7-751b2dc9a8ab}" name="rotation">
+  <RADIAN default="0" animated="1" name="X" hidden="false" order="0" single_keyframe_only="1">
+   <KEYFRAME data="0" time="34"/>
+  </RADIAN>
+  <RADIAN default="0" animated="1" name="Y" hidden="false" order="1" single_keyframe_only="1">
+   <KEYFRAME data="0" time="34"/>
+  </RADIAN>
+  <RADIAN default="0" animated="1" name="Z" hidden="false" order="2" single_keyframe_only="1">
+   <KEYFRAME data="0" time="34"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="crm_c02.xml" warscape_properties_file="../cameras/crm_c02.xml"/>
+ </NODE>
+</SCENE_FILE>

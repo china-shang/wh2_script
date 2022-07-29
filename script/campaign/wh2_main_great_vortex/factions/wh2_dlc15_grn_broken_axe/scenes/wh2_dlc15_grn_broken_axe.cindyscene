@@ -1,0 +1,29 @@
+<SCENE_FILE end_record_time="109.000005684793" name="wh2_dlc15_grn_broken_axe.CindyScene" perspective_camera="476.36,11.3904,169.269:471.654,2.44559,180.436" id="{f9d78f64-4244-42d1-93a8-7aa376d36dd0}" version="23" start_record_time="0">
+ <ENVIRONMENT name="Environment" order="0" data="Weather/default.environment" id="{ae627c6c-2762-4a53-a725-ea6955643250}" hidden="false"/>
+ <VECTOR name="position" unique_id="{3573527e-0517-4677-b036-a1f2fe6c580a}" id="{3573527e-0517-4677-b036-a1f2fe6c580a}" is_linked="0" link_id="0" surface_mode="Freeform">
+  <DOUBLE name="X" animated="1" single_keyframe_only="1" order="0" default="0" id="{9c96da29-281b-4ae7-9e11-91ff1a59ab99}" hidden="false">
+   <KEYFRAME data="0" time="6.066667079925537"/>
+  </DOUBLE>
+  <DOUBLE name="Y" animated="1" single_keyframe_only="1" order="1" default="0" id="{f6278753-e6f5-487d-8de5-c84cebdd5cec}" hidden="false">
+   <KEYFRAME data="0" time="6.066667079925537"/>
+  </DOUBLE>
+  <DOUBLE name="Z" animated="1" single_keyframe_only="1" order="2" default="0" id="{3d60e7e9-c6a3-4ef5-a547-6262f5897092}" hidden="false">
+   <KEYFRAME data="0" time="6.066667079925537"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{a64dce43-707d-43e3-8896-d9a6c11c97d8}">
+  <RADIAN name="X" animated="1" single_keyframe_only="1" order="0" default="0" id="{90796e47-a852-4d6b-9ee3-5cf7274a1f25}" hidden="false">
+   <KEYFRAME data="0" time="6.066667079925537"/>
+  </RADIAN>
+  <RADIAN name="Y" animated="1" single_keyframe_only="1" order="1" default="0" id="{3f90053b-37bb-4909-9ef9-637f5bd94f15}" hidden="false">
+   <KEYFRAME data="0" time="6.066667079925537"/>
+  </RADIAN>
+  <RADIAN name="Z" animated="1" single_keyframe_only="1" order="2" default="0" id="{eba5e435-47d4-4e16-8fde-888a0293d1c8}" hidden="false">
+   <KEYFRAME data="0" time="6.066667079925537"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links" id="{8c2b32fa-64fe-48ce-a2d7-99aa608e73bc}"/>
+ <NODE name="Warscape Properties" id="{0da9dac7-931c-4f11-a7dc-5bde13443910}">
+  <WARSCAPE_PROPERTIES name="wh2_dlc15_grn_broken_axe.xml" id="{97cf77b5-d406-4f2b-94da-7c143531de47}" warscape_properties_file="../cameras/wh2_dlc15_grn_broken_axe.xml"/>
+ </NODE>
+</SCENE_FILE>

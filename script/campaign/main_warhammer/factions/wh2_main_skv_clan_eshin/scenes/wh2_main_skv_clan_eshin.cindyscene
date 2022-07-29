@@ -1,0 +1,29 @@
+<SCENE_FILE name="wh2_main_skv_clan_eshin.CindyScene" end_record_time="76.4000039845705" version="23" perspective_camera="667.805,12.1869,214.535:659.983,-0.345823,228.016" start_record_time="0">
+ <ENVIRONMENT order="0" name="Environment" hidden="false" data="Weather/default.environment"/>
+ <VECTOR link_id="-1" surface_mode="Freeform" name="position" id="{5df61c8f-512b-49f5-9c2c-304f459b9dc4}" is_linked="0" unique_id="{5df61c8f-512b-49f5-9c2c-304f459b9dc4}">
+  <DOUBLE order="0" default="0" single_keyframe_only="1" name="X" hidden="false" animated="1">
+   <KEYFRAME data="0" time="0.300000011920929"/>
+  </DOUBLE>
+  <DOUBLE order="1" default="0" single_keyframe_only="1" name="Y" hidden="false" animated="1">
+   <KEYFRAME data="0" time="0.300000011920929"/>
+  </DOUBLE>
+  <DOUBLE order="2" default="0" single_keyframe_only="1" name="Z" hidden="false" animated="1">
+   <KEYFRAME data="0" time="0.300000011920929"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{51d879ca-cc97-4684-a87e-dc5e55407798}">
+  <RADIAN order="0" default="0" single_keyframe_only="1" name="X" hidden="false" animated="1">
+   <KEYFRAME data="0" time="0.300000011920929"/>
+  </RADIAN>
+  <RADIAN order="1" default="0" single_keyframe_only="1" name="Y" hidden="false" animated="1">
+   <KEYFRAME data="0" time="0.300000011920929"/>
+  </RADIAN>
+  <RADIAN order="2" default="0" single_keyframe_only="1" name="Z" hidden="false" animated="1">
+   <KEYFRAME data="0" time="0.300000011920929"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="wh2_main_skv_clan_eshin.xml" warscape_properties_file="../cameras/wh2_main_skv_clan_eshin.xml"/>
+ </NODE>
+</SCENE_FILE>

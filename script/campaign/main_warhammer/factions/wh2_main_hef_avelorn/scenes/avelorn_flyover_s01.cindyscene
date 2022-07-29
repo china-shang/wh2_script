@@ -1,0 +1,29 @@
+<SCENE_FILE perspective_camera="149.453,7.40831,264.219:151.153,0.447151,278.688" version="23" name="avelorn_flyover_s01.CindyScene" start_record_time="0" end_record_time="79.80000416189432">
+ <ENVIRONMENT data="Weather/default.environment" hidden="false" name="Environment" order="0"/>
+ <VECTOR surface_mode="Freeform" id="{e5eff4ec-2c07-4a77-83a5-cd8a343a2799}" is_linked="0" link_id="0" name="position" unique_id="{e5eff4ec-2c07-4a77-83a5-cd8a343a2799}">
+  <DOUBLE hidden="false" default="0" single_keyframe_only="1" name="X" animated="1" order="0">
+   <KEYFRAME handle1_type="EASY" data="0" time="0" handle2_type="EASY"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" default="0" single_keyframe_only="1" name="Y" animated="1" order="1">
+   <KEYFRAME handle1_type="EASY" data="0" time="0" handle2_type="EASY"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" default="0" single_keyframe_only="1" name="Z" animated="1" order="2">
+   <KEYFRAME handle1_type="EASY" data="0" time="0" handle2_type="EASY"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{a3b7a653-5bae-41c3-b0c8-6e476174f884}" name="rotation">
+  <RADIAN hidden="false" default="0" single_keyframe_only="1" name="X" animated="1" order="0">
+   <KEYFRAME handle1_type="EASY" data="0" time="0" handle2_type="EASY"/>
+  </RADIAN>
+  <RADIAN hidden="false" default="0" single_keyframe_only="1" name="Y" animated="1" order="1">
+   <KEYFRAME handle1_type="EASY" data="0" time="0" handle2_type="EASY"/>
+  </RADIAN>
+  <RADIAN hidden="false" default="0" single_keyframe_only="1" name="Z" animated="1" order="2">
+   <KEYFRAME handle1_type="EASY" data="0" time="0" handle2_type="EASY"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/avelorn_flyover_camera_01.xml" name="avelorn_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

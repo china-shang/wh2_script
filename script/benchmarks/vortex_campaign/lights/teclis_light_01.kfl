@@ -1,0 +1,32 @@
+<POINT_LIGHT_FILE id="{5a2018ec-cafc-4a06-9f65-3520d2fb1c08}" name="teclis_light_01.kfl" version="22">
+ <VECTOR link_id="0" id="{25f9bcf3-90c1-4997-b70c-28d5996465cd}" name="position" is_linked="0" unique_id="{25f9bcf3-90c1-4997-b70c-28d5996465cd}" surface_mode="Freeform">
+  <DOUBLE order="0" single_keyframe_only="1" name="X" hidden="false" default="0" animated="0">
+   <KEYFRAME time="0" data="51.39348220825195"/>
+  </DOUBLE>
+  <DOUBLE order="1" single_keyframe_only="1" name="Y" hidden="false" default="0" animated="0">
+   <KEYFRAME time="0" data="2.581466913223267"/>
+  </DOUBLE>
+  <DOUBLE order="2" single_keyframe_only="1" name="Z" hidden="false" default="0" animated="0">
+   <KEYFRAME time="0" data="92.20319366455078"/>
+  </DOUBLE>
+ </VECTOR>
+ <RGB name="colour">
+  <DOUBLE order="0" single_keyframe_only="1" name="R" hidden="false" default="1024" animated="0">
+   <KEYFRAME time="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE order="1" single_keyframe_only="1" name="G" hidden="false" default="1024" animated="0">
+   <KEYFRAME time="0" data="614.4000244140625"/>
+  </DOUBLE>
+  <DOUBLE order="2" single_keyframe_only="1" name="B" hidden="false" default="1024" animated="0">
+   <KEYFRAME time="0" data="1024"/>
+  </DOUBLE>
+ </RGB>
+ <DOUBLE order="3" single_keyframe_only="1" name="Multiplier" hidden="false" default="100" animated="0">
+  <KEYFRAME time="0" data="10"/>
+ </DOUBLE>
+ <DOUBLE order="4" single_keyframe_only="1" name="Range" hidden="false" default="10" animated="0">
+  <KEYFRAME time="0" data="5"/>
+ </DOUBLE>
+ <DOUBLE order="5" single_keyframe_only="1" name="Scatter Diameter" hidden="false" default="0.2000000029802322" animated="0"/>
+ <BOOL order="6" single_keyframe_only="1" name="Casts Shadows" hidden="false" default="1" animated="0"/>
+</POINT_LIGHT_FILE>

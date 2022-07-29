@@ -1,0 +1,29 @@
+<SCENE_FILE start_record_time="0" version="23" name="lybaras_flyover_s01.CindyScene" perspective_camera="576.89,7.46823,90.5384:576.89,-68.5778,155.336" end_record_time="66.00000344216824">
+ <ENVIRONMENT hidden="false" order="0" name="Environment" data="Weather/Default.environment"/>
+ <VECTOR is_linked="0" unique_id="{9ff91bcc-2696-437a-8dd5-bfee49190581}" id="{9ff91bcc-2696-437a-8dd5-bfee49190581}" name="position" link_id="0" surface_mode="Freeform">
+  <DOUBLE hidden="false" single_keyframe_only="1" animated="1" order="0" default="0" name="X">
+   <KEYFRAME handle1_type="SMOOTH" handle2_x="0" time="0" handle2_type="SMOOTH" handle1_x="0" handle1_y="0" handle2_y="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" single_keyframe_only="1" animated="1" order="1" default="0" name="Y">
+   <KEYFRAME handle1_type="SMOOTH" handle2_x="0" time="0" handle2_type="SMOOTH" handle1_x="0" handle1_y="0" handle2_y="0" data="0"/>
+  </DOUBLE>
+  <DOUBLE hidden="false" single_keyframe_only="1" animated="1" order="2" default="0" name="Z">
+   <KEYFRAME handle1_type="SMOOTH" handle2_x="0" time="0" handle2_type="SMOOTH" handle1_x="0" handle1_y="0" handle2_y="0" data="0"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES id="{3e4c5cb8-bbc8-4fc3-9460-5a096e132072}" name="rotation">
+  <RADIAN hidden="false" single_keyframe_only="1" animated="1" order="0" default="0" name="X">
+   <KEYFRAME handle1_type="SMOOTH" handle2_x="0" time="0" handle2_type="SMOOTH" handle1_x="0" handle1_y="0" handle2_y="0" data="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" single_keyframe_only="1" animated="1" order="1" default="0" name="Y">
+   <KEYFRAME handle1_type="SMOOTH" handle2_x="0" time="0" handle2_type="SMOOTH" handle1_x="0" handle1_y="0" handle2_y="0" data="0"/>
+  </RADIAN>
+  <RADIAN hidden="false" single_keyframe_only="1" animated="1" order="2" default="0" name="Z">
+   <KEYFRAME handle1_type="SMOOTH" handle2_x="0" time="0" handle2_type="SMOOTH" handle1_x="0" handle1_y="0" handle2_y="0" data="0"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links"/>
+ <NODE name="Warscape Properties">
+  <WARSCAPE_PROPERTIES name="lybaras_flyover_camera_01.xml" warscape_properties_file="../cameras/lybaras_flyover_camera_01.xml"/>
+ </NODE>
+</SCENE_FILE>

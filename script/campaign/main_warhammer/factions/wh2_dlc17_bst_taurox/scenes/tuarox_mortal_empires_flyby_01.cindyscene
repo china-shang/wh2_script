@@ -1,0 +1,29 @@
+<SCENE_FILE version="26" end_record_time="107.0333389155567" id="{2c4600de-c235-4179-a2b7-e7f83789230c}" start_record_time="0" hidden="false" perspective_camera="27.7443,12.2812,403.854:32.755,7.28442,408.847">
+ <ENVIRONMENT order="0" name="Environment" data="" id="{cf882a25-7944-418a-867e-33ba489dc5cc}" hidden="false"/>
+ <VECTOR is_linked="0" name="position" id="{313d9727-433a-4869-84a6-55021b9f1ce8}" link_id="0" unique_id="{313d9727-433a-4869-84a6-55021b9f1ce8}" hidden="false" surface_mode="Freeform">
+  <DOUBLE order="0" name="X" id="{67588c3f-f70f-4280-b3e1-191e0bb9b25c}" single_keyframe_only="1" default="0" hidden="false" animated="1">
+   <KEYFRAME handle2_y="0" handle2_type="SMOOTH" data="0" time="38.93333435058594" handle2_x="38.9333"/>
+  </DOUBLE>
+  <DOUBLE order="1" name="Y" id="{3caa928e-855d-42c2-b3fe-b22bc34daa21}" single_keyframe_only="1" default="0" hidden="false" animated="1">
+   <KEYFRAME handle2_y="0" handle2_type="SMOOTH" data="0" time="38.93333435058594" handle2_x="38.9333"/>
+  </DOUBLE>
+  <DOUBLE order="2" name="Z" id="{68ec2e87-4090-4b5b-846d-34d615a4e0c6}" single_keyframe_only="1" default="0" hidden="false" animated="1">
+   <KEYFRAME handle2_y="0" handle2_type="SMOOTH" data="0" time="38.93333435058594" handle2_x="38.9333"/>
+  </DOUBLE>
+ </VECTOR>
+ <ROTATION_AXES name="rotation" id="{560db7c1-bfa8-4954-adfd-62235376dfe4}" hidden="false">
+  <RADIAN order="0" name="X" id="{0ba3655e-2571-4989-b6ac-f11574e9d00f}" single_keyframe_only="1" default="0" hidden="false" animated="1">
+   <KEYFRAME handle2_y="0" handle2_type="SMOOTH" data="0" time="38.93333435058594" handle2_x="38.9333"/>
+  </RADIAN>
+  <RADIAN order="1" name="Y" id="{5ddb2a68-711f-40d3-a23a-1c863c05525e}" single_keyframe_only="1" default="0" hidden="false" animated="1">
+   <KEYFRAME handle2_y="0" handle2_type="SMOOTH" data="0" time="38.93333435058594" handle2_x="38.9333"/>
+  </RADIAN>
+  <RADIAN order="2" name="Z" id="{efa06386-6dc3-4927-8506-b225826a1bb5}" single_keyframe_only="1" default="0" hidden="false" animated="1">
+   <KEYFRAME handle2_y="0" handle2_type="SMOOTH" data="0" time="38.93333435058594" handle2_x="38.9333"/>
+  </RADIAN>
+ </ROTATION_AXES>
+ <NODE name="Links" id="{23975822-404b-4180-b432-148539ef5afb}" hidden="false"/>
+ <NODE name="Warscape Properties" id="{1c1f7c42-2ece-4499-9280-2460a6a922ca}" hidden="false">
+  <WARSCAPE_PROPERTIES warscape_properties_file="../cameras/taurox_me_flyby_cam_11.xml" name="taurox_me_flyby_cam_11.xml" id="{5176c132-3ec4-485d-bcbb-2612c59f41c5}" hidden="false"/>
+ </NODE>
+</SCENE_FILE>
