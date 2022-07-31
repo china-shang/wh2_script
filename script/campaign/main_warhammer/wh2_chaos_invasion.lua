@@ -1,8 +1,8 @@
 CI_DEBUG = false;
 CI_EVENTS = {
 	{key = "INTRO", required_stage = 0, first_turn = 15, last_turn = 25, army_spawns = 0, agent_spawns = 0, chaos_effect = ""},
-	{key = "MID_GAME", required_stage = 1, first_turn = 90, last_turn = 110, army_spawns = 4, agent_spawns = 2, chaos_effect = "rises"}, -- rises
-	{key = "END_GAME", required_stage = 2, first_turn = 140, last_turn = 160, army_spawns = 8, agent_spawns = 4, chaos_effect = ""}, -- invasion
+	{key = "MID_GAME", required_stage = 1, first_turn = 90, last_turn = 95, army_spawns = 2, agent_spawns = 5, chaos_effect = "rises"}, -- rises
+	{key = "END_GAME", required_stage = 2, first_turn = 140, last_turn = 145, army_spawns = 12, agent_spawns = 8, chaos_effect = ""}, -- invasion
 	{key = "VICTORY", required_stage = -1, first_turn = -1, last_turn = -1, army_spawns = 0, agent_spawns = 0, chaos_effect = ""}
 };
 CI_CHAOS_CHARACTERS = {
@@ -26,7 +26,7 @@ CI_CHAOS_CHARACTERS = {
 		["faction_leader"] = false,
 		["immortal"] = true,
 		["force"] = "",
-		["force_xp"] = 0,
+		["force_xp"] = 9,
 		["effect"] = "wh_main_bundle_military_upkeep_free_force_unbreakable",
 		["spawn_pos_center"] = {x = 780, y = 611}
 	},
@@ -38,7 +38,7 @@ CI_CHAOS_CHARACTERS = {
 		["faction_leader"] = false,
 		["immortal"] = true,
 		["force"] = "",
-		["force_xp"] = 0,
+		["force_xp"] = 9,
 		["effect"] = "wh_main_bundle_military_upkeep_free_force_unbreakable",
 		["spawn_pos_center"] = {x = 770, y = 611}
 	},
@@ -50,7 +50,7 @@ CI_CHAOS_CHARACTERS = {
 		["faction_leader"] = false,
 		["immortal"] = true,
 		["force"] = "",
-		["force_xp"] = 0,
+		["force_xp"] = 9,
 		["effect"] = "wh_main_bundle_military_upkeep_free_force_unbreakable",
 		["spawn_pos_center"] = {x = 766, y = 657}
 	}
@@ -70,8 +70,8 @@ CI_CHAOS_AGENTS = {
 CI_CHAOS_ARMY_SPAWNS = {
 	faction_key = "wh_main_chs_chaos",
 	effect_bundle = "wh_main_bundle_military_upkeep_free_force",
-	buildings = {"wh_main_horde_chaos_settlement_3", "wh_main_horde_chaos_warriors_2", "wh_main_horde_chaos_forge_1"},
-	--buildings = {"wh_main_horde_chaos_settlement_5",	"wh_main_horde_chaos_warriors_3", "wh_main_horde_chaos_trolls_1", "wh_main_horde_chaos_magic_2", "wh_main_horde_chaos_knights_2", "wh_main_horde_chaos_dragon_ogres_2", "wh_main_horde_chaos_giants_1", "wh_main_horde_chaos_marauders_3"},
+	-- buildings = {"wh_main_horde_chaos_settlement_3", "wh_main_horde_chaos_warriors_2", "wh_main_horde_chaos_forge_1"},
+	buildings = {"wh_main_horde_chaos_settlement_5",	"wh_main_horde_chaos_warriors_3", "wh_main_horde_chaos_trolls_1", "wh_main_horde_chaos_magic_2", "wh_main_horde_chaos_knights_2", "wh_main_horde_chaos_dragon_ogres_2", "wh_main_horde_chaos_giants_1", "wh_main_horde_chaos_marauders_3"},
 	invasions = {
 		{
 			key = "chaos_wastes",
@@ -122,10 +122,10 @@ CI_DATA = {
 };
 CI_ARMY_SETTINGS = {
 	{key = "Off", multiplier = 0},
-	{key = "On", multiplier = 1},
-	{key = "Hard", multiplier = 1.5},
-	{key = "Very Hard", multiplier = 2},
-	{key = "Legendary", multiplier = 3}
+	{key = "On", multiplier = 5},
+	{key = "Hard", multiplier = 8},
+	{key = "Very Hard", multiplier = 12},
+	{key = "Legendary", multiplier = 30}
 };
 
 function CI_setup()
@@ -289,7 +289,7 @@ function CI_CharacterRazedSettlement(context)
 		local faction_key = faction:name();
 
 		if faction_key == CI_CHAOS_ARMY_SPAWNS.faction_key or faction_key == CI_BEASTMEN_ARMY_SPAWNS.faction_key or faction_key == CI_NORSCA_ARMY_SPAWNS.faction_key then
-			CI_DATA.CI_RAZED_REGIONS = CI_DATA.CI_RAZED_REGIONS + 1;
+			CI_DATA.CI_RAZED_REGIONS = CI_DATA.CI_RAZED_REGIONS + 2;
 			CI_invasion_effect_bundle_update();
 		end
 	end
@@ -493,9 +493,9 @@ function CI_spawn_character(char_details)
 		else
 			local xp = CI_army_xp();
 			if xp > 0 then
-				chaos_invasion:add_unit_experience(xp);
+					chaos_invasion:add_unit_experience(xp);
+				end
 			end
-		end
 		
 		chaos_invasion:start_invasion(
 		function(self)
@@ -535,16 +535,24 @@ function CI_spawn_chaos(num_armies)
 				local x, y = cm:find_valid_spawn_location_for_character_from_position(CI_CHAOS_ARMY_SPAWNS.faction_key, temp_pos[1], temp_pos[2], true);
 			
 				if x > -1 and y > -1 then
-					local force = random_army_manager:generate_force("CI_chaos", 19, false);
+					local force = random_army_manager:generate_force("CI_chaos_high", 19, false);
+					if CI_DATA.CI_INVASION_STAGE < 3 then
+						force = random_army_manager:generate_force("CI_chaos", 19, false);
+					end
 					local turn_number = cm:model():turn_number();
 					local invasion_key = "CI_chaos_"..position_key.."_T"..turn_number.."_"..core:get_unique_counter();
 					local chaos_invasion = invasion_manager:new_invasion(invasion_key, CI_CHAOS_ARMY_SPAWNS.faction_key, force, {x, y});
-					chaos_invasion:add_character_experience(10, true);
+					-- chaos_invasion:add_character_experience(19 * (CI_DATA.CI_INVASION_STAGE - 1), true);
+					chaos_invasion:add_character_experience(19 * (CI_DATA.CI_INVASION_STAGE - 1), true);
 					chaos_invasion:apply_effect(CI_CHAOS_ARMY_SPAWNS.effect_bundle, 0);
 					
 					local xp = CI_army_xp();
 					if xp > 0 then
-						chaos_invasion:add_unit_experience(xp);
+						if xp >= 6 then
+							chaos_invasion:add_unit_experience(CI_DATA.CI_INVASION_STAGE * 3);
+						else
+							chaos_invasion:add_unit_experience(xp);
+						end
 					end
 					
 					chaos_invasion:start_invasion(
@@ -655,7 +663,7 @@ function CI_spawn_agents(num_agents)
 					x, y,
 					false,
 					function(cqi)
-						cm:add_agent_experience("character_cqi:"..cqi, 10, true);
+						cm:add_agent_experience("character_cqi:"..cqi, 30, true);
 					end
 				);
 				out.chaos("Spawned Chaos Agent "..i.." ("..tostring(x).." / "..tostring(y)..")");
@@ -974,72 +982,71 @@ function CI_setup_armies()
 	random_army_manager:new_force("CI_kholek");
 	random_army_manager:new_force("CI_sarthorael");
 	random_army_manager:new_force("CI_chaos");
+	random_army_manager:new_force("CI_chaos_high");
 	random_army_manager:new_force("CI_norsca");
 	random_army_manager:new_force("CI_beastmen");
 	
 	-- ARCHAON
-	random_army_manager:add_mandatory_unit("CI_archaon", "wh_pro04_chs_cav_chaos_knights_ror_0", 1);
-	random_army_manager:add_mandatory_unit("CI_archaon", "wh_main_chs_cav_chaos_knights_0", 1);
+	random_army_manager:add_mandatory_unit("CI_archaon", "wh_pro04_chs_art_hellcannon_ror_0", 3);
+	random_army_manager:add_mandatory_unit("CI_archaon", "wh_pro04_chs_cav_chaos_knights_ror_0", 3);
+	random_army_manager:add_mandatory_unit("CI_archaon", "wh_pro04_chs_mon_dragon_ogre_ror_0", 3);
+	random_army_manager:add_mandatory_unit("CI_archaon", "wh_dlc01_chs_mon_dragon_ogre_shaggoth", 2);
 	random_army_manager:add_mandatory_unit("CI_archaon", "wh_main_chs_cav_chaos_knights_1", 2);
-	random_army_manager:add_mandatory_unit("CI_archaon", "wh_pro04_chs_art_hellcannon_ror_0", 1);
-	random_army_manager:add_mandatory_unit("CI_archaon", "wh_main_chs_art_hellcannon", 1);
-	random_army_manager:add_mandatory_unit("CI_archaon", "wh_dlc06_chs_inf_aspiring_champions_0", 2);
-	random_army_manager:add_mandatory_unit("CI_archaon", "wh_main_chs_inf_chosen_0", 4);
-	random_army_manager:add_mandatory_unit("CI_archaon", "wh_main_chs_inf_chosen_1", 4);
-	random_army_manager:add_mandatory_unit("CI_archaon", "wh_dlc01_chs_inf_chosen_2", 2);
+	random_army_manager:add_mandatory_unit("CI_archaon", "wh_main_chs_inf_chosen_0", 1);
+	random_army_manager:add_mandatory_unit("CI_archaon", "wh_main_chs_inf_chosen_1", 1);
+	random_army_manager:add_mandatory_unit("CI_archaon", "wh_dlc01_chs_inf_chosen_2", 1);
 	random_army_manager:add_mandatory_unit("CI_archaon", "wh_main_chs_mon_giant", 1);
-	random_army_manager:add_unit("CI_archaon", "wh_main_chs_inf_chaos_warriors_0", 1);
+	random_army_manager:add_unit("CI_archaon", "wh_pro04_chs_cav_chaos_knights_ror_0", 2);
+	random_army_manager:add_unit("CI_archaon", "wh_pro04_chs_mon_dragon_ogre_ror_0", 2);
+	random_army_manager:add_unit("CI_archaon", "wh_dlc01_chs_mon_dragon_ogre_shaggoth", 2);
 	
 	-- SIGVALD
 	random_army_manager:add_mandatory_unit("CI_sigvald", "wh_pro04_chs_inf_chaos_warriors_ror_0", 1);
-	random_army_manager:add_mandatory_unit("CI_sigvald", "wh_main_chs_cav_chaos_knights_0", 2);
-	random_army_manager:add_mandatory_unit("CI_sigvald", "wh_main_chs_art_hellcannon", 2);
-	random_army_manager:add_mandatory_unit("CI_sigvald", "wh_dlc06_chs_cav_marauder_horsemasters_0", 2);
-	random_army_manager:add_mandatory_unit("CI_sigvald", "wh_main_chs_inf_chaos_marauders_1", 2);
-	random_army_manager:add_mandatory_unit("CI_sigvald", "wh_main_chs_inf_chaos_marauders_0", 3);
-	random_army_manager:add_mandatory_unit("CI_sigvald", "wh_dlc06_chs_inf_aspiring_champions_0", 2);
-	random_army_manager:add_mandatory_unit("CI_sigvald", "wh_main_chs_inf_chaos_warriors_0", 3);
-	random_army_manager:add_mandatory_unit("CI_sigvald", "wh_main_chs_inf_chaos_warriors_1", 2);
-	random_army_manager:add_unit("CI_sigvald", "wh_main_chs_inf_chaos_warriors_0", 1);
+	random_army_manager:add_unit("CI_sigvald", "wh_main_chs_cav_chaos_knights_0", 4);
+	random_army_manager:add_unit("CI_sigvald", "wh_main_chs_cav_chaos_knights_1", 4);
+	random_army_manager:add_unit("CI_sigvald", "wh_main_chs_art_hellcannon", 2);
 	
 	-- KHOLEK
 	random_army_manager:add_mandatory_unit("CI_kholek", "wh_pro04_chs_mon_dragon_ogre_ror_0", 1);
-	random_army_manager:add_mandatory_unit("CI_kholek", "wh_dlc01_chs_mon_dragon_ogre_shaggoth", 4);
-	random_army_manager:add_mandatory_unit("CI_kholek", "wh_dlc01_chs_mon_dragon_ogre", 6);
-	random_army_manager:add_mandatory_unit("CI_kholek", "wh_main_chs_art_hellcannon", 2);
-	random_army_manager:add_mandatory_unit("CI_kholek", "wh_main_chs_inf_chaos_warriors_0", 3);
-	random_army_manager:add_mandatory_unit("CI_kholek", "wh_main_chs_inf_chaos_warriors_1", 3);
-	random_army_manager:add_unit("CI_kholek", "wh_main_chs_inf_chaos_warriors_0", 1);
+	random_army_manager:add_unit("CI_kholek", "wh_dlc01_chs_mon_dragon_ogre_shaggoth", 12);
+	random_army_manager:add_unit("CI_kholek", "wh_dlc01_chs_mon_dragon_ogre", 6);
+	random_army_manager:add_unit("CI_kholek", "wh_main_chs_art_hellcannon", 2);
 	
 	-- SARTHORAEL
 	random_army_manager:add_mandatory_unit("CI_sarthorael", "wh_pro04_chs_inf_forsaken_ror_0", 1);
-	random_army_manager:add_mandatory_unit("CI_sarthorael", "wh_pro04_chs_mon_chaos_spawn_ror_0", 1);
-	random_army_manager:add_mandatory_unit("CI_sarthorael", "wh_main_chs_art_hellcannon", 2);
-	random_army_manager:add_mandatory_unit("CI_sarthorael", "wh_dlc01_chs_inf_forsaken_0", 6);
-	random_army_manager:add_mandatory_unit("CI_sarthorael", "wh_main_chs_mon_trolls", 2);
-	random_army_manager:add_mandatory_unit("CI_sarthorael", "wh_dlc01_chs_mon_trolls_1", 1);
-	random_army_manager:add_mandatory_unit("CI_sarthorael", "wh_main_chs_mon_chaos_spawn", 2);
-	random_army_manager:add_mandatory_unit("CI_sarthorael", "wh_main_chs_mon_giant", 2);
-	random_army_manager:add_mandatory_unit("CI_sarthorael", "wh_main_chs_mon_chaos_warhounds_1", 2);
-	random_army_manager:add_unit("CI_sarthorael", "wh_main_chs_inf_chaos_warriors_0", 1);
+	random_army_manager:add_mandatory_unit("CI_sarthorael", "wh_main_chs_art_hellcannon", 3);
+	random_army_manager:add_unit("CI_sarthorael", "wh_main_chs_cav_chaos_chariot", 2);
+	random_army_manager:add_unit("CI_sarthorael", "wh_main_chs_mon_giant", 2);
+	random_army_manager:add_unit("CI_sarthorael", "wh_main_chs_cav_chaos_knights_0", 2);
+	random_army_manager:add_unit("CI_sarthorael", "wh_dlc01_chs_mon_dragon_ogre_shaggoth", 2);
+	random_army_manager:add_unit("CI_sarthorael", "wh_dlc01_chs_mon_dragon_ogre", 2);
 	
 	-- EXTRA CHAOS
-	random_army_manager:add_mandatory_unit("CI_chaos", "wh_main_chs_art_hellcannon", 1);
-	random_army_manager:add_mandatory_unit("CI_chaos", "wh_main_chs_cav_chaos_knights_0", 2);
-	random_army_manager:add_mandatory_unit("CI_chaos", "wh_dlc06_chs_inf_aspiring_champions_0", 1);
-	random_army_manager:add_mandatory_unit("CI_chaos", "wh_main_chs_inf_chaos_warriors_0", 2);
-	random_army_manager:add_mandatory_unit("CI_chaos", "wh_main_chs_inf_chaos_marauders_0", 2);
-	random_army_manager:add_unit("CI_chaos", "wh_main_chs_inf_chosen_0", 1);
-	random_army_manager:add_unit("CI_chaos", "wh_main_chs_inf_chosen_1", 1);
-	random_army_manager:add_unit("CI_chaos", "wh_main_chs_inf_chaos_warriors_0", 2);
-	random_army_manager:add_unit("CI_chaos", "wh_main_chs_inf_chaos_warriors_1", 2);
-	random_army_manager:add_unit("CI_chaos", "wh_main_chs_inf_chaos_marauders_1", 2);
-	random_army_manager:add_unit("CI_chaos", "wh_main_chs_inf_chaos_marauders_0", 2);
+	random_army_manager:add_unit("CI_chaos", "wh_main_chs_art_hellcannon", 2);
+	random_army_manager:add_mandatory_unit("CI_chaos", "wh_dlc01_chs_inf_chosen_2", 2);
+	random_army_manager:add_unit("CI_chaos", "wh_main_chs_cav_chaos_chariot", 1);
 	random_army_manager:add_unit("CI_chaos", "wh_main_chs_mon_giant", 1);
+	random_army_manager:add_unit("CI_chaos", "wh_main_chs_cav_chaos_knights_0", 1);
+	random_army_manager:add_unit("CI_chaos", "wh_dlc01_chs_mon_dragon_ogre_shaggoth", 1);
+	random_army_manager:add_unit("CI_chaos", "wh_dlc01_chs_mon_dragon_ogre", 1);
+	random_army_manager:add_unit("CI_chaos", "wh_main_chs_inf_chosen_0", 4);
+	random_army_manager:add_unit("CI_chaos", "wh_main_chs_inf_chosen_1", 6);
 	random_army_manager:add_unit("CI_chaos", "wh_main_chs_mon_chaos_spawn", 1);
 	random_army_manager:add_unit("CI_chaos", "wh_main_chs_mon_trolls", 1);
 	random_army_manager:add_unit("CI_chaos", "wh_main_chs_mon_chaos_warhounds_0", 1);
 
+	-- EXTRA CHAOS
+	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_art_hellcannon", 4);
+	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_mon_giant", 3);
+	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_cav_chaos_knights_0", 3);
+	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_cav_chaos_knights_1", 3);
+	random_army_manager:add_unit("CI_chaos_high", "wh_dlc01_chs_mon_dragon_ogre_shaggoth", 3);
+	random_army_manager:add_unit("CI_chaos_high", "wh_dlc01_chs_mon_dragon_ogre", 3);
+	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_cav_chaos_chariot", 2);
+	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_inf_chosen_0", 2);
+	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_inf_chosen_1", 2);
+	random_army_manager:add_unit("CI_chaos_high", "wh_dlc01_chs_inf_chosen_2", 1);
+	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_mon_chaos_warhounds_1", 1);
 	-- NORSCA
 	random_army_manager:add_mandatory_unit("CI_norsca", "wh_dlc08_nor_inf_marauder_champions_0", 2);
 	random_army_manager:add_mandatory_unit("CI_norsca", "wh_main_nor_inf_chaos_marauders_0", 6);
@@ -1075,7 +1082,7 @@ function CI_army_xp()
 	elseif difficulty == -1 then
 		xp = 3; -- Hard
 	elseif difficulty == -2 then
-		xp = 6; -- Very Hard
+		xp = 9; -- Very Hard
 	elseif difficulty == -3 then
 		xp = 9; -- Legendary
 	end
@@ -1085,12 +1092,12 @@ end
 function CI_debug_setup()
 	if CI_DEBUG == true then
 		out.chaos("!!!! DEBUG IS ACTIVE !!!!");
-		CI_EVENTS[1].first_turn = 1;
-		CI_EVENTS[1].last_turn = 2;
-		CI_EVENTS[2].first_turn = 2;
-		CI_EVENTS[2].last_turn = 3;
-		CI_EVENTS[3].first_turn = 4;
-		CI_EVENTS[3].last_turn = 5;
+		CI_EVENTS[1].first_turn = 2;
+		CI_EVENTS[1].last_turn = 3;
+		CI_EVENTS[2].first_turn = 3;
+		CI_EVENTS[2].last_turn = 4;
+		CI_EVENTS[3].first_turn = 5;
+		CI_EVENTS[3].last_turn = 6;
 
 		local player = cm:get_local_faction_name(true);
 
