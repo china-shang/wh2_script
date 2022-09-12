@@ -72,12 +72,12 @@ do
 	-- Make a file called "enable_console_logging" in the root of the script folder to enable console logging
 	local file_str = effect.filesystem_lookup("/script/", "enable_console_logging");
 	__write_output_to_logfile = (file_str ~= "");
+	__write_output_to_logfile = true
 end;
 
 __logfile_path = "";
 
 
-if __write_output_to_logfile then
 
 	print("*** script logging enabled ***");
 	
@@ -96,10 +96,17 @@ if __write_output_to_logfile then
 		file:write("\n");
 		file:write("creating logfile " .. filename .. "\n");
 		file:write("\n");
+		if __write_output_to_logfile then
+			file:write(" write log\n")
+		else
+			file:write(" not write log\n")
+		end
+		local file_str = effect.filesystem_lookup("/script/", "enable_console_logging");
+		file:write(file_str)
+		file:write("\n")
 		file:close();
 		__logfile_path = _G.logfile_path;
 	end;
-end;
 
 
 

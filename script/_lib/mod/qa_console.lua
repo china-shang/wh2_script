@@ -10,12 +10,17 @@ local uic_console_persistent_checkbox = false;
 
 
 local function qa_console_shortcut_pressed()
+	   out("F3 pressed")
 	if uic_console then
 		if uic_console:Visible() then 	
+			out("sett qa false")
 			uic_console:SetVisible(false);
 		else
+			out("sett qa true")
 			uic_console:SetVisible(true);
 		end;
+	else
+		out("no qa")
     end
 end
 
@@ -24,6 +29,7 @@ local function qa_console_execute_command()
     local text = find_uicomponent(uic_console, "entry_box"):GetStateText();
     local func, err = loadstring(text);
     
+	   out("F3 pressed")
     if not func then 
 		script_error("ERROR: qa console attempted to run a script command but an error was reported when loading the command string into a function. Command and error will follow this message.");
 		out("Command:");
@@ -47,6 +53,7 @@ local function qa_console_execute_command()
 	end;
 
 	if not string.find(uic_console_persistent_checkbox:CurrentState(), "selected") then
+		out("set qa false")
 		uic_console:SetVisible(false);
 	end;
 end
@@ -55,10 +62,34 @@ end
 core:add_ui_created_callback(
 	function()
 		-- create the console uicomponent
+		out("create console tui")
 		uic_console = core:get_or_create_component(uic_console_name, layout_path);
-		uic_console:SetVisible(false);
+		uic_console:SetVisible(true);
+
+		if uic_console and uic_console:Visible(true) then
+			out("ke shi")
+		else
+			out("no ke shi")
+		end
+
+		if uic_console:IsValid() then
+			out("valid")
+		else
+			out("no valid")
+		end
+
+		if uic_console then
+			out("has")
+		else
+			out("none")
+		end
 
 		uic_console_persistent_checkbox = find_uicomponent(uic_console, "persist_checkbox");
+		if uic_console_persistent_checkbox then
+			out("has checkbox")
+		else
+			out("no checkbox")
+		end
 
 		core:add_listener(
 			"qa_console_listener",
