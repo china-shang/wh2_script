@@ -1,10 +1,14 @@
 CI_DEBUG = false;
 CI_EVENTS = {
 	{key = "INTRO", required_stage = 0, first_turn = 15, last_turn = 25, army_spawns = 0, agent_spawns = 0, chaos_effect = ""},
-	{key = "MID_GAME", required_stage = 1, first_turn = 90, last_turn = 95, army_spawns = 2, agent_spawns = 5, chaos_effect = "rises"}, -- rises
-	{key = "END_GAME", required_stage = 2, first_turn = 140, last_turn = 145, army_spawns = 12, agent_spawns = 8, chaos_effect = ""}, -- invasion
+	{key = "MID_GAME", required_stage = 1, first_turn = 90, last_turn = 95, army_spawns = 4, agent_spawns = 5, chaos_effect = "rises"}, -- rises
+	{key = "END_GAME", required_stage = 2, first_turn = 140, last_turn = 145, army_spawns = 8, agent_spawns = 3, chaos_effect = ""}, -- invasion
+	{key = "END_GAME", required_stage = 3, first_turn = 160, last_turn = 165, army_spawns = 12, agent_spawns = 6, chaos_effect = ""}, -- invasion
+	{key = "END_GAME", required_stage = 4, first_turn = 180, last_turn = 185, army_spawns = 3, agent_spawns = 2, chaos_effect = ""}, -- invasion
 	{key = "VICTORY", required_stage = -1, first_turn = -1, last_turn = -1, army_spawns = 0, agent_spawns = 0, chaos_effect = ""}
 };
+SEL = nil
+KILLING = nil
 CI_CHAOS_CHARACTERS = {
 	["archaon"] = {
 		["id"] = "archaon",
@@ -120,16 +124,20 @@ CI_DATA = {
 	CI_EARLY_TURNS = 0,
 	CI_EXTRA_ARMIES = 0
 };
+
+CI_EXTRA_DATA = {
+	CI_END_STAGE = 0
+}
+
 CI_ARMY_SETTINGS = {
-	{key = "Off", multiplier = 0},
-	{key = "On", multiplier = 5},
-	{key = "Hard", multiplier = 8},
-	{key = "Very Hard", multiplier = 12},
-	{key = "Legendary", multiplier = 30}
+	{key = "Off", multiplier = 2},
+	{key = "On", multiplier = 2},
+	{key = "Hard", multiplier = 4},
+	{key = "Very Hard", multiplier = 6},
+	{key = "Legendary", multiplier = 2}
 };
 
 function CI_setup()
-	CI_debug_setup();
 	out.chaos("CI_setup()");
 	out.inc_tab("chaos");
 
@@ -182,6 +190,7 @@ function CI_setup()
 
 	local chaos_faction = cm:model():world():faction_by_key(CI_CHAOS_ARMY_SPAWNS.faction_key);
 	
+	CI_debug_setup();
 	if chaos_faction:is_human() == false then
 		CI_setup_armies();
 		
@@ -197,8 +206,46 @@ function CI_setup()
 			end, 1);
 		end
 
-		if CI_DATA.CI_SETTING > 1 then
+		if CI_DATA.CI_SETTING >= 1 then
 			out.chaos("Creating Script Listeners");
+			out.chaos(CI_DATA.CI_SETTING);
+			-- character selected
+			core:add_listener(
+				"killKey",
+				"ShortcutPressed",
+				function(context)
+					out("ShortcutPressed event occurred, context.string is " .. context.string);
+					return context.string == "script_ctrl_F4"
+				end,
+				function(context)
+					if is_nil(SEL) then
+						out("SEL NIL")
+						return
+					end
+					if not is_nil(KILLING) then
+						out("KILLING NOT NULL")
+						return
+					end
+					KILLING = SEL;
+					SEL = nil;
+					local character = KILLING;
+					out("select Character will kill, forename " .. tostring(character:get_forename()) .. ", surname " .. tostring(character:get_surname()) .. ", position [" .. character:logical_position_x() .. ", " .. character:logical_position_y() .. "], faction " .. character:faction():name() .. ", cqi " .. tostring(character:cqi()));
+					cm:set_character_immortality("character_cqi:"..character:command_queue_index(), false);
+					cm:kill_character(character:command_queue_index(), true);
+					out.ui("Character killed, forename " .. tostring(character:get_forename()) .. ", surname " .. tostring(character:get_surname()) .. ", position [" .. character:logical_position_x() .. ", " .. character:logical_position_y() .. "], faction " .. character:faction():name() .. ", cqi " .. tostring(character:cqi()));
+					KILLING = nil
+				end,
+				true
+			);
+			core:add_listener(
+				"campaign_selection_listener2",
+				"CharacterSelected",
+				true,
+				function(context)
+					SEL = context:character();
+				end,
+				true
+			);
 			core:add_listener(
 				"CI_FactionTurnStart",
 				"FactionTurnStart",
@@ -296,7 +343,8 @@ function CI_CharacterRazedSettlement(context)
 end
 
 function CI_CharacterConvalescedOrKilled(context)
-	if CI_DATA.CI_INVASION_STAGE == 3 then
+	out("killed some thing")
+	if CI_DATA.CI_INVASION_STAGE >= 3 then
 		local character = context:character();
 		local faction = character:faction();
 
@@ -310,7 +358,12 @@ function CI_CharacterConvalescedOrKilled(context)
 				CI_invasion_effect_bundle_update();
 
 				if archaon == 0 and kholek == 0 and sigvald == 0 then
-					CI_Event_4_Victory(CI_EVENTS[4]);
+					if CI_EXTRA_DATA.CI_END_STAGE >= 3 then
+						CI_Event_4_Victory(CI_EVENTS[6]);
+					end
+					if CI_EXTRA_DATA.CI_END_STAGE < 3 then
+						CI_Event_3_EndGame(CI_EVENTS[3 + CI_EXTRA_DATA.CI_END_STAGE])
+					end
 				end
 			end
 		end
@@ -370,7 +423,8 @@ end
 function CI_Event_3_EndGame(event)
 	out.chaos("CI_Event_3_EndGame()");
 	out.inc_tab("chaos");
-	CI_DATA.CI_INVASION_STAGE = 3;
+	CI_DATA.CI_INVASION_STAGE = CI_DATA.CI_INVASION_STAGE + 1;
+	CI_EXTRA_DATA.CI_END_STAGE = CI_EXTRA_DATA.CI_END_STAGE + 1;
 	local human_factions = cm:get_human_factions();
 	
 	for i = 1, #human_factions do
@@ -387,7 +441,28 @@ function CI_Event_3_EndGame(event)
 		cm:make_region_visible_in_shroud(human_factions[i], "wh_main_chaos_wastes");
 	end
 
-	CI_spawn_unique_characters();
+	-- CI_spawn_unique_characters();
+
+	out.chaos("CI_spawn_unique_characters()");
+	out.inc_tab("chaos");
+	if CI_EXTRA_DATA.CI_END_STAGE == 1 then
+		CI_spawn_character(CI_CHAOS_CHARACTERS["kholek"]);
+		out.chaos("Spawned Kholek");
+	end
+	if CI_EXTRA_DATA.CI_END_STAGE == 2 then
+		CI_spawn_character(CI_CHAOS_CHARACTERS["archaon"]);
+		out.chaos("Spawned Archaon");
+		CI_spawn_character(CI_CHAOS_CHARACTERS["sarthorael"]);
+		out.chaos("Spawned Sarthorael");
+		cm:complete_scripted_mission_objective("wh_main_short_victory", "archaon_spawned", true);
+		cm:complete_scripted_mission_objective("wh_main_long_victory", "archaon_spawned", true);
+	end
+	if CI_EXTRA_DATA.CI_END_STAGE == 3 then
+		CI_spawn_character(CI_CHAOS_CHARACTERS["sigvald"]);
+		out.chaos("Spawned Sigvald");
+	end
+	out.dec_tab("chaos");
+
 	CI_spawn_chaos(event.army_spawns);
 	CI_spawn_agents(event.agent_spawns);
 	CI_declare_war(CI_CHAOS_ARMY_SPAWNS.faction_key);
@@ -397,7 +472,9 @@ function CI_Event_3_EndGame(event)
 	CI_spawn_beastmen();
 	CI_invasion_effect_bundle_update();
 	
-	cm:register_instant_movie("Warhammer/chs_rises");
+	if CI_EXTRA_DATA.CI_END_STAGE == 2 then
+		cm:register_instant_movie("Warhammer/chs_rises");
+	end
 	cm:set_camera_position(518.37, 473.95, 10.83, 0.0, 11.30);
 	out.dec_tab("chaos");
 end
@@ -543,7 +620,7 @@ function CI_spawn_chaos(num_armies)
 					local invasion_key = "CI_chaos_"..position_key.."_T"..turn_number.."_"..core:get_unique_counter();
 					local chaos_invasion = invasion_manager:new_invasion(invasion_key, CI_CHAOS_ARMY_SPAWNS.faction_key, force, {x, y});
 					-- chaos_invasion:add_character_experience(19 * (CI_DATA.CI_INVASION_STAGE - 1), true);
-					chaos_invasion:add_character_experience(19 * (CI_DATA.CI_INVASION_STAGE - 1), true);
+					chaos_invasion:add_character_experience(13 + 6 * (CI_DATA.CI_INVASION_STAGE - 1), true);
 					chaos_invasion:apply_effect(CI_CHAOS_ARMY_SPAWNS.effect_bundle, 0);
 					
 					local xp = CI_army_xp();
@@ -883,6 +960,44 @@ function CI_personality_swap(override)
 	end
 end
 
+function CI_kill_invasion()
+	local chaos_faction = cm:model():world():faction_by_key(CI_CHAOS_ARMY_SPAWNS.faction_key);
+	local archaon = 0;
+	local kholek = 0;
+	local sigvald = 0;
+	local char_list = chaos_faction:character_list();
+	out.chaos("Killing Archaon! - '"..chaos_faction:faction_leader():command_queue_index().."'");
+	cm:set_character_immortality("character_cqi:"..chaos_faction:faction_leader():command_queue_index(), false);
+	cm:kill_character(chaos_faction:faction_leader():command_queue_index(), true, false);
+	out.chaos("Killing Archaon END! - '"..chaos_faction:faction_leader():command_queue_index().."'");
+	
+	for i = 0, char_list:num_items() - 1 do
+		if current_char:character_subtype("chs_archaon") or current_char:character_subtype("chs_kholek_suneater") or current_char:character_subtype("chs_prince_sigvald") then
+			if current_char:has_military_force() == true then
+				if current_char:is_wounded() == false then
+					if current_char:character_subtype("chs_archaon") == true and current_char:is_faction_leader() == true then
+						archaon = 1;
+						out.chaos("Killing Archaon! - '"..chaos_faction:faction_leader():command_queue_index().."'");
+						cm:set_character_immortality("character_cqi:"..current_char:command_queue_index(), false);
+						cm:kill_character(chaos_faction:faction_leader():command_queue_index(), true, false);
+					elseif current_char:character_subtype("chs_kholek_suneater") == true  then
+						kholek = 1;
+						out.chaos("Killing kholek! - '"..current_char:command_queue_index().."'");
+						cm:set_character_immortality("character_cqi:"..current_char:command_queue_index(), false);
+						cm:kill_character(current_char:command_queue_index(), true, false);
+					elseif current_char:character_subtype("chs_prince_sigvald") == true  then
+						out.chaos("Killing sigvald! - '"..current_char:command_queue_index().."'");
+						cm:set_character_immortality("character_cqi:"..current_char:command_queue_index(), false);
+						cm:kill_character(current_char:command_queue_index(), true, false);
+						sigvald = 1;
+					end
+				end
+			end
+		end
+	end
+	return archaon, kholek, sigvald;
+end
+
 function CI_invasion_deaths()
 	local chaos_faction = cm:model():world():faction_by_key(CI_CHAOS_ARMY_SPAWNS.faction_key);
 	local archaon = 0;
@@ -1038,8 +1153,8 @@ function CI_setup_armies()
 	-- EXTRA CHAOS
 	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_art_hellcannon", 4);
 	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_mon_giant", 3);
-	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_cav_chaos_knights_0", 3);
-	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_cav_chaos_knights_1", 3);
+	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_cav_chaos_knights_0", 1);
+	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_cav_chaos_knights_1", 5);
 	random_army_manager:add_unit("CI_chaos_high", "wh_dlc01_chs_mon_dragon_ogre_shaggoth", 3);
 	random_army_manager:add_unit("CI_chaos_high", "wh_dlc01_chs_mon_dragon_ogre", 3);
 	random_army_manager:add_unit("CI_chaos_high", "wh_main_chs_cav_chaos_chariot", 2);
@@ -1089,20 +1204,37 @@ function CI_army_xp()
 	return xp;
 end
 
-function CI_debug_setup()
-	if CI_DEBUG == true then
-		out.chaos("!!!! DEBUG IS ACTIVE !!!!");
-		CI_EVENTS[1].first_turn = 2;
-		CI_EVENTS[1].last_turn = 3;
-		CI_EVENTS[2].first_turn = 3;
-		CI_EVENTS[2].last_turn = 4;
-		CI_EVENTS[3].first_turn = 5;
-		CI_EVENTS[3].last_turn = 6;
-
-		local player = cm:get_local_faction_name(true);
-
-		if player then
-			cm:make_region_visible_in_shroud(player, "wh_main_chaos_wastes");
+	function CI_debug_setup()
+		out(" setting dubug")
+		out(CI_DATA.CI_SETTING)
+		out("\n")
+		if CI_DEBUG == true or CI_DATA.CI_SETTING == 5 then
+			out.chaos("!!!! DEBUG IS ACTIVE !!!!");
+			CI_EVENTS[1].first_turn = 1;
+			CI_EVENTS[1].last_turn = 2;
+			CI_EVENTS[2].first_turn = 2;
+			CI_EVENTS[2].last_turn = 3;
+			CI_EVENTS[3].first_turn = 4;
+			CI_EVENTS[3].last_turn = 5;
+			CI_EVENTS[4].first_turn = 5;
+			CI_EVENTS[4].last_turn = 6;
+			CI_EVENTS[5].first_turn = 6;
+			CI_EVENTS[5].last_turn = 7;
+			local player = cm:get_local_faction_name(true);
+			if player then
+				cm:make_region_visible_in_shroud(player, "wh_main_chaos_wastes");
+			end
+		else if CI_DATA.CI_SETTING == 1 then
+			CI_EVENTS[1].first_turn = CI_EVENTS[1].first_turn - 30;
+			CI_EVENTS[1].last_turn = CI_EVENTS[1].last_turn - 30;
+			CI_EVENTS[2].first_turn = CI_EVENTS[2].first_turn - 30;
+			CI_EVENTS[2].last_turn = CI_EVENTS[2].last_turn - 30;
+			CI_EVENTS[3].first_turn = CI_EVENTS[3].first_turn - 30;
+			CI_EVENTS[3].last_turn = CI_EVENTS[3].last_turn - 30;
+			CI_EVENTS[4].first_turn = CI_EVENTS[4].first_turn - 30;
+			CI_EVENTS[4].last_turn = CI_EVENTS[4].last_turn - 30;
+			CI_EVENTS[5].first_turn = CI_EVENTS[5].first_turn - 30;
+			CI_EVENTS[5].last_turn = CI_EVENTS[5].last_turn - 30;
 		end
 	end
 end
@@ -1112,9 +1244,9 @@ function CI_event(num)
 		CI_Event_1_Intro(CI_EVENTS[num]);
 	elseif num == 2 then
 		CI_Event_2_MidGame(CI_EVENTS[num]);
-	elseif num == 3 then
+	elseif num == 3 or num == 4 or num == 5 then
 		CI_Event_3_EndGame(CI_EVENTS[num]);
-	elseif num == 4 then
+	elseif num == 6 then
 		CI_Event_4_Victory(CI_EVENTS[num]);
 	end
 end
@@ -1125,12 +1257,14 @@ end
 cm:add_saving_game_callback(
 	function(context)
 		cm:save_named_value("CI_DATA", CI_DATA, context);
+		cm:save_named_value("CI_EXTRA_DATA", CI_EXTRA_DATA, context);
 	end
 );
 cm:add_loading_game_callback(
 	function(context)
 		if cm:is_new_game() == false then
 			CI_DATA = cm:load_named_value("CI_DATA", CI_DATA, context);
+			CI_EXTRA_DATA = cm:load_named_value("CI_EXTRA_DATA", CI_DATA, context);
 		end
 	end
 );
