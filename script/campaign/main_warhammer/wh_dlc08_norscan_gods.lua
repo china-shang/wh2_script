@@ -434,6 +434,7 @@ function Norsca_ComponentLClickUp(context)
 		local clicked_level = 0;
 		local god = "";
 		
+		out("click" .. UIComponent(context.component):Id())
 		if UIComponent(context.component):Id() == "level_3" then
 			clicked_level = 3;
 		elseif UIComponent(context.component):Id() == "level_2" then
@@ -459,9 +460,9 @@ function Norsca_ComponentLClickUp(context)
 						local fav = NORSCAN_GODS[fac][god].favour;
 						
 						if clicked_level == 1 then
-							Add_God_Favour(fac, god, -10, 0);
+							Add_God_Favour(fac, god, -5, 0);
 						elseif clicked_level == 3 then
-							Add_God_Favour(fac, god, 10, 0);
+							Add_God_Favour(fac, god, 6, 0);
 						end
 					end
 				end
@@ -472,6 +473,8 @@ end
 
 function Add_God_Favour(faction_key, god_key, amount, amount_others)
 	out("Add_God_Favour("..faction_key..", "..god_key..", "..amount..", "..amount_others..")");
+	local has = Get_Aligned_With_God_Num(faction_key);
+	amount = amount * (1 + 0.5 * has)
 	Play_Norsca_Advice("dlc08.camp.advice.nor.gods.002", norsca_info_text_gods);
 	
 	local arrow_tab = {};
@@ -481,43 +484,59 @@ function Add_God_Favour(faction_key, god_key, amount, amount_others)
 		
 		if current_favour >= MAX_NORSCAN_GOD_FAVOUR then
 			-- Already won
-			return false;
-		end
-		
-		if key == god_key then
-			-- This is the god!
-			current_favour = current_favour + amount;
-			
-			if amount > 0 then
-				arrow_tab[key] = "arrow_up";
-			elseif amount < 0 then
-				arrow_tab[key] = "arrow_down";
-			end
+			-- do nothing
 		else
-			-- This is another god!
-			current_favour = current_favour + amount_others;
-			
-			if amount_others > 0 then
-				arrow_tab[key] = "arrow_up";
-			elseif amount_others < 0 then
-				arrow_tab[key] = "arrow_down";
+			if key == god_key then
+				-- This is the god!
+				if amount < 0 then
+					current_favour = current_favour + math.max(amount, (current_favour % 10) * -1)
+				else
+					current_favour = current_favour + amount;
+				end
+
+				if amount > 0 then
+					arrow_tab[key] = "arrow_up";
+				elseif amount < 0 then
+					arrow_tab[key] = "arrow_down";
+				end
+			else
+				-- This is another god!
+				if amount_others < 0 then
+					current_favour = current_favour + math.max(amount_others, (current_favour % 10) * -1)
+				else
+					current_favour = current_favour + amount_others;
+				end
+				
+				if amount_others > 0 then
+					arrow_tab[key] = "arrow_up";
+				elseif amount_others < 0 then
+					arrow_tab[key] = "arrow_down";
+				end
 			end
+			
+			-- Clamp favour
+			if current_favour < 0 then
+				current_favour = 0;
+			elseif current_favour > MAX_NORSCAN_GOD_FAVOUR then
+				current_favour = MAX_NORSCAN_GOD_FAVOUR;
+			end
+			
+			data.favour = current_favour;
+			local win = Check_God_Favour_Win_Conditions(faction_key, key);
+			
+			if win == true then
+				-- If we've completed the objective then we no longer need to check others
+				-- i want all
+				-- break;
+			end
+
 		end
 		
-		-- Clamp favour
-		if current_favour < 0 then
-			current_favour = 0;
-		elseif current_favour > MAX_NORSCAN_GOD_FAVOUR then
-			current_favour = MAX_NORSCAN_GOD_FAVOUR;
-		end
-		
-		data.favour = current_favour;
-		local win = Check_God_Favour_Win_Conditions(faction_key, key);
-		
-		if win == true then
-			-- If we've completed the objective then we no longer need to check others
-			break;
-		end
+	end
+	if Get_Aligned_With_God_Num(faction_key) == 4 then
+		out("will get everchosen")
+		cm:remove_effect_bundle("wh_dlc08_bundle_true_everchosen", faction_key);
+		cm:apply_effect_bundle("wh_dlc08_bundle_true_everchosen", faction_key, 0);
 	end
 	
 	UpdateNorscanGodEffects(faction_key);
@@ -529,6 +548,7 @@ function Check_God_Favour_Win_Conditions(faction_key, god_key)
 	local current_favour = NORSCAN_GODS[faction_key][god_key].favour;
 
 	if current_favour >= CHAPTER_3_FAVOUR_REQUIREMENT then
+		out("Give_Final_God_Reward\n")
 		cm:complete_scripted_mission_objective("wh_dlc08_objective_03_"..faction_key, "gain_chapter_favour_"..faction_key, true);
 		Give_Final_God_Reward(faction_key, god_key);
 	end
@@ -540,6 +560,7 @@ function Check_God_Favour_Win_Conditions(faction_key, god_key)
 	end
 	if current_favour >= MAX_NORSCAN_GOD_FAVOUR then
 		Trigger_God_Challengers(faction_key, god_key);
+		out("Trigger_God_Challengers\n")
 		return true;
 	end
 	return false;
@@ -627,10 +648,10 @@ function Norsca_CharacterPerformsSettlementOccupationDecision(context)
 				out("\tRAZE_ID_TO_GOD_KEY - "..tostring(god_key));
 				
 				if god_key ~= nil then
-					local god_selected = Has_Aligned_With_God(character:faction():name());
+					local god_selected = Get_Aligned_With_God_Num(character:faction():name());
 					
 					-- Make sure the player hasn't already achieved maximum favour
-					if god_selected == false then
+					if god_selected < 4 then
 						Add_God_Favour(character:faction():name(), god_key, NORSCAN_FAVOUR_GAIN, NORSCAN_FAVOUR_LOSS);
 					end
 				end
@@ -640,10 +661,10 @@ function Norsca_CharacterPerformsSettlementOccupationDecision(context)
 end
 
 function Trigger_God_Challengers(faction_key, god_key)
+	local skip = false
 	if Has_Aligned_With_God(faction_key) then
-		return false;
+		skip = true
 	end
-
 	local lowest_god = god_key;
 	local lowest_value = 999999;
 
@@ -651,15 +672,19 @@ function Trigger_God_Challengers(faction_key, god_key)
 		if key == god_key then
 			-- This is your chosen god!
 			data.aligned = true;
-		else
-			-- This is an enemy god!
-			data.aligned = false;
-			
-			if data.favour <= lowest_value then
-				lowest_god = key;
-				lowest_value = data.favour;
+		else if data.aligned == false then
+				-- This is an enemy god!
+				data.aligned = false;
+				
+				if data.favour <= lowest_value then
+					lowest_god = key;
+					lowest_value = data.favour;
+				end
 			end
 		end
+	end
+	if skip == true then
+		return
 	end
 	
 	-- The God with the worst relation becomes the final quest battle
@@ -686,16 +711,16 @@ function Trigger_God_Challengers(faction_key, god_key)
 	end
 	
 	for key, data in pairs(NORSCAN_GODS[faction_key]) do
-		if data.aligned == false then
-			if data.final == false then
+		-- if data.aligned == false then
+		-- 	if data.final == false then
 				out("\n#######################################################\n Spawn_Challenger("..faction_key..", "..key..", "..tostring(is_mp)..")\n#######################################################\n");
 				local spawn_pos, mission_key = Spawn_Challenger(faction_key, key, is_mp);
 				table.insert(wars_to_do, key);
 				table.insert(challengers_spawned, spawn_pos);
 				table.insert(missions_to_spawn, mission_key);
 				data.spawned = true;
-			end
-		end
+		-- 	end
+		-- end
 	end
 	
 	out("MP Challenger missions to spawn: "..#missions_to_spawn);
@@ -918,7 +943,7 @@ function Spawn_Challenger(faction_key, god_key, is_mp)
 	-- Set up the General
 	challenger_invasion:create_general(GOD_KEY_TO_CHALLENGER_DETAILS[god_key].make_faction_leader, GOD_KEY_TO_CHALLENGER_DETAILS[god_key].agent_subtype, GOD_KEY_TO_CHALLENGER_DETAILS[god_key].forename, GOD_KEY_TO_CHALLENGER_DETAILS[god_key].clan_name, GOD_KEY_TO_CHALLENGER_DETAILS[god_key].family_name, GOD_KEY_TO_CHALLENGER_DETAILS[god_key].other_name);
 	
-	challenger_invasion:add_character_experience(30, true); -- Level 30
+	challenger_invasion:add_character_experience(38, true); -- Level 30
 	
 	challenger_invasion:apply_effect(GOD_KEY_TO_CHALLENGER_DETAILS[god_key].effect_bundle, -1);
 	
@@ -1129,12 +1154,12 @@ function Norsca_CharacterCreated(context)
 	
 	if agent:is_null_interface() == false and agent:character_subtype("wh_dlc08_nor_arzik") then
 		out("AZRIK SPAWNED!");
-		if agent:rank() < 30 then
+		if agent:rank() < 38 then
 			local cqi = agent:cqi();
-			cm:add_agent_experience("character_cqi:"..cqi, 30, true);
+			cm:add_agent_experience("character_cqi:"..cqi, 38, true);
 			
 			cm:callback(function()
-				for i = 1, 30 do
+				for i = 1, 38 do
 					cm:force_add_skill("character_cqi:"..cqi, "wh_dlc08_skill_arzik_dummy");
 				end
 			end, 0.5);
@@ -1167,6 +1192,18 @@ function Has_Aligned_With_God(faction_key)
 		end
 	end
 	return false;
+end
+
+function Get_Aligned_With_God_Num(faction_key)
+	local num = 0
+	if NORSCAN_GODS[faction_key] ~= nil then
+		for god_key, data in pairs(NORSCAN_GODS[faction_key]) do
+			if data.aligned == true then
+				num = num + 1
+			end
+		end
+	end
+	return num;
 end
 
 function Setup_Challenger_Armies()
