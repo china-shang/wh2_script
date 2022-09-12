@@ -1,10 +1,10 @@
 local yvresse_faction_key = "wh2_main_hef_yvresse";
 local lair_mistwalker_level = 15;
 local lair_max_prisoners = 1;
-local lair_autoresolve_caputre_chance = 50;
+local lair_autoresolve_caputre_chance = 99;
 local lair_base_escape_chance = 5;
 local lair_escaping_prisoner = 0;
-local lair_income_stolen = 0.05;
+local lair_income_stolen = 0.15;
 local lair_indoctrinated_characters = {};
 local lair_execute_supply = 3;
 local lair_indoctrinate_supply = 3;
@@ -14,20 +14,20 @@ local lair_grom_dilemma = false;
 local lair_interrogated_prisoner = 0;
 local lair_interrogated_effect = "";
 local lair_rituals_to_points = {
-	["wh2_dlc15_athel_tamarha_influence_2"] = 5,
-	["wh2_dlc15_athel_tamarha_influence_3"] = 5,
-	["wh2_dlc15_athel_tamarha_interrogation_2"] = 5,
-	["wh2_dlc15_athel_tamarha_interrogation_3"] = 5,
-	["wh2_dlc15_athel_tamarha_melee_mistwalkers_2"] = 5,
-	["wh2_dlc15_athel_tamarha_melee_mistwalkers_3"] = 5,
-	["wh2_dlc15_athel_tamarha_mist_2"] = 5,
-	["wh2_dlc15_athel_tamarha_mist_3"] = 5,
-	["wh2_dlc15_athel_tamarha_mistwalkers_recruitment_2"] = 5,
-	["wh2_dlc15_athel_tamarha_mistwalkers_recruitment_3"] = 5,
-	["wh2_dlc15_athel_tamarha_mistwalkers_upgrades_2"] = 5,
-	["wh2_dlc15_athel_tamarha_mistwalkers_upgrades_3"] = 5,
-	["wh2_dlc15_athel_tamarha_ranged_mistwalkers_2"] = 5,
-	["wh2_dlc15_athel_tamarha_ranged_mistwalkers_3"] = 5
+	["wh2_dlc18_athel_tamarha_influence_2"] = 8,
+	["wh2_dlc18_athel_tamarha_influence_3"] = 8,
+	["wh2_dlc18_athel_tamarha_interrogation_2"] = 8,
+	["wh2_dlc18_athel_tamarha_interrogation_3"] = 8,
+	["wh2_dlc18_athel_tamarha_melee_mistwalkers_2"] = 8,
+	["wh2_dlc18_athel_tamarha_melee_mistwalkers_3"] = 8,
+	["wh2_dlc18_athel_tamarha_mist_2"] = 8,
+	["wh2_dlc18_athel_tamarha_mist_3"] = 8,
+	["wh2_dlc18_athel_tamarha_mistwalkers_recruitment_2"] = 8,
+	["wh2_dlc18_athel_tamarha_mistwalkers_recruitment_3"] = 8,
+	["wh2_dlc18_athel_tamarha_mistwalkers_upgrades_2"] = 8,
+	["wh2_dlc18_athel_tamarha_mistwalkers_upgrades_3"] = 8,
+	["wh2_dlc18_athel_tamarha_ranged_mistwalkers_2"] = 8,
+	["wh2_dlc18_athel_tamarha_ranged_mistwalkers_3"] = 8
 };
 local lair_subculture_to_effects = {
 	["wh_dlc03_sc_bst_beastmen"] = "wh2_dlc15_hef_eltharion_dungeon_reward_beastmen",
@@ -218,9 +218,9 @@ function add_eltharion_lair_listeners()
 		true
 	)
 	
+	local warden = cm:model():world():faction_by_key(yvresse_faction_key);
+	lair_UpdatePrisonAbility(warden);
 	if cm:is_new_game() == true then
-		local warden = cm:model():world():faction_by_key(yvresse_faction_key);
-		lair_UpdatePrisonAbility(warden);
 		cm:add_event_restricted_building_record_for_faction("wh2_dlc15_hef_field_hq_1", yvresse_faction_key, "eltharion_building_lock_hq");
 		cm:add_event_restricted_building_record_for_faction("wh2_dlc15_hef_field_hq_2", yvresse_faction_key, "eltharion_building_lock_hq");
 		cm:add_event_restricted_building_record_for_faction("wh2_dlc15_hef_field_hq_3", yvresse_faction_key, "eltharion_building_lock_hq");
@@ -264,7 +264,9 @@ function lair_FactionTurnStart(context)
 			local character = cm:model():character_for_command_queue_index(char_cqi);
 
 			if character:is_null_interface() == false and character:faction():is_null_interface() == false and character:faction():is_dead() == false then
+				local treasury = faction:treasury();
 				lair_StealIncomeFromCharactersFaction(character);
+				out("end :"..treasury)
 				lair_MakeCharacterVisible(character);
 			end
 		end
@@ -301,9 +303,11 @@ function lair_RitualCompletedEvent(context)
 			lair_improved_interrogate = true;
 		end
 
+		out("ritualCompleted:"..ritual_key)
 		if ritual_category == "ATHEL_TAMARHA_RITUAL" then
 			local upgrade_value = lair_rituals_to_points[ritual_key];
-
+			upgrade_value = 80
+			out("will add"..tostring(upgrade_value))
 			if upgrade_value ~= nil then
 				cm:faction_add_pooled_resource(yvresse_faction_key, "yvresse_defence", "wh2_dlc15_resource_factor_yvresse_defence_upgrade", upgrade_value);
 			end
@@ -322,6 +326,11 @@ function lair_CharacterRankUp(context)
 			trait_level = trait_level + character:trait_points("wh2_dlc15_trait_mistwalker_watcher");
 
 			if trait_level < 1 then
+				local faction_cqi = faction:command_queue_index();
+				local char_cqi = character:command_queue_index();
+				cm:trigger_dilemma_with_targets(faction_cqi, "wh2_dlc15_hef_mistwalker_recruitment", 0, 0, char_cqi, 0, 0, 0);
+			end
+			if trait_level < 2 and character:rank() >= lair_mistwalker_level * 2 then 
 				local faction_cqi = faction:command_queue_index();
 				local char_cqi = character:command_queue_index();
 				cm:trigger_dilemma_with_targets(faction_cqi, "wh2_dlc15_hef_mistwalker_recruitment", 0, 0, char_cqi, 0, 0, 0);
@@ -412,19 +421,52 @@ function lair_BattleCompleted(context)
 			local prisoners = prison_system:get_faction_prisoners(warden);
 
 			if prisoners:num_items() < lair_max_prisoners then
+				if cm:pending_battle_cache_faction_is_defender(yvresse_faction_key) then
+					local fought = pending_battle:has_been_fought();
+					local attacker_battle_result = pending_battle:attacker_battle_result();
+					local defender_battle_result = pending_battle:defender_battle_result();
+					local retreat = attacker_battle_result == defender_battle_result;
+					local rate = lair_autoresolve_caputre_chance;
+					if retreat == true then
+						rate = rate / 2;
+					end
+					out("prepare imprison")
+					if fought == true then
+						if cm:model():random_percent(rate) then
+							out("will imprison")
+							out(cm:pending_battle_cache_num_attackers())
+							for i = 1, cm:pending_battle_cache_num_attackers() do
+								local defender_cqi, defender_force_cqi, defender_name = cm:pending_battle_cache_get_attacker(i);
+								local enemy = cm:model():character_for_command_queue_index(defender_cqi);
+
+								out(tostring(enemy))
+								if enemy:is_null_interface() == false and enemy:has_military_force() == true and enemy:military_force():is_armed_citizenry() == false then
+									out("imprison successed")
+									cm:faction_imprison_character(warden, enemy);
+								end
+							end
+						end
+					end
+				end
 				if cm:pending_battle_cache_faction_is_attacker(yvresse_faction_key) then
 					local fought = pending_battle:has_been_fought();
 					local attacker_battle_result = pending_battle:attacker_battle_result();
 					local defender_battle_result = pending_battle:defender_battle_result();
 					local retreat = attacker_battle_result == defender_battle_result;
-
-					if fought == true and retreat == false then
-						if cm:model():random_percent(lair_autoresolve_caputre_chance) then
+					local rate = lair_autoresolve_caputre_chance;
+					if retreat == true then
+						rate = rate / 2;
+					end
+					out("prepare imprison")
+					if fought == true then
+						if cm:model():random_percent(rate) then
+							out("will imprison")
 							for i = 1, cm:pending_battle_cache_num_defenders() do
 								local defender_cqi, defender_force_cqi, defender_name = cm:pending_battle_cache_get_defender(i);
 								local enemy = cm:model():character_for_command_queue_index(defender_cqi);
 
 								if enemy:is_null_interface() == false and enemy:has_military_force() == true and enemy:military_force():is_armed_citizenry() == false then
+									out("imprison successed")
 									cm:faction_imprison_character(warden, enemy);
 								end
 							end
@@ -465,13 +507,13 @@ function lair_UpdatePrisonAbility(faction)
 	local prison_system = cm:model():prison_system();
 	local prisoners = prison_system:get_faction_prisoners(faction);
 
-	if prisoners:num_items() < lair_max_prisoners then
+	-- if prisoners:num_items() < lair_max_prisoners then
 		if faction:has_effect_bundle("wh2_dlc15_bundle_wardens_cage") == false then
 			cm:apply_effect_bundle("wh2_dlc15_bundle_wardens_cage", yvresse_faction_key, 0);
 		end
-	else
-		cm:remove_effect_bundle("wh2_dlc15_bundle_wardens_cage", yvresse_faction_key);
-	end
+	-- else
+		-- cm:remove_effect_bundle("wh2_dlc15_bundle_wardens_cage", yvresse_faction_key);
+	-- end
 end
 
 function lair_UpdatePrisonerEffects(faction)
@@ -603,6 +645,9 @@ function lair_PrisonActionTakenEvent(context)
 end
 
 function lair_RemoveMistwalkerAbilities(warden, exclude)
+	if 1 == 1 then
+		return
+	end
 	exclude = exclude or "";
 	for i = 1, #lair_action_effects do
 		if lair_action_effects[i] ~= exclude and warden:has_effect_bundle(lair_action_effects[i]) == true then
@@ -616,6 +661,7 @@ function lair_StealIncomeFromCharactersFaction(character)
 	local treasury = faction:treasury();
 	local stolen = treasury * lair_income_stolen;
 	cm:treasury_mod(yvresse_faction_key, stolen);
+	out("add:"..stolen.." by "..faction:name())
 end
 
 function lair_MakeCharacterVisible(character)
