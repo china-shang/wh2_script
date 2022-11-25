@@ -189,6 +189,35 @@ function add_starting_vows()
 	end
 end
 
+-- Human characters get the Vows per level
+core:add_listener(
+		"character_rank_up_vows_per_level_human",
+		"CharacterRankUp",
+		true,
+		function(context)
+			local character = context:character();
+
+			if character:faction():is_human() == true and character:faction():culture() == "wh_main_brt_bretonnia" then
+				if character:character_type("general") == true then
+					if character:rank() == 8 then
+						for i = 1, 6 do
+							add_vow_progress(character, "wh_dlc07_trait_brt_knights_vow_knowledge_pledge", true, true);
+						end
+					elseif character:rank() == 10 then
+						for i = 1, 6 do
+							add_vow_progress(character, "wh_dlc07_trait_brt_questing_vow_protect_pledge", true, true);
+						end
+					elseif character:rank() == 13 then
+						for i = 1, 6 do
+							add_vow_progress(character, "wh_dlc07_trait_brt_grail_vow_valour_pledge", true, true);
+						end
+					end
+				end
+			end
+		end,
+		true
+);
+
 -- AI characters get the Vows per level
 core:add_listener(
 	"character_rank_up_vows_per_level_ai",
